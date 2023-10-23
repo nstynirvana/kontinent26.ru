@@ -1,0 +1,1 @@
+<img src="/banqueting_hall/design/img/food.jpg" alt="food" class="food-banner">

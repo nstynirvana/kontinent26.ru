@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>%5BGroup 9%5D-DSC_0179_DSC_0196-18 images_equi</title>
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=2.0, minimum-scale=2.0, maximum-scale=3.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<style>
+		@-ms-viewport { width: device-width; }
+		@media only screen and (min-device-width: 800px) { html { overflow:hidden; } }
+		html { height:100%; }
+		body { height:100%; overflow:hidden; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#FFFFFF; background-color:#000000; }
+	</style>
+</head>
+<body>
+<script>
+function getCookie(name) {
+  var matches = document.cookie.match(new RegExp(
+    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+  ));
+  return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+function setCookie(value) {
+console.log('setCookie');
+
+ document.cookie = "showhelp="+value+"; path=/; expires= Mon, 31-dec-2029 00:00:00 GMT";
+ }
+</script>
+
+<script src="tour.js"></script>
+
+<div id="pano" style="width:100%;height:100%;">
+	<noscript><table style="width:100%;height:100%;"><tr style="valign:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
+	<script>
+	var settings ={};
+	if(getCookie("showhelp") == "true")(
+		settings["onstart"] = "startup();"
+		)
+	else (
+		settings["onstart"] = "startup();set(skin_settings.showinghelp,true);showhelp();"
+	)
+	embedpano({swf:"tour.swf", xml:"tour.xml", target:"pano", html5:"auto", passQueryParameters:true, vars:settings});
+	</script>
+</div>
+
+</body>
+</html>

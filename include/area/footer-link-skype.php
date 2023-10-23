@@ -1,0 +1,1 @@
+<a href="skype:kontinent26?chat" class="footer-link link-skype">kontinent26</a>

@@ -1,0 +1,1 @@
+<span class="footer-link link-adress">г. Ставрополь, ул. Дзержинского, 114</span>

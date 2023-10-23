@@ -1,0 +1,1094 @@
+<krpano version="1.18" title="Virtual Tour" onstart="startup();">
+
+	<progress showwait="none" showload="bar(bottom,100%,4,0,0,shaded,0xffffff,0xc71585,0xc71585,0x6a6a6a,1,0xaaaaaa,1)"/>
+	<control movetocursor ="arrow" />
+	<!--<display flash10="on" stillquality="HIGHSHARP" movequality="HIGHSHARP" stillquality10="HIGHSHARP" movequality10="HIGHSHARP" details="22" />-->
+	<include url="skin/vtourskin.xml" />
+	
+    <include url="%SWFPATH%/skin/vtourskin.xml" />)
+
+    <plugin name="menu" url="%SWFPATH%/open.png"  devices="html5"
+	align="top" keep="true" visible="true" onover="tween(scale,1)" 
+	onout="tween(scale,0.9)" onclick="action(visible);"  width="35%" height="prop" x="0" y="-8" scale="0.9"/>  
+	
+	<plugin name="stack"  url="%SWFPATH%/stack.png" devices="html5" 
+	align="center" alpha="0"  keep="true" visible="false" enabled="true"  
+	handcursor="false" capture="true" width="78%" height="prop" x="0" y="-60"/>
+	
+	<plugin name="close2" keep="true" devices="html5" parent="stack" zorder="99"
+	url="%SWFPATH%/graphics/close.png" align="righttop" x="-20" y="-20" scale="0.8" onhover="showtext(Закрыть);" onclick="hidden();"/>
+ 
+ 
+     <plugin name="menu" url="%SWFPATH%/open.png"  devices="flash"
+	align="top" keep="true" visible="true" onover="tween(scale,1)" 
+	onout="tween(scale,0.9)" onclick="action(visible);"  width="229" height="45" x="0" y="-8" scale="0.9"/>  
+	
+	<plugin name="stack"  url="%SWFPATH%/stack.png" devices="flash" 
+	align="center" alpha="0"  keep="true" visible="false" enabled="true"  
+	handcursor="false" capture="true" width="305" height="495" x="0%" y="-60"/>
+	
+	<plugin name="close2" keep="true" devices="flash" parent="stack" zorder="99" url="%SWFPATH%/graphics/close.png" align="righttop" x="-20" y="-20" scale="0.2" onhover="showtext(Закрыть);" onclick="hidden();"/>
+ 
+  
+  
+  <!-- плашки меню-->
+    <plugin name="single" url="%SWFPATH%/1.png" parent="stack"  enabled="true" 
+	keep="true" visible="true" width="78%"  height="prop" align="top" 
+	alpha="0" x="0" y="0%" onclick="action(hidden);loadscene(scene__Group_9_-DSC_0179_DSC_0196-18_images_equi,null,MERGE,BLEND(1));"/>
+	
+    <plugin name="single2" url="%SWFPATH%/1.png" parent="stack"  enabled="true" 
+	keep="true" visible="true" width="78%"  height="prop" align="top" 
+	alpha="0" x="0" y="6,6%" onclick="action(hidden);loadscene(scene__Group_7_-DSC_0141_DSC_0158-18_images_equi,null,MERGE,BLEND(1));"/>
+	
+	    <plugin name="single3" url="%SWFPATH%/1.png" parent="stack"  enabled="true" 
+	keep="true" visible="true" width="78%"  height="prop" align="top" 
+	alpha="0" x="0" y="13,2%" onclick="action(hidden);loadscene(scene__Group_2_-DSC_0034_DSC_0060-24_images_equi,null,MERGE,BLEND(1));"/> 
+	
+	<plugin name="single14" url="%SWFPATH%/1.png" parent="stack"  enabled="true" 
+	keep="true" visible="true" width="78%"  height="prop" align="top" 
+	alpha="0" x="0" y="19,8%" onclick="action(hidden);loadscene(scene__Group_4_-DSC_0361_DSC_0381-21_images_equi,null,MERGE,BLEND(1));"/> 
+	
+    <plugin name="single5" url="%SWFPATH%/1.png" parent="stack"  enabled="true"     
+	keep="true" visible="true" width="78%"  height="prop" align="top" 
+	alpha="0" x="0" y="26,4%" onclick="action(hidden);loadscene(scene__Group_8_-DSC_0159_DSC_0176-18_images_equi,null,MERGE,BLEND(1));"/>  <!-- Двухместный стандарт -->
+	
+		    <plugin name="single6" url="%SWFPATH%/1.png" parent="stack"  enabled="true" 
+	keep="true" visible="true" width="78%"  height="prop" align="top" 
+	alpha="0" x="0" y="33%" onclick="action(hidden);loadscene(scene__Group_10_-DSC_0199_DSC_0216-18_images_equi,null,MERGE,BLEND(1));"/>
+	
+	
+	
+	
+    <plugin name="single7" url="%SWFPATH%/1.png" parent="stack"  enabled="true" 
+	keep="true" visible="true" width="78%"  height="prop" align="top" 
+	alpha="0" x="0" y="39,6%" onclick="action(hidden);loadscene(scene__Group_0_-DSC_0001_DSC_0015-15_images_equi,null,MERGE,BLEND(1));"/>
+	
+	 <plugin name="single71" url="%SWFPATH%/1.png" parent="stack"  enabled="true" 
+	keep="true" visible="true" width="78%"  height="prop" align="top" 
+	alpha="0" x="0" y="46,2%" onclick="action(hidden);loadscene(scene__Group_2_-DSC_0519_DSC_0536-18_images_equi,null,MERGE,BLEND(1));"/>
+	
+			
+		    <plugin name="single8" url="%SWFPATH%/1.png" parent="stack"  enabled="true" 
+	keep="true" visible="true" width="78%"  height="prop" align="top" 
+	alpha="0" x="0" y="52,8%" onclick="action(hidden);loadscene(scene__Group_4_-DSC_0087_DSC_0104-18_images_equi,null,MERGE,BLEND(1));"/>
+    <plugin name="single9" url="%SWFPATH%/1.png" parent="stack"  enabled="true" 
+	keep="true" visible="true" width="78%"  height="prop" align="top" 
+	alpha="0" x="0" y="59,4%" onclick="action(hidden);loadscene(scene__Group_0_-DSC_0289_DSC_0306-18_images_equi,MERGE,BLEND(1));"/>
+	
+
+		    <plugin name="single10" url="%SWFPATH%/1.png" parent="stack"  enabled="true" 
+	keep="true" visible="true" width="78%"  height="prop" align="top" 
+	alpha="0" x="0" y="66%" onclick="action(hidden);loadscene(scene__Group_11_-DSC_0217_DSC_0234-18_images_equi,null,MERGE,BLEND(1));"/>
+	
+	
+		
+	
+    <plugin name="single11" url="%SWFPATH%/1.png" parent="stack"  enabled="true" 
+	keep="true" visible="true" width="78%"  height="prop" align="top" 
+	alpha="0" x="0" y="72,6%" onclick="action(hidden);loadscene(scene__Group_12_-DSC_0235_DSC_0252-18_imagesssa_equi,null,MERGE,BLEND(1));"/>
+	<plugin name="single12" url="%SWFPATH%/1.png" parent="stack"  enabled="true" 
+	keep="true" visible="true" width="78%"  height="prop" align="top" 
+	alpha="0" x="0" y="79,2%" onclick="action(hidden);loadscene(scene__Group_12_-DSC_0235_DSC_0252-213,null,MERGE,BLEND(1));"/>
+    <plugin name="single13" url="%SWFPATH%/1.png" parent="stack"  enabled="true" 
+	keep="true" visible="true" width="78%"  height="prop" align="top" 
+	alpha="0" x="0" y="85,8%" onclick="action(hidden);loadscene(scene__Group_13_-DSC_0253_DSC_0270-18_images_equi,MERGE,BLEND(1));"/>
+	
+	 <plugin name="single15" url="%SWFPATH%/1.png" parent="stack"  enabled="true" 
+	keep="true" visible="true" width="78%"  height="prop" align="top" 
+	alpha="0" x="0" y="92,4%" onclick="action(hidden);loadscene(scene__Group_0_-DSC_0850_DSC_0867-18_images_equi,MERGE,BLEND(1));"/>
+	
+
+   
+<!-- открыть эскиз -->
+<action name="visible">
+set(plugin[menu].visible,false);
+set(plugin[arroumenu].visible,true);
+set(plugin[stack].visible,true);
+tween(plugin[stack].alpha,1);
+ </action>
+<!-- скрыть эскиз -->
+ <action name="hidden">
+set(plugin[menu].visible,true);
+set(plugin[arroumenu].visible,false);
+set(plugin[stack].visible,false);
+tween(plugin[stack].alpha,0);
+ </action>
+ 
+
+<action name="startup">
+if(startscene === null, copy(startscene,scene[0].name)); loadscene(get(startscene), null, MERGE);
+</action>
+ 
+	<skin_settings bingmaps="false"
+	               bingmaps_key=""
+	               bingmaps_zoombuttons="false"
+	               gyro="true"
+	               thumbs_width="120" thumbs_height="60" thumbs_padding="5" thumbs_vpadding="8" thumbs_crop="0|80|240|120"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="true"
+	               thumbs_scrollindicator="true"
+	               tooltips_thumbs="true"
+	               tooltips_hotspots="true"
+	               tooltips_mapspots="true"
+	               controlbar_offset="-38"
+	               />
+
+	<!-- set optional skin logo url -->
+	<!--<layer name="skin_logo" url="" scale="0.25" opened_onclick="openurl('...',_blank);" />-->
+
+
+	<action name="startup">
+		if(startscene === null, copy(startscene,scene[0].name));
+		loadscene(get(startscene), null, MERGE);
+	</action>
+
+	
+	<!-- set skin settings: bingmaps? gyro? thumbnail controlling? tooltips? -->
+	<skin_settings bingmaps="false"
+	               bingmaps_key=""
+	               bingmaps_zoombuttons="false"
+	               gyro="true"
+	               thumbs_width="120" thumbs_height="60" thumbs_padding="5" thumbs_vpadding="8" thumbs_crop="0|80|240|120"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="true"
+	               thumbs_scrollindicator="true"
+	               tooltips_thumbs="true"
+	               tooltips_hotspots="true"
+	               tooltips_mapspots="true"
+	               controlbar_offset="-38"
+	               quickmenu="false"
+	               webvr="false"
+	               showinghelp="true"
+	               />
+
+	<!-- set optional skin logo url -->
+	<!--<layer name="skin_logo" url="" scale="0.25" opened_onclick="openurl('...',_blank);" />-->
+
+
+	<action name="startup">
+		if(startscene === null, copy(startscene,scene[0].name));
+		loadscene(get(startscene), null, MERGE);
+	</action>
+
+
+	<scene name="scene__Group_5_-DSC_0382_DSC_0405-24_images_equi" title="Улица" onstart="" thumburl="panos/_Group_5_-DSC_0382_DSC_0405-24_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-5.322" vlookat="-9.875" fovtype="DFOV" fov="120.000" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_5_-DSC_0382_DSC_0405-24_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_5_-DSC_0382_DSC_0405-24_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_5_-DSC_0382_DSC_0405-24_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_5_-DSC_0382_DSC_0405-24_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_5_-DSC_0382_DSC_0405-24_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-35.830" atv="-3.964" linkedscene="scene__group_14_-dsc_0271_dsc_0288-18_images_equi" />
+
+	</scene>
+		
+		
+	
+	<scene name="scene__Group_14_-DSC_0271_DSC_0288-18_images_equi" title="Ресепшн" onstart="action(visible);" thumburl="panos/_Group_14_-DSC_0271_DSC_0288-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+	
+		<view hlookat="158.791" vlookat="0.858"  fovtype="DFOV" fov="120.000" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_14_-DSC_0271_DSC_0288-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_14_-DSC_0271_DSC_0288-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_14_-DSC_0271_DSC_0288-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_14_-DSC_0271_DSC_0288-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_14_-DSC_0271_DSC_0288-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+	<hotspot name="videospot" 
+		 	 devices="flash"
+			 url="plugins/videoplayer.swf" 
+	         alturl="plugins/videoplayer.js"
+	         ath="138.868" atv="-18.574" distorted="true" rx="-15.5" ry="0.5" rz="-1.052548" width="424" height="240" scale="0.329909" 
+	         buffertime="5"
+	         directionalsound="true"
+	         ignoremetadata="false"
+	         iscomplete="false"
+	         isvideoready="true"
+	         loop="true"
+	         outofrangevolume="0"
+	         pausedonstart="false"
+	         range="110"
+	         rangefalloff="1"
+	         videourl="graphics/video.mp4"
+	         volume="14"
+	         handcursor="false"
+	         capture="false"
+	         />
+		
+		<hotspot name="spot14" style="skin_hotspotstyle" ath="27.482" atv="-1.274" linkedscene="scene__group_5_-dsc_0382_dsc_0405-24_images_equi" />
+		
+		
+		
+	</scene>
+	
+	
+	<scene name="scene__Group_0_-DSC_0850_DSC_0867-18_images_equi" title="" onstart="" thumburl="panos/_Group_0_-DSC_0850_DSC_0867-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="32.244" vlookat="-0.915" fovtype="DFOV" fov="120.000" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_0_-DSC_0850_DSC_0867-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_0_-DSC_0850_DSC_0867-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_0_-DSC_0850_DSC_0867-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_0_-DSC_0850_DSC_0867-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_0_-DSC_0850_DSC_0867-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-66.646" atv="-0.804" linkedscene="scene__group_14_-dsc_0271_dsc_0288-18_images_equi" />
+
+	</scene>
+	
+	<scene name="scene__Group_0_-DSC_0001_DSC_0015-15_images_equi" title="Бизнес Люкс" onstart="" thumburl="panos/_Group_0_-DSC_0001_DSC_0015-15_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="120" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_0_-DSC_0001_DSC_0015-15_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_0_-DSC_0001_DSC_0015-15_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_0_-DSC_0001_DSC_0015-15_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_0_-DSC_0001_DSC_0015-15_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_0_-DSC_0001_DSC_0015-15_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-127.915" atv="4.890" linkedscene="scene__group_14_-dsc_0271_dsc_0288-18_images_equi" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-120.498" atv="4.111" linkedscene="scene__group_1_-dsc_0016_dsc_0033-18_images_equi" />
+
+	</scene>
+
+
+	
+
+	<scene name="scene__Group_1_-DSC_0016_DSC_0033-18_images_equi" title="Санузел" onstart="" thumburl="panos/_Group_1_-DSC_0016_DSC_0033-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="120" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_1_-DSC_0016_DSC_0033-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_1_-DSC_0016_DSC_0033-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_1_-DSC_0016_DSC_0033-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_1_-DSC_0016_DSC_0033-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_1_-DSC_0016_DSC_0033-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="119.883" atv="24.623" linkedscene="scene__group_0_-dsc_0001_dsc_0015-15_images_equi" />
+
+	</scene>
+
+	<scene name="scene__Group_2_-DSC_0034_DSC_0060-24_images_equi" title="Стандарт комфорт одноместный" onstart="" thumburl="panos/_Group_2_-DSC_0034_DSC_0060-24_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-52.587" vlookat="5.622" fovtype="DFOV" fov="125.000" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_2_-DSC_0034_DSC_0060-24_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_2_-DSC_0034_DSC_0060-24_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_2_-DSC_0034_DSC_0060-24_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_2_-DSC_0034_DSC_0060-24_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_2_-DSC_0034_DSC_0060-24_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-159.689" atv="7.347" linkedscene="scene__group_1_-dsc_0016_dsc_0033-18_images_equi24s" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-174.883" atv="6.174" linkedscene="scene__group_14_-dsc_0271_dsc_0288-18_images_equi" />
+		
+		
+
+	
+		
+	</scene>
+
+
+	<scene name="scene__Group_1_-DSC_0016_DSC_0033-18_images_equi24s" title="Санузел" onstart="" thumburl="panos/4/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="120" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/4/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/4/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/4/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/4/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/4/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="118.970" atv="25.451" linkedscene="scene__group_2_-dsc_0034_dsc_0060-24_images_equi" />
+		
+
+	</scene>
+<scene name="scene__Group_2_-DSC_0519_DSC_0536-18_images_equi" title="Бизнес Люкс двухкомнатный" onstart="" thumburl="panos/_Group_2_-DSC_0519_DSC_0536-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="256.161" vlookat="1.778" fovtype="DFOV" fov="125.000" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_2_-DSC_0519_DSC_0536-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_2_-DSC_0519_DSC_0536-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_2_-DSC_0519_DSC_0536-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_2_-DSC_0519_DSC_0536-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_2_-DSC_0519_DSC_0536-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+<hotspot name="spot1" style="skin_hotspotstyleleft" ath="-161.731" atv="10.412" linkedscene="scene__Group_1_-DSC_0016_DSC_0033-18_images_equi2431" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-162.238" atv="-1.352" linkedscene="scene__group_14_-dsc_0271_dsc_0288-18_images_equi" />
+		<hotspot name="spot3" style="skin_hotspotstyleright" ath="-145.666" atv="4.235" linkedscene="scene__group_3_-dsc_0537_dsc_0557-21_images_equi" />
+	</scene>
+
+	<scene name="scene__Group_3_-DSC_0537_DSC_0557-21_images_equi" title="" onstart="" thumburl="panos/_Group_3_-DSC_0537_DSC_0557-21_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-411.987" vlookat="5.855" fovtype="DFOV" fov="125.000" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_3_-DSC_0537_DSC_0557-21_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_3_-DSC_0537_DSC_0557-21_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_3_-DSC_0537_DSC_0557-21_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_3_-DSC_0537_DSC_0557-21_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_3_-DSC_0537_DSC_0557-21_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="49.306" atv="4.513" linkedscene="scene__group_2_-dsc_0519_dsc_0536-18_images_equi" />
+		<hotspot name="spot2" style="skin_hotspotstyleright" ath="103.734" atv="4.292" linkedscene="scene__group_14_-dsc_0271_dsc_0288-18_images_equi" />
+
+	</scene>
+	
+	
+	<scene name="scene__Group_1_-DSC_0016_DSC_0033-18_images_equi2431" title="Санузел" onstart="" thumburl="panos/6/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="120" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/6/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/6/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/6/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/6/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/6/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="118.970" atv="25.451" linkedscene="scene__Group_2_-DSC_0519_DSC_0536-18_images_equi" />
+		
+
+	</scene>
+	
+	
+	<scene name="scene__Group_4_-DSC_0087_DSC_0104-18_images_equi" title="Premier Люкс" onstart="" thumburl="panos/_Group_4_-DSC_0087_DSC_0104-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="120" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_4_-DSC_0087_DSC_0104-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_4_-DSC_0087_DSC_0104-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_4_-DSC_0087_DSC_0104-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_4_-DSC_0087_DSC_0104-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_4_-DSC_0087_DSC_0104-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-170.026" atv="5.563" linkedscene="scene__group_14_-dsc_0271_dsc_0288-18_images_equi" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="72.229" atv="3.597" linkedscene="scene__group_5_-dsc_0105_dsc_0122-18_images_equi" />
+		<hotspot name="spot3" style="skin_hotspotstyleleft" ath="-171.477" atv="11.254" linkedscene="scene__group_3_-dsc_0069_dsc_0086-18_images_equi" />
+
+	</scene>
+
+	<scene name="scene__Group_5_-DSC_0105_DSC_0122-18_images_equi" title="" onstart="" thumburl="panos/_Group_5_-DSC_0105_DSC_0122-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="7.648" vlookat="6.601" fovtype="DFOV" fov="125.000" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_5_-DSC_0105_DSC_0122-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_5_-DSC_0105_DSC_0122-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_5_-DSC_0105_DSC_0122-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_5_-DSC_0105_DSC_0122-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_5_-DSC_0105_DSC_0122-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-124.999" atv="4.101" linkedscene="scene__group_4_-dsc_0087_dsc_0104-18_images_equi" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="97.415" atv="6.012" linkedscene="scene__group_6_-dsc_0123_dsc_0140-18_images_equi" />
+
+	</scene>
+
+	<scene name="scene__Group_6_-DSC_0123_DSC_0140-18_images_equi" title="" onstart="" thumburl="panos/_Group_6_-DSC_0123_DSC_0140-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="29.622" vlookat="2.549" fovtype="DFOV" fov="125.000" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_6_-DSC_0123_DSC_0140-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_6_-DSC_0123_DSC_0140-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_6_-DSC_0123_DSC_0140-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_6_-DSC_0123_DSC_0140-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_6_-DSC_0123_DSC_0140-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-65.683" atv="6.539" linkedscene="scene__group_5_-dsc_0105_dsc_0122-18_images_equi" />
+
+	</scene>
+
+	<scene name="scene__Group_3_-DSC_0069_DSC_0086-18_images_equi" title="Санузел" onstart="" thumburl="panos/_Group_3_-DSC_0069_DSC_0086-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-85.396" vlookat="17.271" fovtype="DFOV" fov="125.000" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_3_-DSC_0069_DSC_0086-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_3_-DSC_0069_DSC_0086-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_3_-DSC_0069_DSC_0086-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_3_-DSC_0069_DSC_0086-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_3_-DSC_0069_DSC_0086-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-179.278" atv="26.527" linkedscene="scene__group_4_-dsc_0087_dsc_0104-18_images_equi" />
+
+	</scene>
+
+	
+	
+	<scene name="scene__Group_7_-DSC_0141_DSC_0158-18_images_equi" title="Стандарт двухместный" onstart="" thumburl="panos/_Group_7_-DSC_0141_DSC_0158-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="120" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_7_-DSC_0141_DSC_0158-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_7_-DSC_0141_DSC_0158-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_7_-DSC_0141_DSC_0158-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_7_-DSC_0141_DSC_0158-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_7_-DSC_0141_DSC_0158-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-108.947" atv="3.239" linkedscene="scene__group_14_-dsc_0271_dsc_0288-18_images_equi" />
+
+			<hotspot name="picturespot1" style="skin_hotspotstylepicture1" 
+		         ath="-102.708"
+		         atv="4.661"
+		         onhover="showtext(Санузел);"
+		         onclick="showpicture(picture1);"
+		         />
+
+		<plugin name="picture1" visible="false" url="graphics/1.png" align="center" alpha="1" onclick="hidepicture(picture1);" />
+        <plugin name="close1" parent="picture1"  style="skin_close"  align="righttop" x="10" y="10" onhover="showtext(Закрыть);" onclick="hidepicture(picture1);"/>
+
+		
+	</scene>
+
+	<scene name="scene__Group_8_-DSC_0159_DSC_0176-18_images_equi" title="Стандарт комфорт двухместный Twin" onstart="" thumburl="panos/_Group_8_-DSC_0159_DSC_0176-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="12.308" vlookat="11.047" fovtype="DFOV" fov="125.000" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_8_-DSC_0159_DSC_0176-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_8_-DSC_0159_DSC_0176-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_8_-DSC_0159_DSC_0176-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_8_-DSC_0159_DSC_0176-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_8_-DSC_0159_DSC_0176-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="121.890" atv="5.924" linkedscene="scene__group_14_-dsc_0271_dsc_0288-18_images_equi" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="114.671" atv="6.253" linkedscene="scene__group_1_-dsc_0016_dsc_0033-18_images_equi1" />
+
+	</scene>
+
+		
+
+	<scene name="scene__Group_1_-DSC_0016_DSC_0033-18_images_equi1" title="Санузел" onstart="" thumburl="panos/2/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="120" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/2/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/2/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/2/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/2/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/2/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="119.462" atv="26.069" linkedscene="scene__group_8_-dsc_0159_dsc_0176-18_images_equi" />
+
+	</scene>
+	
+	<scene name="scene__Group_9_-DSC_0179_DSC_0196-18_images_equi" title="Стандарт одноместный" onstart="" thumburl="panos/_Group_9_-DSC_0179_DSC_0196-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="120" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_9_-DSC_0179_DSC_0196-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_9_-DSC_0179_DSC_0196-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_9_-DSC_0179_DSC_0196-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_9_-DSC_0179_DSC_0196-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_9_-DSC_0179_DSC_0196-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="149.993" atv="5.117" linkedscene="scene__group_14_-dsc_0271_dsc_0288-18_images_equi" />
+
+			<hotspot name="picturespot1" style="skin_hotspotstylepicture1" 
+		         ath="131.641"
+		         atv="11.701"
+		         onhover="showtext(Санузел);"
+		         onclick="showpicture(picture1);"
+		         />
+
+		<plugin name="picture1" visible="false" url="graphics/1.png" align="center" alpha="1" onclick="hidepicture(picture1);" />
+        <plugin name="close1" parent="picture1"  style="skin_close"  align="righttop" x="10" y="10" onhover="showtext(Закрыть);" onclick="hidepicture(picture1);"/>
+
+		
+	</scene>
+
+	
+	
+	
+	<scene name="scene__Group_10_-DSC_0199_DSC_0216-18_images_equi" title="Полулюкс" onstart="" thumburl="panos/_Group_10_-DSC_0199_DSC_0216-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="120" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_10_-DSC_0199_DSC_0216-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_10_-DSC_0199_DSC_0216-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_10_-DSC_0199_DSC_0216-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_10_-DSC_0199_DSC_0216-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_10_-DSC_0199_DSC_0216-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-120.961" atv="-1.554" linkedscene="scene__group_14_-dsc_0271_dsc_0288-18_images_equi" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-118.272" atv="6.254" linkedscene="scene__group_1_-dsc_0016_dsc_0033-18_images_equi2" />
+
+	</scene>
+
+	<scene name="scene__Group_1_-DSC_0016_DSC_0033-18_images_equi2" title="Санузел " onstart="" thumburl="panos/3/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="120" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/3/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/3/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/3/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/3/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/3/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="119.009" atv="25.899" linkedscene="scene__group_10_-dsc_0199_dsc_0216-18_images_equi" />
+
+	</scene>
+
+	
+	
+		<scene name="scene__Group_0_-DSC_0289_DSC_0306-18_images_equi" title="Premier Люкс" onstart="" thumburl="panos/_Group_0_-DSC_0289_DSC_0306-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="120" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_0_-DSC_0289_DSC_0306-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_0_-DSC_0289_DSC_0306-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_0_-DSC_0289_DSC_0306-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_0_-DSC_0289_DSC_0306-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_0_-DSC_0289_DSC_0306-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-138.340" atv="4.476" linkedscene="scene__group_14_-dsc_0271_dsc_0288-18_images_equi" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-74.524" atv="5.178" linkedscene="scene__group_1_-dsc_0307_dsc_0324-18_images_equi" />
+		<hotspot name="spot3" style="skin_hotspotstyleleft" ath="-138.737" atv="10.812" linkedscene="scene__group_3_-dsc_0069_dsc_0086-18_images_equi1" />
+
+	</scene>
+
+	<scene name="scene__Group_1_-DSC_0307_DSC_0324-18_images_equi" title="" onstart="" thumburl="panos/_Group_1_-DSC_0307_DSC_0324-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="120" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_1_-DSC_0307_DSC_0324-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_1_-DSC_0307_DSC_0324-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_1_-DSC_0307_DSC_0324-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_1_-DSC_0307_DSC_0324-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_1_-DSC_0307_DSC_0324-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="112.185" atv="5.307" linkedscene="scene__group_0_-dsc_0289_dsc_0306-18_images_equi" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="154.290" atv="5.802" linkedscene="scene__group_3_-dsc_0343_dsc_0360-18_images_equi" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-106.554" atv="4.684" linkedscene="scene__group_2_-dsc_0325_dsc_0342-18_images_equi" />
+
+	</scene>
+
+	<scene name="scene__Group_2_-DSC_0325_DSC_0342-18_images_equi" title="" onstart="" thumburl="panos/_Group_2_-DSC_0325_DSC_0342-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="120" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_2_-DSC_0325_DSC_0342-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_2_-DSC_0325_DSC_0342-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_2_-DSC_0325_DSC_0342-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_2_-DSC_0325_DSC_0342-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_2_-DSC_0325_DSC_0342-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="95.591" atv="2.699" linkedscene="scene__group_1_-dsc_0307_dsc_0324-18_images_equi" />
+
+		
+		<hotspot name="picturespot1" style="skin_hotspotstylepicture1" 
+		         ath="-44.993"
+		         atv="4.912"
+		         onhover="showtext(Сауна);"
+		         onclick="showpicture(picture1);"
+		         />
+
+		<plugin name="picture1" visible="false" url="graphics/2.png" align="center" alpha="1" onclick="hidepicture(picture1);" />
+        <plugin name="close1" parent="picture1"  style="skin_close"  align="righttop" x="10" y="10" onhover="showtext(Закрыть);" onclick="hidepicture(picture1);"/>
+
+
+		
+	</scene>
+
+	<scene name="scene__Group_3_-DSC_0343_DSC_0360-18_images_equi" title="" onstart="" thumburl="panos/_Group_3_-DSC_0343_DSC_0360-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="120" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_3_-DSC_0343_DSC_0360-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_3_-DSC_0343_DSC_0360-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_3_-DSC_0343_DSC_0360-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_3_-DSC_0343_DSC_0360-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_3_-DSC_0343_DSC_0360-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="28.995" atv="11.289" linkedscene="scene__group_1_-dsc_0307_dsc_0324-18_images_equi" />
+
+	</scene>
+		<scene name="scene__Group_3_-DSC_0069_DSC_0086-18_images_equi1" title="Санузел" onstart="" thumburl="panos/_Group_3_-DSC_0069_DSC_0086-18_images_equi1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="260.080" vlookat="10.787" fovtype="DFOV" fov="125.000" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_3_-DSC_0069_DSC_0086-18_images_equi1.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_3_-DSC_0069_DSC_0086-18_images_equi1.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_3_-DSC_0069_DSC_0086-18_images_equi1.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_3_-DSC_0069_DSC_0086-18_images_equi1.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_3_-DSC_0069_DSC_0086-18_images_equi1.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-179.800" atv="32.730" linkedscene="scene__group_0_-dsc_0289_dsc_0306-18_images_equi" />
+
+	</scene>
+
+	
+	<scene name="scene__Group_4_-DSC_0361_DSC_0381-21_images_equi" title="Стандарт комфорт двухместный Double" onstart="" thumburl="panos/_Group_4_-DSC_0361_DSC_0381-21_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-8.220" vlookat="9.023" fovtype="DFOV" fov="125.000" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_4_-DSC_0361_DSC_0381-21_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_4_-DSC_0361_DSC_0381-21_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_4_-DSC_0361_DSC_0381-21_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_4_-DSC_0361_DSC_0381-21_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_4_-DSC_0361_DSC_0381-21_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-108.986" atv="6.664" linkedscene="scene__group_14_-dsc_0271_dsc_0288-18_images_equi" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-101.378" atv="7.517" linkedscene="scene__group_1_-dsc_0016_dsc_0033-18_images_equi2434" />
+
+		
+			
+
+
+		
+	</scene>
+
+<scene name="scene__Group_1_-DSC_0016_DSC_0033-18_images_equi2434" title="Санузел" onstart="" thumburl="panos/5/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="120" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/5/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/5/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/5/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/5/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/5/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="119.056" atv="25.981" linkedscene="scene__group_4_-dsc_0361_dsc_0381-21_images_equi" />
+
+
+	</scene>
+	
+	
+		<scene name="scene__Group_11_-DSC_0217_DSC_0234-18_images_equi" title="Конференц зал №1" onstart="" thumburl="panos/_Group_11_-DSC_0217_DSC_0234-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-49.226" vlookat="1.539" fovtype="DFOV" fov="120.000" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_11_-DSC_0217_DSC_0234-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_11_-DSC_0217_DSC_0234-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_11_-DSC_0217_DSC_0234-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_11_-DSC_0217_DSC_0234-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_11_-DSC_0217_DSC_0234-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-125.840" atv="1.463" linkedscene="scene__group_14_-dsc_0271_dsc_0288-18_images_equi" />
+
+	</scene>
+
+	<scene name="scene__Group_12_-DSC_0235_DSC_0252-18_imagesssa_equi" title="Конференц зал №2" onstart="" thumburl="panos/_Group_12_-DSC_0235_DSC_0252-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-163.759" vlookat="8.998" fovtype="DFOV" fov="120.000" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_12_-DSC_0235_DSC_0252-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_12_-DSC_0235_DSC_0252-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_12_-DSC_0235_DSC_0252-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_12_-DSC_0235_DSC_0252-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_12_-DSC_0235_DSC_0252-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-175.446" atv="0.218" linkedscene="scene__group_14_-dsc_0271_dsc_0288-18_images_equi" />
+
+	</scene>
+
+
+		<scene name="scene__Group_12_-DSC_0235_DSC_0252-213" title="Конференц зал №3" onstart="" thumburl="panos/22/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="16.694" vlookat="19.498" fovtype="DFOV" fov="120.000" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/22/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/22/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/22/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/22/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/22/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-175.446" atv="0.218" linkedscene="scene__group_14_-dsc_0271_dsc_0288-18_images_equi" />
+
+	</scene>
+
+	
+	<scene name="scene__Group_13_-DSC_0253_DSC_0270-18_images_equi" title="Форум холл" onstart="" thumburl="panos/_Group_13_-DSC_0253_DSC_0270-18_images_equi.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="120" maxpixelzoom="1.5" fovmin="100" fovmax="125" limitview="auto" />
+
+		<preview url="panos/_Group_13_-DSC_0253_DSC_0270-18_images_equi.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512">
+			<level tiledimagewidth="2048" tiledimageheight="2048" download="view">
+				<cube url="panos/_Group_13_-DSC_0253_DSC_0270-18_images_equi.tiles/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1024" tiledimageheight="1024" download="view">
+				<cube url="panos/_Group_13_-DSC_0253_DSC_0270-18_images_equi.tiles/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/_Group_13_-DSC_0253_DSC_0270-18_images_equi.tiles/mobile_%s.jpg" />
+			</mobile>
+			<mobile devices="iPad+Retina+Tablet">
+				<cube url="panos/_Group_13_-DSC_0253_DSC_0270-18_images_equi.tiles/tablet_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="35.811" atv="0.252" linkedscene="scene__group_14_-dsc_0271_dsc_0288-18_images_equi" />
+
+	</scene>
+
+	
+	
+
+</krpano>

@@ -1,0 +1,60 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Номера", 
+		"/rooms/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Конференц-залы", 
+		"/konferenc-zaly/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Банкетный зал", 
+		"/banqueting_hall/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Спецпредложения", 
+		"/specials/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Услуги", 
+		"/services/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Отзывы", 
+		"/reviews/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"/contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Об отеле", 
+		"/about_hotel/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

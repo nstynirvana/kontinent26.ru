@@ -1,0 +1,3 @@
+<?
+$sSectionName="banqueting_hall";
+?>

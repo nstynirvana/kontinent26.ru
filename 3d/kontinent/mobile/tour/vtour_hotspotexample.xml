@@ -1,0 +1,233 @@
+
+
+		<hotspot name="picturespot1" style="skin_hotspotstylepicture1" 
+		         ath="0"
+		         atv="0"
+		         onhover="showtext( );"
+		         onclick="showpicture(picture1);"
+		         />
+
+		<plugin name="picture1" visible="false" url="graphics/object0.png" align="center" alpha="1" onclick="hidepicture(picture1);" />
+        <plugin name="close1" parent="picture1"  style="skin_close"  align="righttop" x="10" y="10" onhover="showtext(Закрыть);" onclick="hidepicture(picture1);"/>
+
+
+
+
+		<hotspot name="picturespot2" style="skin_hotspotstylepicture2" 
+		         ath="0"
+		         atv="0"
+		         onhover="showtext( );"
+		         onclick="showpicture(picture1);"
+		         />
+		<plugin name="picture1" visible="false" url="graphics/object0.png" align="center" alpha="1" onclick="hidepicture(picture1);"/>
+          
+
+		<plugin name="button1" url="graphics/button1.png"  align="leftbottom" x="10" y="40" visible="true"  onover="tween(scale,1.1)" onout="tween(scale,1)" scale="1" onclick=" " />
+
+		<hotspot name="videospot1" style="skin_hotspotstylevideo" 
+		         ath="0"
+		         atv="0"
+		         onhover="showtext( );"
+		         onclick="showvideo(video1,video_rim1);"
+		         />
+		
+		<plugin name="video_rim1" visible="false" zorder="5" url="skin/rim.png" align="center" alpha="0"/>
+
+		<plugin name="video1"  visible="false" zorder="6" alturl="plugins/videoplayer.js" url="plugins/videoplayer.swf" videourl="graphics/video.mp4" pausedonstart="true" align="center" alpha="0" buffertime="10" onclick="hidevideo(video1,video_rim1)"/>
+
+		
+
+		<hotspot name="info1" style="skin_hotspotstyleinfo" 
+		         ath="0"
+		         atv="0"
+		         onhover="showtext( );"
+		         onclick="openurl(http://navse360.ru/)"
+		         />
+		       
+
+	
+
+	<hotspot name="videospot" 
+		 	 devices="flash"
+			 url="plugins/videoplayer.swf" 
+	         alturl="plugins/videoplayer.js"
+	         ath="0" atv="0" distorted="true" scale="0.5" 
+	         buffertime="5"
+	         directionalsound="true"
+	         ignoremetadata="false"
+	         iscomplete="false"
+	         isvideoready="true"
+	         loop="true"
+	         outofrangevolume="0"
+	         pausedonstart="false"
+	         range="110"
+	         rangefalloff="1"
+	         videourl="graphics/video.mp4"
+	         volume="0"
+	         handcursor="false"
+	         capture="false"
+	         />
+
+	
+<hotspot name="info1" onover="tween(scale,0.8,0.2);tween(alpha,1,0.2);" onout="tween(scale,0.5,0.2);tween(alpha,0.8,0.2);" alpha="0.8" style="skin_hotspotstyleinfo" 
+		         ath="0"
+		         atv="0"
+		         zoom="false"
+		         onhover="showtext( );"
+		         onclick="openurl(http://navse360.ru/)"
+		         />
+		       
+
+
+<hotspot name="info1" onover="tween(scale,0.8,0.2);tween(alpha,1,0.2);" onout="tween(scale,0.5,0.2);tween(alpha,0.8,0.2);" alpha="0.8" style="skin_hotspotstyleinfo" 
+		         ath="-59.358"
+		         atv="1.848"
+		         zoom="false"
+		         onhover="showtext( );"
+		         />
+
+
+<hotspot name="menu1" scale="0.5" edge="top" oy="0"
+	       distorted="false"
+	       onover="tween(scale,0.8,0.2);tween(alpha,1,0.2);"   onout="tween(scale,0.5,0.2);tween(alpha,0.8,0.2);" alpha="0.8" url="skin/pointer_menu.png" 
+		         ath="0"
+		         atv="0"
+		         onhover="showtext( );"
+		         onclick="openurl(http://files-navse360.ru/armavir/menu/)"
+		         />
+
+
+<hotspot name="stop" onover="tween(scale,0.8,0.2);tween(alpha,1,0.2);" onout="tween(scale,0.5,0.2);tween(alpha,0.8,0.2);" alpha="0.8" style="skin_stopstyle" 
+		     ath="0" 
+		     atv="0"
+		     zoom="false"
+		     />
+	
+
+
+
+
+
+
+<!--Значок карты "ВЫКЛ"-->
+      <plugin name="mapp" devices="flash" align="leftbottom" crop="0|0|26|26"  keep="true" onovercrop="0|26|26|26" onclick="set(plugin[mapp_down].visible,true);tween(plugin[mapp_bubble].alpha,1);set(plugin[mapp_bubble].enabled,true);"   url="skin/menu_map.png" x="8" y="5"/>
+      
+<!--Значок карты "ВКЛ"-->
+      <plugin name="mapp_down" devices="flash" visible="true" align="leftbottom" crop="0|52|26|26"  keep="true" onclick="tween(plugin[mapp_bubble].alpha,0);set(plugin[mapp_bubble].enabled,false);set(plugin[mapp_down].visible,false);" url="skin/menu_map.png" x="8" y="5"/>
+      
+<!--Карта-->
+      <plugin name="mapp_bubble" devices="flash" enabled="true" zorder="9" alpha="1" align="leftbottom" keep="true" width="prop" height="50%" handcursor="false" capture="false" children="true"  url="graphics/mapp.jpg" x="8" y="37" scale="0.6" onhover="tween(plugin[mapp_bubble].scale, 1.3);" onout="tween(plugin[mapp_bubble].scale, 0.6);"/>
+	
+<!--Радар-->
+      <plugin name="radar" devices="flash" visible="false" keep="true" parent="mapp_bubble" url="plugins/radar.swf" alturl="plugins/radar.js" align="lefttop" edge="center" zorder="1"
+scale="0.3" fillcolor="0xFFFFFF" fillalpha="0.4" linecolor="0xFF0000" linewidth="0.5" linealpha="0.5" headingoffset="0"/>
+
+<!--Радар делает-->				       
+   	  <action name="activatespot">
+		copy(plugin[radar].x, plugin[%1].x);
+		copy(plugin[radar].y, plugin[%1].y);
+		set(plugin[radar].heading, %2);
+		set(plugin[radar].visible, true);
+	  </action>	
+
+
+
+<plugin name="mapspot1" devices="flash" url="skin/mapspot.png" keep="true" zorder="10" parent="mapp_bubble" align="lefttop" edge="center" onclick="loadscene(scene_20160226-aero1,null,MERGE,BLEND(1));" scale="0.7" x="70.9%" y="96.6%" style="skin_hotspotmap"/>
+
+
+
+
+
+
+
+
+<hotspot name="fotospot1" style="skin_hotspotstylepicture1" ath="0" atv="0" onhover="showtext(Текст);" onclick="showmenu(fotomenu,3);" />
+	<plugin name="fon" type="container" bgcolor="0xFFFFFF" bgalpha="0.5" align="center" visible="false" width="100%" height="100%"/>
+	<layer name="menuloading"  url="%SWFPATH%/plugins/textfield.swf" align="center" parent="fon" html="&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1072;..." visible="false" autoheight="true" background="false" border="false" enabled="false" css="text-align:center; color:#FFFFFF; font-family:Pt sans; font-weight:bold; font-size:22px;" textshadow="2" />
+		 
+		 	 <plugin name="fotomenu" align="center" zorder="50" visible="false" number="0" alpha="0"/>
+		 	 <plugin name="fotomenu1" align="center" zorder="50" url="%CURRENTXML%/graphics/foto1.png" visible="false"/>
+			 <plugin name="fotomenu2" align="center" zorder="50" url="%CURRENTXML%/graphics/foto2.png" visible="false"/>
+			 <plugin name="fotomenu3" align="center" zorder="50" url="%CURRENTXML%/graphics/foto3.png" visible="false"/>
+
+
+			 <action name="showmenu">
+	  set(plugin[fon].visible,true);
+	  set(layer[menuloading].visible,true);
+	  txtadd(pname,%1,'1');
+	  set(plugin[%1].url,get(plugin[get(pname)].url));
+	  set(plugin[%1].visible,true);
+	  set(plugin[%1].onclick,changepicture(%1,%2));
+	  tween(plugin[%1].alpha,1);
+	  set(events.onresize,skin_onresize();set(pname,get(plugin[%1].number));txtadd(plaginname,%1,get(pname)); resizemenu(%1, get(plaginname)););
+	  resizemenu(%1,get(pname));
+	  set(plugin[%1].number,'1');
+	 
+			
+	     
+	     addplugin(close);
+		    set(plugin[close].url,%CURRENTXML%/skin/close.png);
+	        set(plugin[close].parent,%1);
+	        set(plugin[close].align,righttop);
+	        set(plugin[close].scale,0.4);
+			set(plugin[close].onhover,showtext(Закрыть));
+	        set(plugin[close].onclick,tween(plugin[%1].alpha,0);set(events.onresize,skin_onresize(););delayedcall(0.5,set(plugin[%1].visible,false);set(plugin[fon].visible,false);set(plugin[menuloading].visible,false);));
+	        set(plugin[close].x,3%);
+	        set(plugin[close].y,4%);
+	       
+	</action>
+	
+	
+	<action name="resizemenu">
+	 	div(soot,get(stagewidth),get(stageheight));
+		div(sootpicture,get(plugin[%2].width),get(plugin[%2].height));
+		if (soot LT sootpicture,
+			set(plugin[%1].width,90%);
+			set(plugin[%1].height,prop);
+			,
+			set(plugin[%1].height,90%);
+			set(plugin[%1].width,prop);
+		);	
+   
+	</action>
+
+	      <action name="changepicture">
+	      div(seredinax,get(stagewidth),2);
+	      if(mouse.x LT seredinax, prevpicture (%1,%2), nextpicture(%1,%2));
+	      </action>
+	      
+	      <action name="nextpicture">
+	      set(pname,get(plugin[%1].number));
+		  if(pname == %2,
+		     set(plugin[next].visible,false);
+		  ,
+		  inc(pname);
+		  txtadd(plaginname,%1,get(pname));
+		  set(plugin[prev].visible,true);
+		  set(plugin[%1].url,get(plugin[get(plaginname)].url));
+		  set(plugin[%1].number,get(pname));
+		  resizemenu(%1,get(plaginname));
+		  if(pname == %2,
+		     set(plugin[next].visible,false));
+
+		  );
+		  </action>
+	      
+	      
+		  
+	      <action name="prevpicture">
+	      set(pname,get(plugin[%1].number));
+		  if(pname == 1,
+		     set(plugin[prev].visible,false);
+		  ,
+		  dec(pname);
+		  txtadd(plaginname,%1,get(pname));
+		  set(plugin[next].visible,true);
+		  set(plugin[%1].url,get(plugin[get(plaginname)].url));
+		  set(plugin[%1].number,get(pname));
+		  resizemenu(%1,get(plaginname));
+		  if(pname == 1,
+		     set(plugin[prev].visible,false));
+
+		  );
+	      </action>

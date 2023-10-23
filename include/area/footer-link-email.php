@@ -1,0 +1,1 @@
+<a href="mailto:kontinent26@bk.ru" class="footer-link link-email">kontinent26@bk.ru</a>

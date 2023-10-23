@@ -1,0 +1,1 @@
+<img alt="Price" src="/banqueting_hall/design/img/price.jpg">
