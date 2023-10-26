@@ -34,6 +34,28 @@ $(document).ready(function() {
 	
 	});
 
+
+	$('.banner-slider-main').slick({
+		dots: false,
+		arrows: false,
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 6000,
+		speed: 2000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 691,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+				}
+			}
+		]
+	});
+
 	$('.information-header-slider-container').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,

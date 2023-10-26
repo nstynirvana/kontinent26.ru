@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d435ca62-7d43-49c4-96de-b856c4cad3b9" name="kontinent26">
+        <fileTransfer rootFolder="/home/d/dapsite/kontinent-test/public_html/" accessType="SFTP" host="92.53.96.150" port="22" sshConfigId="bf17cee8-6d2c-42d8-b991-1f1a96ec95ad" sshConfig="dapsite@92.53.96.150:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

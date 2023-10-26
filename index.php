@@ -1,14 +1,84 @@
 <?
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetPageProperty("description", "От 1500 руб./чел. Центр Ставрополя. Wi-Fi. Парковка. Шведский стол. 203 комфортабельных номера. Один из лучших видов на город. Завтрак включен.");
 $APPLICATION->SetPageProperty("title", "Бизнес отель «Континент» - гостиница в центре Ставрополя");
 $APPLICATION->SetTitle("Бизнес отель «Континент» ");
 ?>
 
-<?//global $USER;?>
-<?//if(!$USER->IsAdmin()):?>
+<? //global $USER;?>
+<? //if(!$USER->IsAdmin()):?>
 
     <section class="main-block new-style">
+
+        <div class="main-block_slider" >
+            <? $APPLICATION->IncludeComponent(
+                "bitrix:news.list",
+                "banner-slider-main",
+                array(
+                    "ACTIVE_DATE_FORMAT" => "d.m.Y",
+                    "ADD_SECTIONS_CHAIN" => "Y",
+                    "AJAX_MODE" => "N",
+                    "AJAX_OPTION_ADDITIONAL" => "",
+                    "AJAX_OPTION_HISTORY" => "N",
+                    "AJAX_OPTION_JUMP" => "N",
+                    "AJAX_OPTION_STYLE" => "Y",
+                    "CACHE_FILTER" => "N",
+                    "CACHE_GROUPS" => "Y",
+                    "CACHE_TIME" => "36000000",
+                    "CACHE_TYPE" => "A",
+                    "CHECK_DATES" => "Y",
+                    "DETAIL_URL" => "",
+                    "DISPLAY_BOTTOM_PAGER" => "Y",
+                    "DISPLAY_DATE" => "Y",
+                    "DISPLAY_NAME" => "Y",
+                    "DISPLAY_PICTURE" => "Y",
+                    "DISPLAY_PREVIEW_TEXT" => "Y",
+                    "DISPLAY_TOP_PAGER" => "N",
+                    "FIELD_CODE" => array(
+                        0 => "",
+                        1 => "",
+                    ),
+                    "FILTER_NAME" => "",
+                    "HIDE_LINK_WHEN_NO_DETAIL" => "N",
+                    "IBLOCK_ID" => "34",
+                    "IBLOCK_TYPE" => "slider",
+                    "INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+                    "INCLUDE_SUBSECTIONS" => "Y",
+                    "MESSAGE_404" => "",
+                    "NEWS_COUNT" => "20",
+                    "PAGER_BASE_LINK_ENABLE" => "N",
+                    "PAGER_DESC_NUMBERING" => "N",
+                    "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+                    "PAGER_SHOW_ALL" => "N",
+                    "PAGER_SHOW_ALWAYS" => "N",
+                    "PAGER_TEMPLATE" => ".default",
+                    "PAGER_TITLE" => "Новости",
+                    "PARENT_SECTION" => "",
+                    "PARENT_SECTION_CODE" => "",
+                    "PREVIEW_TRUNCATE_LEN" => "",
+                    "PROPERTY_CODE" => array(
+                        0 => "",
+                        1 => "",
+                    ),
+                    "SET_BROWSER_TITLE" => "Y",
+                    "SET_LAST_MODIFIED" => "N",
+                    "SET_META_DESCRIPTION" => "N",
+                    "SET_META_KEYWORDS" => "N",
+                    "SET_STATUS_404" => "N",
+                    "SET_TITLE" => "N",
+                    "SHOW_404" => "N",
+                    "SORT_BY1" => "ACTIVE_FROM",
+                    "SORT_BY2" => "SORT",
+                    "SORT_ORDER1" => "DESC",
+                    "SORT_ORDER2" => "ASC",
+                    "STRICT_SECTION_CHECK" => "N",
+                    "COMPONENT_TEMPLATE" => "banner-slider-main"
+                ),
+                false
+            ); ?>
+        </div>
+
+
 
         <div class="header-line-menu">
             <div class="header-line-menu-sect1">
@@ -22,19 +92,21 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
                     </div>
                     <div class="header-line-logo">
                         <a href="/">
-                            <img src="/design/img/logo.svg" alt="" title="" />
+                            <img src="/design/img/logo.svg" alt="" title=""/>
                         </a>
                     </div>
                     <div class="header-line-service lg-view">
                         <div class="icon-service-ite">
-                            <a href="https://www.tripadvisor.ru/Hotel_Review-g675739-d2468067-Reviews-Kontinent-Stavropol_Stavropol_Krai_North_Caucasian_District.html" target="_blank" class="tripadvisor">
+                            <a href="https://www.tripadvisor.ru/Hotel_Review-g675739-d2468067-Reviews-Kontinent-Stavropol_Stavropol_Krai_North_Caucasian_District.html"
+                               target="_blank" class="tripadvisor">
                                 <span class="icon icon-trip"></span>
                                 <span class="icon icon-trip-text"></span>
                                 <span class="icon text">4.0</span>
                             </a>
                         </div>
                         <div class="icon-service-ite">
-                            <a href="https://www.booking.com/hotel/ru/continent.ru.html" class="booking" target="_blank">
+                            <a href="https://www.booking.com/hotel/ru/continent.ru.html" class="booking"
+                               target="_blank">
                                 <span class="icon icon-booking"></span>
                                 <span class="icon icon-booking-text"></span>
                                 <span class="icon text">8.5</span>
@@ -64,7 +136,7 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
                         </div>
                         <div class="header-line-contacts-adress">
                             г. Ставрополь, ул. Дзержинского, 114
-                            <br /><span>Центр города</span>
+                            <br/><span>Центр города</span>
                         </div>
                     </div>
                     <div class="header-nomera-menu md-view">
@@ -85,7 +157,7 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
             <div class="header-line-menu-sect2">
                 <div class="wrapper-inside">
                     <div class="main-menu">
-                        <?$APPLICATION->IncludeComponent(
+                        <? $APPLICATION->IncludeComponent(
                             "bitrix:menu",
                             "main-menu",
                             array(
@@ -94,8 +166,7 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
                                 "MENU_CACHE_TYPE" => "N",
                                 "MENU_CACHE_TIME" => "3600",
                                 "MENU_CACHE_USE_GROUPS" => "Y",
-                                "MENU_CACHE_GET_VARS" => array(
-                                ),
+                                "MENU_CACHE_GET_VARS" => array(),
                                 "MAX_LEVEL" => "1",
                                 "CHILD_MENU_TYPE" => "left",
                                 "USE_EXT" => "N",
@@ -122,15 +193,17 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
                     <div class="mobile-style-banner-content xs-view">
                         <div class="header-line-service">
                             <div class="icon-service-ite">
-                                <a href="https://www.tripadvisor.ru/Hotel_Review-g675739-d2468067-Reviews-Kontinent-Stavropol_Stavropol_Krai_North_Caucasian_District.html" target="_blank" class="tripadvisor">
+                                <a href="https://www.tripadvisor.ru/Hotel_Review-g675739-d2468067-Reviews-Kontinent-Stavropol_Stavropol_Krai_North_Caucasian_District.html"
+                                   target="_blank" class="tripadvisor">
                                     <span class="icon icon-trip"></span>
                                     <span class="icon icon-trip-text"></span>
                                     <span class="icon text">4.0</span>
                                 </a>
                             </div>
-                            <br />
+                            <br/>
                             <div class="icon-service-ite">
-                                <a href="https://www.booking.com/hotel/ru/continent.ru.html" class="booking" target="_blank">
+                                <a href="https://www.booking.com/hotel/ru/continent.ru.html" class="booking"
+                                   target="_blank">
                                     <span class="icon icon-booking"></span>
                                     <span class="icon icon-booking-text"></span>
                                     <span class="icon text">8.5</span>
@@ -146,17 +219,17 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
                     <div class="header-line-form xs-view">
                         <div class="header-line-form-container">
                             <div class="header-line-form-title">Бронирование номеров</div>
-                            <div class="header-line-form-text"><?/*При бронировании на сайте действует постоянная скидка 10%*/?> </div>
+                            <div class="header-line-form-text"><? /*При бронировании на сайте действует постоянная скидка 10%*/ ?> </div>
                             <div class="header-line-form-body">
                                 <form action="" method="" class="reservation-form">
                                     <div class="bronirovanie-items-fields">
                                         <div class="bronirovanie-item">
                                             <span class="icon icon-data"></span>
-                                            <input type="text" class="from" name="" placeholder="Заезд" />
+                                            <input type="text" class="from" name="" placeholder="Заезд"/>
                                         </div>
                                         <div class="bronirovanie-item">
                                             <span class="icon icon-data"></span>
-                                            <input type="text" class="to" name="" placeholder="Отъезд" />
+                                            <input type="text" class="to" name="" placeholder="Отъезд"/>
                                         </div>
                                     </div>
                                     <div class="bronirovanie-item bronirovanie-item-btn">
@@ -169,82 +242,84 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
 
                     <div class="information-header-slider">
 
-                        <?$APPLICATION->IncludeComponent("bitrix:news.list", "main-slider-actions", Array(
+                        <? $APPLICATION->IncludeComponent("bitrix:news.list", "main-slider-actions", array(
                             "COMPONENT_TEMPLATE" => ".default",
-                            "IBLOCK_TYPE" => "content",	// Тип информационного блока (используется только для проверки)
-                            "IBLOCK_ID" => "8",	// Код информационного блока
-                            "NEWS_COUNT" => "5",	// Количество новостей на странице
-                            "SORT_BY1" => "SORT",	// Поле для первой сортировки новостей
-                            "SORT_ORDER1" => "DESC",	// Направление для первой сортировки новостей
-                            "SORT_BY2" => "NAME",	// Поле для второй сортировки новостей
-                            "SORT_ORDER2" => "ASC",	// Направление для второй сортировки новостей
-                            "FILTER_NAME" => "",	// Фильтр
-                            "FIELD_CODE" => array(	// Поля
+                            "IBLOCK_TYPE" => "content",    // Тип информационного блока (используется только для проверки)
+                            "IBLOCK_ID" => "8",    // Код информационного блока
+                            "NEWS_COUNT" => "5",    // Количество новостей на странице
+                            "SORT_BY1" => "SORT",    // Поле для первой сортировки новостей
+                            "SORT_ORDER1" => "DESC",    // Направление для первой сортировки новостей
+                            "SORT_BY2" => "NAME",    // Поле для второй сортировки новостей
+                            "SORT_ORDER2" => "ASC",    // Направление для второй сортировки новостей
+                            "FILTER_NAME" => "",    // Фильтр
+                            "FIELD_CODE" => array(    // Поля
                                 0 => "",
                                 1 => "",
                             ),
-                            "PROPERTY_CODE" => array(	// Свойства
+                            "PROPERTY_CODE" => array(    // Свойства
                                 0 => "",
                                 1 => "DOP_TEXT",
                                 2 => "SHOW_PERCENT",
                                 3 => "",
                             ),
-                            "CHECK_DATES" => "Y",	// Показывать только активные на данный момент элементы
-                            "DETAIL_URL" => "",	// URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
-                            "AJAX_MODE" => "N",	// Включить режим AJAX
-                            "AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
-                            "AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
-                            "AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
-                            "AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
-                            "CACHE_TYPE" => "A",	// Тип кеширования
-                            "CACHE_TIME" => "36000000",	// Время кеширования (сек.)
-                            "CACHE_FILTER" => "N",	// Кешировать при установленном фильтре
-                            "CACHE_GROUPS" => "Y",	// Учитывать права доступа
-                            "PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
-                            "ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
-                            "SET_TITLE" => "N",	// Устанавливать заголовок страницы
-                            "SET_BROWSER_TITLE" => "N",	// Устанавливать заголовок окна браузера
-                            "SET_META_KEYWORDS" => "N",	// Устанавливать ключевые слова страницы
-                            "SET_META_DESCRIPTION" => "N",	// Устанавливать описание страницы
-                            "SET_LAST_MODIFIED" => "N",	// Устанавливать в заголовках ответа время модификации страницы
-                            "INCLUDE_IBLOCK_INTO_CHAIN" => "N",	// Включать инфоблок в цепочку навигации
-                            "ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
-                            "HIDE_LINK_WHEN_NO_DETAIL" => "N",	// Скрывать ссылку, если нет детального описания
-                            "PARENT_SECTION" => "",	// ID раздела
-                            "PARENT_SECTION_CODE" => "",	// Код раздела
-                            "INCLUDE_SUBSECTIONS" => "Y",	// Показывать элементы подразделов раздела
-                            "STRICT_SECTION_CHECK" => "N",	// Строгая проверка раздела для показа списка
-                            "DISPLAY_DATE" => "Y",	// Выводить дату элемента
-                            "DISPLAY_NAME" => "Y",	// Выводить название элемента
-                            "DISPLAY_PICTURE" => "Y",	// Выводить изображение для анонса
-                            "DISPLAY_PREVIEW_TEXT" => "Y",	// Выводить текст анонса
-                            "PAGER_TEMPLATE" => ".default",	// Шаблон постраничной навигации
-                            "DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
-                            "DISPLAY_BOTTOM_PAGER" => "Y",	// Выводить под списком
-                            "PAGER_TITLE" => "Новости",	// Название категорий
-                            "PAGER_SHOW_ALWAYS" => "N",	// Выводить всегда
-                            "PAGER_DESC_NUMBERING" => "N",	// Использовать обратную навигацию
-                            "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",	// Время кеширования страниц для обратной навигации
-                            "PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
-                            "PAGER_BASE_LINK_ENABLE" => "N",	// Включить обработку ссылок
-                            "SET_STATUS_404" => "N",	// Устанавливать статус 404
-                            "SHOW_404" => "N",	// Показ специальной страницы
-                            "MESSAGE_404" => "",	// Сообщение для показа (по умолчанию из компонента)
+                            "CHECK_DATES" => "Y",    // Показывать только активные на данный момент элементы
+                            "DETAIL_URL" => "",    // URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
+                            "AJAX_MODE" => "N",    // Включить режим AJAX
+                            "AJAX_OPTION_JUMP" => "N",    // Включить прокрутку к началу компонента
+                            "AJAX_OPTION_STYLE" => "Y",    // Включить подгрузку стилей
+                            "AJAX_OPTION_HISTORY" => "N",    // Включить эмуляцию навигации браузера
+                            "AJAX_OPTION_ADDITIONAL" => "",    // Дополнительный идентификатор
+                            "CACHE_TYPE" => "A",    // Тип кеширования
+                            "CACHE_TIME" => "36000000",    // Время кеширования (сек.)
+                            "CACHE_FILTER" => "N",    // Кешировать при установленном фильтре
+                            "CACHE_GROUPS" => "Y",    // Учитывать права доступа
+                            "PREVIEW_TRUNCATE_LEN" => "",    // Максимальная длина анонса для вывода (только для типа текст)
+                            "ACTIVE_DATE_FORMAT" => "d.m.Y",    // Формат показа даты
+                            "SET_TITLE" => "N",    // Устанавливать заголовок страницы
+                            "SET_BROWSER_TITLE" => "N",    // Устанавливать заголовок окна браузера
+                            "SET_META_KEYWORDS" => "N",    // Устанавливать ключевые слова страницы
+                            "SET_META_DESCRIPTION" => "N",    // Устанавливать описание страницы
+                            "SET_LAST_MODIFIED" => "N",    // Устанавливать в заголовках ответа время модификации страницы
+                            "INCLUDE_IBLOCK_INTO_CHAIN" => "N",    // Включать инфоблок в цепочку навигации
+                            "ADD_SECTIONS_CHAIN" => "N",    // Включать раздел в цепочку навигации
+                            "HIDE_LINK_WHEN_NO_DETAIL" => "N",    // Скрывать ссылку, если нет детального описания
+                            "PARENT_SECTION" => "",    // ID раздела
+                            "PARENT_SECTION_CODE" => "",    // Код раздела
+                            "INCLUDE_SUBSECTIONS" => "Y",    // Показывать элементы подразделов раздела
+                            "STRICT_SECTION_CHECK" => "N",    // Строгая проверка раздела для показа списка
+                            "DISPLAY_DATE" => "Y",    // Выводить дату элемента
+                            "DISPLAY_NAME" => "Y",    // Выводить название элемента
+                            "DISPLAY_PICTURE" => "Y",    // Выводить изображение для анонса
+                            "DISPLAY_PREVIEW_TEXT" => "Y",    // Выводить текст анонса
+                            "PAGER_TEMPLATE" => ".default",    // Шаблон постраничной навигации
+                            "DISPLAY_TOP_PAGER" => "N",    // Выводить над списком
+                            "DISPLAY_BOTTOM_PAGER" => "Y",    // Выводить под списком
+                            "PAGER_TITLE" => "Новости",    // Название категорий
+                            "PAGER_SHOW_ALWAYS" => "N",    // Выводить всегда
+                            "PAGER_DESC_NUMBERING" => "N",    // Использовать обратную навигацию
+                            "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",    // Время кеширования страниц для обратной навигации
+                            "PAGER_SHOW_ALL" => "N",    // Показывать ссылку "Все"
+                            "PAGER_BASE_LINK_ENABLE" => "N",    // Включить обработку ссылок
+                            "SET_STATUS_404" => "N",    // Устанавливать статус 404
+                            "SHOW_404" => "N",    // Показ специальной страницы
+                            "MESSAGE_404" => "",    // Сообщение для показа (по умолчанию из компонента)
                         ),
                             false
-                        );?>
+                        ); ?>
 
 
                         <div class="header-line-service md-view">
                             <div class="icon-service-ite">
-                                <a href="https://www.tripadvisor.ru/Hotel_Review-g675739-d2468067-Reviews-Kontinent-Stavropol_Stavropol_Krai_North_Caucasian_District.html" target="_blank" class="tripadvisor">
+                                <a href="https://www.tripadvisor.ru/Hotel_Review-g675739-d2468067-Reviews-Kontinent-Stavropol_Stavropol_Krai_North_Caucasian_District.html"
+                                   target="_blank" class="tripadvisor">
                                     <span class="icon icon-trip"></span>
                                     <span class="icon icon-trip-text"></span>
                                     <span class="icon text">4.0</span>
                                 </a>
                             </div>
                             <div class="icon-service-ite">
-                                <a href="https://www.booking.com/hotel/ru/continent.ru.html" class="booking" target="_blank">
+                                <a href="https://www.booking.com/hotel/ru/continent.ru.html" class="booking"
+                                   target="_blank">
                                     <span class="icon icon-booking"></span>
                                     <span class="icon icon-booking-text"></span>
                                     <span class="icon text">8.5</span>
@@ -257,17 +332,17 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
                     <div class="header-line-form lg-view md-view">
                         <div class="header-line-form-container">
                             <div class="header-line-form-title">Бронирование номеров</div>
-                            <div class="header-line-form-text"><?/*При бронировании на сайте действует постоянная скидка 10%*/?> </div>
+                            <div class="header-line-form-text"><? /*При бронировании на сайте действует постоянная скидка 10%*/ ?> </div>
                             <div class="header-line-form-body">
                                 <form action="" method="" class="reservation-form">
                                     <div class="bronirovanie-items-fields">
                                         <div class="bronirovanie-item">
                                             <span class="icon icon-data"></span>
-                                            <input type="text" class="from" name="" placeholder="Заезд" />
+                                            <input type="text" class="from" name="" placeholder="Заезд"/>
                                         </div>
                                         <div class="bronirovanie-item">
                                             <span class="icon icon-data"></span>
-                                            <input type="text" class="to" name="" placeholder="Отъезд" />
+                                            <input type="text" class="to" name="" placeholder="Отъезд"/>
                                         </div>
                                     </div>
                                     <div class="bronirovanie-item bronirovanie-item-btn">
@@ -285,7 +360,7 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
 
     </section>
 
-<?/*else:?>
+<? /*else:?>
 
 	<section class="main-block">
 
@@ -428,8 +503,7 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
 
 	</section>
 
-<?endif; */?>
-
+<?endif; */ ?>
 
 
     <section class="main-action">
@@ -439,7 +513,7 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
                 <a href="/specials/">Все акции</a>
             </div>
             <div class="main-action-container">
-                <?$APPLICATION->IncludeComponent(
+                <? $APPLICATION->IncludeComponent(
                     "bitrix:news.list",
                     "action-list-main-page",
                     array(
@@ -509,27 +583,27 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
                         "MESSAGE_404" => ""
                     ),
                     false
-                );?>
+                ); ?>
             </div>
         </div>
     </section>
 
-<?$arrFilterSlider = array("PROPERTY_SLIDER_SHOW_VALUE" => "Y");?>
-<?$APPLICATION->IncludeComponent("bitrix:news.list", "rooms-list-slider", Array(
+<? $arrFilterSlider = array("PROPERTY_SLIDER_SHOW_VALUE" => "Y"); ?>
+<? $APPLICATION->IncludeComponent("bitrix:news.list", "rooms-list-slider", array(
     "COMPONENT_TEMPLATE" => "rooms-list-header",
-    "IBLOCK_TYPE" => "rooms",	// Тип информационного блока (используется только для проверки)
-    "IBLOCK_ID" => "1",	// Код информационного блока
-    "NEWS_COUNT" => "20",	// Количество новостей на странице
-    "SORT_BY1" => "SORT",	// Поле для первой сортировки новостей
-    "SORT_ORDER1" => "ASC",	// Направление для первой сортировки новостей
-    "SORT_BY2" => "NAME",	// Поле для второй сортировки новостей
-    "SORT_ORDER2" => "ASC",	// Направление для второй сортировки новостей
-    "FILTER_NAME" => "arrFilterSlider",	// Фильтр
-    "FIELD_CODE" => array(	// Поля
+    "IBLOCK_TYPE" => "rooms",    // Тип информационного блока (используется только для проверки)
+    "IBLOCK_ID" => "1",    // Код информационного блока
+    "NEWS_COUNT" => "20",    // Количество новостей на странице
+    "SORT_BY1" => "SORT",    // Поле для первой сортировки новостей
+    "SORT_ORDER1" => "ASC",    // Направление для первой сортировки новостей
+    "SORT_BY2" => "NAME",    // Поле для второй сортировки новостей
+    "SORT_ORDER2" => "ASC",    // Направление для второй сортировки новостей
+    "FILTER_NAME" => "arrFilterSlider",    // Фильтр
+    "FIELD_CODE" => array(    // Поля
         0 => "",
         1 => "",
     ),
-    "PROPERTY_CODE" => array(	// Свойства
+    "PROPERTY_CODE" => array(    // Свойства
         0 => "TRAVELLINE_ID",
         1 => "SLIDER_SHOW",
         2 => "FOR_WHO",
@@ -543,50 +617,50 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
         10 => "SLIDER_PRICE",
         11 => "",
     ),
-    "CHECK_DATES" => "Y",	// Показывать только активные на данный момент элементы
-    "DETAIL_URL" => "",	// URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
-    "AJAX_MODE" => "N",	// Включить режим AJAX
-    "AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
-    "AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
-    "AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
-    "AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
-    "CACHE_TYPE" => "A",	// Тип кеширования
-    "CACHE_TIME" => "36000000",	// Время кеширования (сек.)
-    "CACHE_FILTER" => "N",	// Кешировать при установленном фильтре
-    "CACHE_GROUPS" => "Y",	// Учитывать права доступа
-    "PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
-    "ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
-    "SET_TITLE" => "N",	// Устанавливать заголовок страницы
-    "SET_BROWSER_TITLE" => "N",	// Устанавливать заголовок окна браузера
-    "SET_META_KEYWORDS" => "N",	// Устанавливать ключевые слова страницы
-    "SET_META_DESCRIPTION" => "N",	// Устанавливать описание страницы
-    "SET_LAST_MODIFIED" => "N",	// Устанавливать в заголовках ответа время модификации страницы
-    "INCLUDE_IBLOCK_INTO_CHAIN" => "N",	// Включать инфоблок в цепочку навигации
-    "ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
-    "HIDE_LINK_WHEN_NO_DETAIL" => "N",	// Скрывать ссылку, если нет детального описания
-    "PARENT_SECTION" => "",	// ID раздела
-    "PARENT_SECTION_CODE" => "",	// Код раздела
-    "INCLUDE_SUBSECTIONS" => "Y",	// Показывать элементы подразделов раздела
-    "STRICT_SECTION_CHECK" => "N",	// Строгая проверка раздела для показа списка
-    "DISPLAY_DATE" => "Y",	// Выводить дату элемента
-    "DISPLAY_NAME" => "Y",	// Выводить название элемента
-    "DISPLAY_PICTURE" => "Y",	// Выводить изображение для анонса
-    "DISPLAY_PREVIEW_TEXT" => "Y",	// Выводить текст анонса
-    "PAGER_TEMPLATE" => ".default",	// Шаблон постраничной навигации
-    "DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
-    "DISPLAY_BOTTOM_PAGER" => "Y",	// Выводить под списком
-    "PAGER_TITLE" => "Новости",	// Название категорий
-    "PAGER_SHOW_ALWAYS" => "N",	// Выводить всегда
-    "PAGER_DESC_NUMBERING" => "N",	// Использовать обратную навигацию
-    "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",	// Время кеширования страниц для обратной навигации
-    "PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
-    "PAGER_BASE_LINK_ENABLE" => "N",	// Включить обработку ссылок
-    "SET_STATUS_404" => "N",	// Устанавливать статус 404
-    "SHOW_404" => "N",	// Показ специальной страницы
-    "MESSAGE_404" => "",	// Сообщение для показа (по умолчанию из компонента)
+    "CHECK_DATES" => "Y",    // Показывать только активные на данный момент элементы
+    "DETAIL_URL" => "",    // URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
+    "AJAX_MODE" => "N",    // Включить режим AJAX
+    "AJAX_OPTION_JUMP" => "N",    // Включить прокрутку к началу компонента
+    "AJAX_OPTION_STYLE" => "Y",    // Включить подгрузку стилей
+    "AJAX_OPTION_HISTORY" => "N",    // Включить эмуляцию навигации браузера
+    "AJAX_OPTION_ADDITIONAL" => "",    // Дополнительный идентификатор
+    "CACHE_TYPE" => "A",    // Тип кеширования
+    "CACHE_TIME" => "36000000",    // Время кеширования (сек.)
+    "CACHE_FILTER" => "N",    // Кешировать при установленном фильтре
+    "CACHE_GROUPS" => "Y",    // Учитывать права доступа
+    "PREVIEW_TRUNCATE_LEN" => "",    // Максимальная длина анонса для вывода (только для типа текст)
+    "ACTIVE_DATE_FORMAT" => "d.m.Y",    // Формат показа даты
+    "SET_TITLE" => "N",    // Устанавливать заголовок страницы
+    "SET_BROWSER_TITLE" => "N",    // Устанавливать заголовок окна браузера
+    "SET_META_KEYWORDS" => "N",    // Устанавливать ключевые слова страницы
+    "SET_META_DESCRIPTION" => "N",    // Устанавливать описание страницы
+    "SET_LAST_MODIFIED" => "N",    // Устанавливать в заголовках ответа время модификации страницы
+    "INCLUDE_IBLOCK_INTO_CHAIN" => "N",    // Включать инфоблок в цепочку навигации
+    "ADD_SECTIONS_CHAIN" => "N",    // Включать раздел в цепочку навигации
+    "HIDE_LINK_WHEN_NO_DETAIL" => "N",    // Скрывать ссылку, если нет детального описания
+    "PARENT_SECTION" => "",    // ID раздела
+    "PARENT_SECTION_CODE" => "",    // Код раздела
+    "INCLUDE_SUBSECTIONS" => "Y",    // Показывать элементы подразделов раздела
+    "STRICT_SECTION_CHECK" => "N",    // Строгая проверка раздела для показа списка
+    "DISPLAY_DATE" => "Y",    // Выводить дату элемента
+    "DISPLAY_NAME" => "Y",    // Выводить название элемента
+    "DISPLAY_PICTURE" => "Y",    // Выводить изображение для анонса
+    "DISPLAY_PREVIEW_TEXT" => "Y",    // Выводить текст анонса
+    "PAGER_TEMPLATE" => ".default",    // Шаблон постраничной навигации
+    "DISPLAY_TOP_PAGER" => "N",    // Выводить над списком
+    "DISPLAY_BOTTOM_PAGER" => "Y",    // Выводить под списком
+    "PAGER_TITLE" => "Новости",    // Название категорий
+    "PAGER_SHOW_ALWAYS" => "N",    // Выводить всегда
+    "PAGER_DESC_NUMBERING" => "N",    // Использовать обратную навигацию
+    "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",    // Время кеширования страниц для обратной навигации
+    "PAGER_SHOW_ALL" => "N",    // Показывать ссылку "Все"
+    "PAGER_BASE_LINK_ENABLE" => "N",    // Включить обработку ссылок
+    "SET_STATUS_404" => "N",    // Устанавливать статус 404
+    "SHOW_404" => "N",    // Показ специальной страницы
+    "MESSAGE_404" => "",    // Сообщение для показа (по умолчанию из компонента)
 ),
     false
-);?>
+); ?>
 
 
     <section class="main-service">
@@ -596,22 +670,22 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
                 <a href="/services/">Все услуги</a>
             </div>
 
-            <?$arrFilterSlider = array("PROPERTY_SHOW_MAIN_VALUE" => "Y");?>
-            <?$APPLICATION->IncludeComponent("bitrix:news.list", "service-list-main-page", Array(
+            <? $arrFilterSlider = array("PROPERTY_SHOW_MAIN_VALUE" => "Y"); ?>
+            <? $APPLICATION->IncludeComponent("bitrix:news.list", "service-list-main-page", array(
                 "COMPONENT_TEMPLATE" => "rooms-list-slider",
-                "IBLOCK_TYPE" => "content",	// Тип информационного блока (используется только для проверки)
-                "IBLOCK_ID" => "3",	// Код информационного блока
-                "NEWS_COUNT" => "20",	// Количество новостей на странице
-                "SORT_BY1" => "SORT",	// Поле для первой сортировки новостей
-                "SORT_ORDER1" => "ASC",	// Направление для первой сортировки новостей
-                "SORT_BY2" => "NAME",	// Поле для второй сортировки новостей
-                "SORT_ORDER2" => "ASC",	// Направление для второй сортировки новостей
-                "FILTER_NAME" => "arrFilterSlider",	// Фильтр
-                "FIELD_CODE" => array(	// Поля
+                "IBLOCK_TYPE" => "content",    // Тип информационного блока (используется только для проверки)
+                "IBLOCK_ID" => "3",    // Код информационного блока
+                "NEWS_COUNT" => "20",    // Количество новостей на странице
+                "SORT_BY1" => "SORT",    // Поле для первой сортировки новостей
+                "SORT_ORDER1" => "ASC",    // Направление для первой сортировки новостей
+                "SORT_BY2" => "NAME",    // Поле для второй сортировки новостей
+                "SORT_ORDER2" => "ASC",    // Направление для второй сортировки новостей
+                "FILTER_NAME" => "arrFilterSlider",    // Фильтр
+                "FIELD_CODE" => array(    // Поля
                     0 => "",
                     1 => "",
                 ),
-                "PROPERTY_CODE" => array(	// Свойства
+                "PROPERTY_CODE" => array(    // Свойства
                     0 => "",
                     1 => "TRAVELLINE_ID",
                     2 => "SLIDER_SHOW",
@@ -626,50 +700,50 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
                     11 => "SLIDER_PRICE",
                     12 => "",
                 ),
-                "CHECK_DATES" => "Y",	// Показывать только активные на данный момент элементы
-                "DETAIL_URL" => "",	// URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
-                "AJAX_MODE" => "N",	// Включить режим AJAX
-                "AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
-                "AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
-                "AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
-                "AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
-                "CACHE_TYPE" => "A",	// Тип кеширования
-                "CACHE_TIME" => "36000000",	// Время кеширования (сек.)
-                "CACHE_FILTER" => "N",	// Кешировать при установленном фильтре
-                "CACHE_GROUPS" => "Y",	// Учитывать права доступа
-                "PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
-                "ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
-                "SET_TITLE" => "N",	// Устанавливать заголовок страницы
-                "SET_BROWSER_TITLE" => "N",	// Устанавливать заголовок окна браузера
-                "SET_META_KEYWORDS" => "N",	// Устанавливать ключевые слова страницы
-                "SET_META_DESCRIPTION" => "N",	// Устанавливать описание страницы
-                "SET_LAST_MODIFIED" => "N",	// Устанавливать в заголовках ответа время модификации страницы
-                "INCLUDE_IBLOCK_INTO_CHAIN" => "N",	// Включать инфоблок в цепочку навигации
-                "ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
-                "HIDE_LINK_WHEN_NO_DETAIL" => "N",	// Скрывать ссылку, если нет детального описания
-                "PARENT_SECTION" => "",	// ID раздела
-                "PARENT_SECTION_CODE" => "",	// Код раздела
-                "INCLUDE_SUBSECTIONS" => "Y",	// Показывать элементы подразделов раздела
-                "STRICT_SECTION_CHECK" => "N",	// Строгая проверка раздела для показа списка
-                "DISPLAY_DATE" => "Y",	// Выводить дату элемента
-                "DISPLAY_NAME" => "Y",	// Выводить название элемента
-                "DISPLAY_PICTURE" => "Y",	// Выводить изображение для анонса
-                "DISPLAY_PREVIEW_TEXT" => "Y",	// Выводить текст анонса
-                "PAGER_TEMPLATE" => ".default",	// Шаблон постраничной навигации
-                "DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
-                "DISPLAY_BOTTOM_PAGER" => "Y",	// Выводить под списком
-                "PAGER_TITLE" => "Новости",	// Название категорий
-                "PAGER_SHOW_ALWAYS" => "N",	// Выводить всегда
-                "PAGER_DESC_NUMBERING" => "N",	// Использовать обратную навигацию
-                "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",	// Время кеширования страниц для обратной навигации
-                "PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
-                "PAGER_BASE_LINK_ENABLE" => "N",	// Включить обработку ссылок
-                "SET_STATUS_404" => "N",	// Устанавливать статус 404
-                "SHOW_404" => "N",	// Показ специальной страницы
-                "MESSAGE_404" => "",	// Сообщение для показа (по умолчанию из компонента)
+                "CHECK_DATES" => "Y",    // Показывать только активные на данный момент элементы
+                "DETAIL_URL" => "",    // URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
+                "AJAX_MODE" => "N",    // Включить режим AJAX
+                "AJAX_OPTION_JUMP" => "N",    // Включить прокрутку к началу компонента
+                "AJAX_OPTION_STYLE" => "Y",    // Включить подгрузку стилей
+                "AJAX_OPTION_HISTORY" => "N",    // Включить эмуляцию навигации браузера
+                "AJAX_OPTION_ADDITIONAL" => "",    // Дополнительный идентификатор
+                "CACHE_TYPE" => "A",    // Тип кеширования
+                "CACHE_TIME" => "36000000",    // Время кеширования (сек.)
+                "CACHE_FILTER" => "N",    // Кешировать при установленном фильтре
+                "CACHE_GROUPS" => "Y",    // Учитывать права доступа
+                "PREVIEW_TRUNCATE_LEN" => "",    // Максимальная длина анонса для вывода (только для типа текст)
+                "ACTIVE_DATE_FORMAT" => "d.m.Y",    // Формат показа даты
+                "SET_TITLE" => "N",    // Устанавливать заголовок страницы
+                "SET_BROWSER_TITLE" => "N",    // Устанавливать заголовок окна браузера
+                "SET_META_KEYWORDS" => "N",    // Устанавливать ключевые слова страницы
+                "SET_META_DESCRIPTION" => "N",    // Устанавливать описание страницы
+                "SET_LAST_MODIFIED" => "N",    // Устанавливать в заголовках ответа время модификации страницы
+                "INCLUDE_IBLOCK_INTO_CHAIN" => "N",    // Включать инфоблок в цепочку навигации
+                "ADD_SECTIONS_CHAIN" => "N",    // Включать раздел в цепочку навигации
+                "HIDE_LINK_WHEN_NO_DETAIL" => "N",    // Скрывать ссылку, если нет детального описания
+                "PARENT_SECTION" => "",    // ID раздела
+                "PARENT_SECTION_CODE" => "",    // Код раздела
+                "INCLUDE_SUBSECTIONS" => "Y",    // Показывать элементы подразделов раздела
+                "STRICT_SECTION_CHECK" => "N",    // Строгая проверка раздела для показа списка
+                "DISPLAY_DATE" => "Y",    // Выводить дату элемента
+                "DISPLAY_NAME" => "Y",    // Выводить название элемента
+                "DISPLAY_PICTURE" => "Y",    // Выводить изображение для анонса
+                "DISPLAY_PREVIEW_TEXT" => "Y",    // Выводить текст анонса
+                "PAGER_TEMPLATE" => ".default",    // Шаблон постраничной навигации
+                "DISPLAY_TOP_PAGER" => "N",    // Выводить над списком
+                "DISPLAY_BOTTOM_PAGER" => "Y",    // Выводить под списком
+                "PAGER_TITLE" => "Новости",    // Название категорий
+                "PAGER_SHOW_ALWAYS" => "N",    // Выводить всегда
+                "PAGER_DESC_NUMBERING" => "N",    // Использовать обратную навигацию
+                "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",    // Время кеширования страниц для обратной навигации
+                "PAGER_SHOW_ALL" => "N",    // Показывать ссылку "Все"
+                "PAGER_BASE_LINK_ENABLE" => "N",    // Включить обработку ссылок
+                "SET_STATUS_404" => "N",    // Устанавливать статус 404
+                "SHOW_404" => "N",    // Показ специальной страницы
+                "MESSAGE_404" => "",    // Сообщение для показа (по умолчанию из компонента)
             ),
                 false
-            );?>
+            ); ?>
 
         </div>
     </section>
@@ -677,32 +751,32 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
     <section class="main-hotel-pluses">
         <div class="wrapper-inside">
             <div class="hotel-pluses-list lg-view md-view">
-                <?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/hotel-pluses.php"),Array(),Array("MODE"=>"php"));?>
+                <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/hotel-pluses.php"), array(), array("MODE" => "php")); ?>
                 <div class="hotel-pluses-item form-item">
                     <div class="header-line-form-container">
                         <div class="header-line-form-title">Бронирование номеров</div>
                         <div class="header-line-form-body">
-                            <?include($_SERVER['DOCUMENT_ROOT']."/include/template/page-form-container.php");?>
+                            <? include($_SERVER['DOCUMENT_ROOT'] . "/include/template/page-form-container.php"); ?>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="hotel-pluses-list mobile-list xs-view">
-                <?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/hotel-pluses.php"),Array(),Array("MODE"=>"php"));?>
+                <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/hotel-pluses.php"), array(), array("MODE" => "php")); ?>
             </div>
         </div>
         <div class="hotel-pluses-item form-item xs-view">
             <div class="header-line-form-container">
                 <div class="header-line-form-title">Бронирование номеров</div>
                 <div class="header-line-form-body">
-                    <?include($_SERVER['DOCUMENT_ROOT']."/include/template/page-form-container.php");?>
+                    <? include($_SERVER['DOCUMENT_ROOT'] . "/include/template/page-form-container.php"); ?>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="main-restorant-picture-container main-page">
-        <img src="/design/img/image_18.png" alt="" title="" />
+        <img src="/design/img/image_18.png" alt="" title=""/>
     </section>
 
     <section class="main-restorant-content">
@@ -710,7 +784,8 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
             <div class="main-restorant-info">
                 <div class="main-restorant-title">Ресторан</div>
                 <div class="main-restorant-text">
-                    Для гостей бизнес отеля «Континет» предусмотренны завтраки по системе Шведский стол. Вкусное, полезное и разнообразное меню ждёт вас каждое утро.
+                    Для гостей бизнес отеля «Континет» предусмотренны завтраки по системе Шведский стол. Вкусное,
+                    полезное и разнообразное меню ждёт вас каждое утро.
                 </div>
                 <div class="main-restorant-cases">
                     <div class="case-list">
@@ -725,23 +800,23 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
                     <div class="main-restorant-links-item">
                         <a href="/3d/konferenc/panorama/tour.html" target="_blank" class="tour-link">3D-тур</a>
                     </div>
-                    <?/*
+                    <? /*
 				<div class="main-restorant-links-item">
 					<a href="#" class="menu-link"><span>Посмотреть меню</span></a>
 				</div>
-				*/?>
+				*/ ?>
                 </div>
             </div>
             <div class="main-restorant-pic">
                 <div class="main-restorant-pic-item">
                     <div class="main-restorant-pic-picture">
-                        <img src="/design/img/Rectangle_21.png" alt="" title="" />
+                        <img src="/design/img/Rectangle_21.png" alt="" title=""/>
                     </div>
                     <div class="main-restorant-pic-name">Шведский стол</div>
                 </div>
                 <div class="main-restorant-pic-item">
                     <div class="main-restorant-pic-picture">
-                        <img src="/design/img/Rectangle_22.jpg" alt="" title="" />
+                        <img src="/design/img/Rectangle_22.jpg" alt="" title=""/>
                     </div>
                     <div class="main-restorant-pic-name">Бизнес-обеды</div>
                 </div>
@@ -755,10 +830,12 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
                 <div class="main-restorant-gallery-item big">
                     <a href="/design/img/svedstol2.jpg" class="fancybox"><img src="/design/img/svedstol2-min.jpg"></a>
                     <div class="main-restorant-gallery-item">
-                        <a href="/design/img/svedstol3.jpg" class="fancybox"><img src="/design/img/svedstol3-min.jpg"></a>
+                        <a href="/design/img/svedstol3.jpg" class="fancybox"><img
+                                    src="/design/img/svedstol3-min.jpg"></a>
                     </div>
                     <div class="main-restorant-gallery-item">
-                        <a href="/design/img/svedstol4.jpg" class="fancybox"><img src="/design/img/svedstol4-min.jpg"></a>
+                        <a href="/design/img/svedstol4.jpg" class="fancybox"><img
+                                    src="/design/img/svedstol4-min.jpg"></a>
                     </div>
                 </div>
                 <div class="main-restorant-gallery-item middle">
@@ -790,7 +867,7 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
     </section>
 
     <section class="main-restorant-picture-container main-page">
-        <img src="/design/img/image_192.png" alt="" title="" />
+        <img src="/design/img/image_192.png" alt="" title=""/>
     </section>
 
     <section class="main-restorant-content">
@@ -798,34 +875,37 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
             <div class="main-restorant-info">
                 <div class="main-restorant-title">Расположение</div>
                 <div class="main-restorant-text">
-                    Расположенный в центре города бизнес отель «Континент» – идеальный «второй дом» для гостей, будь они туристами, представителями властных структур или бизнесменами
+                    Расположенный в центре города бизнес отель «Континент» – идеальный «второй дом» для гостей, будь они
+                    туристами, представителями властных структур или бизнесменами
                 </div>
                 <div class="main-restorant-text-small">
-                    Гости и посетители бизнес отеля «Континент» окружены вниманием. Они могут воспользоваться банковскими и почтовыми услугами, забронировать авиа- и железнодорожные билеты, воспользоваться услугой трансфер и выбрать интересные подарки для семьи и друзей в сувенирной лавке бизнес-отеля.
+                    Гости и посетители бизнес отеля «Континент» окружены вниманием. Они могут воспользоваться
+                    банковскими и почтовыми услугами, забронировать авиа- и железнодорожные билеты, воспользоваться
+                    услугой трансфер и выбрать интересные подарки для семьи и друзей в сувенирной лавке бизнес-отеля.
                 </div>
             </div>
 
             <div class="main-restorant-pic lg-view md-view">
-                <?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/panorama-link-block.php"),Array(),Array("MODE"=>"php"));?>
+                <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/panorama-link-block.php"), array(), array("MODE" => "php")); ?>
             </div>
 
             <div class="main-hotel-transport lg-view md-view">
                 <div class="main-hotel-transport-title">Транспортная доступность</div>
                 <div class="main-hotel-transport-item-container">
-                    <?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/transport-table.php"),Array(),Array("MODE"=>"php"));?>
+                    <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/transport-table.php"), array(), array("MODE" => "php")); ?>
                 </div>
             </div>
 
         </div>
 
         <div class="main-restorant-pic xs-view">
-            <?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/panorama-link-block.php"),Array(),Array("MODE"=>"php"));?>
+            <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/panorama-link-block.php"), array(), array("MODE" => "php")); ?>
         </div>
 
         <div class="main-hotel-transport xs-view">
             <div class="main-hotel-transport-title">Транспортная доступность</div>
             <div class="main-hotel-transport-item-container">
-                <?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/transport-table.php"),Array(),Array("MODE"=>"php"));?>
+                <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/transport-table.php"), array(), array("MODE" => "php")); ?>
             </div>
         </div>
 
@@ -833,141 +913,141 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
 
     <section class="main-map">
         <div class="wrapper-inside">
-            <?$APPLICATION->IncludeComponent("bitrix:news.list", "maps-container", Array(
+            <? $APPLICATION->IncludeComponent("bitrix:news.list", "maps-container", array(
                 "COMPONENT_TEMPLATE" => ".default",
-                "IBLOCK_TYPE" => "content",	// Тип информационного блока (используется только для проверки)
-                "IBLOCK_ID" => "6",	// Код информационного блока
-                "NEWS_COUNT" => "20",	// Количество новостей на странице
-                "SORT_BY1" => "SORT",	// Поле для первой сортировки новостей
-                "SORT_ORDER1" => "ASC",	// Направление для первой сортировки новостей
-                "SORT_BY2" => "SORT",	// Поле для второй сортировки новостей
-                "SORT_ORDER2" => "ASC",	// Направление для второй сортировки новостей
-                "FILTER_NAME" => "",	// Фильтр
-                "FIELD_CODE" => array(	// Поля
+                "IBLOCK_TYPE" => "content",    // Тип информационного блока (используется только для проверки)
+                "IBLOCK_ID" => "6",    // Код информационного блока
+                "NEWS_COUNT" => "20",    // Количество новостей на странице
+                "SORT_BY1" => "SORT",    // Поле для первой сортировки новостей
+                "SORT_ORDER1" => "ASC",    // Направление для первой сортировки новостей
+                "SORT_BY2" => "SORT",    // Поле для второй сортировки новостей
+                "SORT_ORDER2" => "ASC",    // Направление для второй сортировки новостей
+                "FILTER_NAME" => "",    // Фильтр
+                "FIELD_CODE" => array(    // Поля
                     0 => "",
                     1 => "",
                 ),
-                "PROPERTY_CODE" => array(	// Свойства
+                "PROPERTY_CODE" => array(    // Свойства
                     0 => "MAP",
                     1 => "COORDS",
                     2 => "METRS",
                     3 => "",
                 ),
-                "CHECK_DATES" => "Y",	// Показывать только активные на данный момент элементы
-                "DETAIL_URL" => "",	// URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
-                "AJAX_MODE" => "N",	// Включить режим AJAX
-                "AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
-                "AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
-                "AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
-                "AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
-                "CACHE_TYPE" => "A",	// Тип кеширования
-                "CACHE_TIME" => "36000000",	// Время кеширования (сек.)
-                "CACHE_FILTER" => "N",	// Кешировать при установленном фильтре
-                "CACHE_GROUPS" => "Y",	// Учитывать права доступа
-                "PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
-                "ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
-                "SET_TITLE" => "N",	// Устанавливать заголовок страницы
-                "SET_BROWSER_TITLE" => "N",	// Устанавливать заголовок окна браузера
-                "SET_META_KEYWORDS" => "N",	// Устанавливать ключевые слова страницы
-                "SET_META_DESCRIPTION" => "N",	// Устанавливать описание страницы
-                "SET_LAST_MODIFIED" => "N",	// Устанавливать в заголовках ответа время модификации страницы
-                "INCLUDE_IBLOCK_INTO_CHAIN" => "N",	// Включать инфоблок в цепочку навигации
-                "ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
-                "HIDE_LINK_WHEN_NO_DETAIL" => "N",	// Скрывать ссылку, если нет детального описания
-                "PARENT_SECTION" => "",	// ID раздела
-                "PARENT_SECTION_CODE" => "",	// Код раздела
-                "INCLUDE_SUBSECTIONS" => "Y",	// Показывать элементы подразделов раздела
-                "STRICT_SECTION_CHECK" => "N",	// Строгая проверка раздела для показа списка
-                "DISPLAY_DATE" => "Y",	// Выводить дату элемента
-                "DISPLAY_NAME" => "Y",	// Выводить название элемента
-                "DISPLAY_PICTURE" => "Y",	// Выводить изображение для анонса
-                "DISPLAY_PREVIEW_TEXT" => "Y",	// Выводить текст анонса
-                "PAGER_TEMPLATE" => ".default",	// Шаблон постраничной навигации
-                "DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
-                "DISPLAY_BOTTOM_PAGER" => "Y",	// Выводить под списком
-                "PAGER_TITLE" => "Новости",	// Название категорий
-                "PAGER_SHOW_ALWAYS" => "N",	// Выводить всегда
-                "PAGER_DESC_NUMBERING" => "N",	// Использовать обратную навигацию
-                "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",	// Время кеширования страниц для обратной навигации
-                "PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
-                "PAGER_BASE_LINK_ENABLE" => "N",	// Включить обработку ссылок
-                "SET_STATUS_404" => "N",	// Устанавливать статус 404
-                "SHOW_404" => "N",	// Показ специальной страницы
-                "MESSAGE_404" => "",	// Сообщение для показа (по умолчанию из компонента)
+                "CHECK_DATES" => "Y",    // Показывать только активные на данный момент элементы
+                "DETAIL_URL" => "",    // URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
+                "AJAX_MODE" => "N",    // Включить режим AJAX
+                "AJAX_OPTION_JUMP" => "N",    // Включить прокрутку к началу компонента
+                "AJAX_OPTION_STYLE" => "Y",    // Включить подгрузку стилей
+                "AJAX_OPTION_HISTORY" => "N",    // Включить эмуляцию навигации браузера
+                "AJAX_OPTION_ADDITIONAL" => "",    // Дополнительный идентификатор
+                "CACHE_TYPE" => "A",    // Тип кеширования
+                "CACHE_TIME" => "36000000",    // Время кеширования (сек.)
+                "CACHE_FILTER" => "N",    // Кешировать при установленном фильтре
+                "CACHE_GROUPS" => "Y",    // Учитывать права доступа
+                "PREVIEW_TRUNCATE_LEN" => "",    // Максимальная длина анонса для вывода (только для типа текст)
+                "ACTIVE_DATE_FORMAT" => "d.m.Y",    // Формат показа даты
+                "SET_TITLE" => "N",    // Устанавливать заголовок страницы
+                "SET_BROWSER_TITLE" => "N",    // Устанавливать заголовок окна браузера
+                "SET_META_KEYWORDS" => "N",    // Устанавливать ключевые слова страницы
+                "SET_META_DESCRIPTION" => "N",    // Устанавливать описание страницы
+                "SET_LAST_MODIFIED" => "N",    // Устанавливать в заголовках ответа время модификации страницы
+                "INCLUDE_IBLOCK_INTO_CHAIN" => "N",    // Включать инфоблок в цепочку навигации
+                "ADD_SECTIONS_CHAIN" => "N",    // Включать раздел в цепочку навигации
+                "HIDE_LINK_WHEN_NO_DETAIL" => "N",    // Скрывать ссылку, если нет детального описания
+                "PARENT_SECTION" => "",    // ID раздела
+                "PARENT_SECTION_CODE" => "",    // Код раздела
+                "INCLUDE_SUBSECTIONS" => "Y",    // Показывать элементы подразделов раздела
+                "STRICT_SECTION_CHECK" => "N",    // Строгая проверка раздела для показа списка
+                "DISPLAY_DATE" => "Y",    // Выводить дату элемента
+                "DISPLAY_NAME" => "Y",    // Выводить название элемента
+                "DISPLAY_PICTURE" => "Y",    // Выводить изображение для анонса
+                "DISPLAY_PREVIEW_TEXT" => "Y",    // Выводить текст анонса
+                "PAGER_TEMPLATE" => ".default",    // Шаблон постраничной навигации
+                "DISPLAY_TOP_PAGER" => "N",    // Выводить над списком
+                "DISPLAY_BOTTOM_PAGER" => "Y",    // Выводить под списком
+                "PAGER_TITLE" => "Новости",    // Название категорий
+                "PAGER_SHOW_ALWAYS" => "N",    // Выводить всегда
+                "PAGER_DESC_NUMBERING" => "N",    // Использовать обратную навигацию
+                "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",    // Время кеширования страниц для обратной навигации
+                "PAGER_SHOW_ALL" => "N",    // Показывать ссылку "Все"
+                "PAGER_BASE_LINK_ENABLE" => "N",    // Включить обработку ссылок
+                "SET_STATUS_404" => "N",    // Устанавливать статус 404
+                "SHOW_404" => "N",    // Показ специальной страницы
+                "MESSAGE_404" => "",    // Сообщение для показа (по умолчанию из компонента)
             ),
                 false
-            );?>
+            ); ?>
         </div>
     </section>
 
     <section class="main-clients">
         <div class="wrapper-inside">
             <div class="main-clients-title">Наши клиенты</div>
-            <?$APPLICATION->IncludeComponent("bitrix:news.list", "klients-main-page", Array(
+            <? $APPLICATION->IncludeComponent("bitrix:news.list", "klients-main-page", array(
                 "COMPONENT_TEMPLATE" => ".default",
-                "IBLOCK_TYPE" => "content",	// Тип информационного блока (используется только для проверки)
-                "IBLOCK_ID" => "7",	// Код информационного блока
-                "NEWS_COUNT" => "20",	// Количество новостей на странице
-                "SORT_BY1" => "SORT",	// Поле для первой сортировки новостей
-                "SORT_ORDER1" => "ASC",	// Направление для первой сортировки новостей
-                "SORT_BY2" => "SORT",	// Поле для второй сортировки новостей
-                "SORT_ORDER2" => "ASC",	// Направление для второй сортировки новостей
-                "FILTER_NAME" => "",	// Фильтр
-                "FIELD_CODE" => array(	// Поля
+                "IBLOCK_TYPE" => "content",    // Тип информационного блока (используется только для проверки)
+                "IBLOCK_ID" => "7",    // Код информационного блока
+                "NEWS_COUNT" => "20",    // Количество новостей на странице
+                "SORT_BY1" => "SORT",    // Поле для первой сортировки новостей
+                "SORT_ORDER1" => "ASC",    // Направление для первой сортировки новостей
+                "SORT_BY2" => "SORT",    // Поле для второй сортировки новостей
+                "SORT_ORDER2" => "ASC",    // Направление для второй сортировки новостей
+                "FILTER_NAME" => "",    // Фильтр
+                "FIELD_CODE" => array(    // Поля
                     0 => "",
                     1 => "",
                 ),
-                "PROPERTY_CODE" => array(	// Свойства
+                "PROPERTY_CODE" => array(    // Свойства
                     0 => "",
                     1 => "",
                     2 => "",
                     3 => "",
                     4 => "",
                 ),
-                "CHECK_DATES" => "Y",	// Показывать только активные на данный момент элементы
-                "DETAIL_URL" => "",	// URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
-                "AJAX_MODE" => "N",	// Включить режим AJAX
-                "AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
-                "AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
-                "AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
-                "AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
-                "CACHE_TYPE" => "A",	// Тип кеширования
-                "CACHE_TIME" => "36000000",	// Время кеширования (сек.)
-                "CACHE_FILTER" => "N",	// Кешировать при установленном фильтре
-                "CACHE_GROUPS" => "Y",	// Учитывать права доступа
-                "PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
-                "ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
-                "SET_TITLE" => "N",	// Устанавливать заголовок страницы
-                "SET_BROWSER_TITLE" => "N",	// Устанавливать заголовок окна браузера
-                "SET_META_KEYWORDS" => "N",	// Устанавливать ключевые слова страницы
-                "SET_META_DESCRIPTION" => "N",	// Устанавливать описание страницы
-                "SET_LAST_MODIFIED" => "N",	// Устанавливать в заголовках ответа время модификации страницы
-                "INCLUDE_IBLOCK_INTO_CHAIN" => "N",	// Включать инфоблок в цепочку навигации
-                "ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
-                "HIDE_LINK_WHEN_NO_DETAIL" => "N",	// Скрывать ссылку, если нет детального описания
-                "PARENT_SECTION" => "",	// ID раздела
-                "PARENT_SECTION_CODE" => "",	// Код раздела
-                "INCLUDE_SUBSECTIONS" => "Y",	// Показывать элементы подразделов раздела
-                "STRICT_SECTION_CHECK" => "N",	// Строгая проверка раздела для показа списка
-                "DISPLAY_DATE" => "Y",	// Выводить дату элемента
-                "DISPLAY_NAME" => "Y",	// Выводить название элемента
-                "DISPLAY_PICTURE" => "Y",	// Выводить изображение для анонса
-                "DISPLAY_PREVIEW_TEXT" => "Y",	// Выводить текст анонса
-                "PAGER_TEMPLATE" => ".default",	// Шаблон постраничной навигации
-                "DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
-                "DISPLAY_BOTTOM_PAGER" => "Y",	// Выводить под списком
-                "PAGER_TITLE" => "Новости",	// Название категорий
-                "PAGER_SHOW_ALWAYS" => "N",	// Выводить всегда
-                "PAGER_DESC_NUMBERING" => "N",	// Использовать обратную навигацию
-                "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",	// Время кеширования страниц для обратной навигации
-                "PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
-                "PAGER_BASE_LINK_ENABLE" => "N",	// Включить обработку ссылок
-                "SET_STATUS_404" => "N",	// Устанавливать статус 404
-                "SHOW_404" => "N",	// Показ специальной страницы
-                "MESSAGE_404" => "",	// Сообщение для показа (по умолчанию из компонента)
+                "CHECK_DATES" => "Y",    // Показывать только активные на данный момент элементы
+                "DETAIL_URL" => "",    // URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
+                "AJAX_MODE" => "N",    // Включить режим AJAX
+                "AJAX_OPTION_JUMP" => "N",    // Включить прокрутку к началу компонента
+                "AJAX_OPTION_STYLE" => "Y",    // Включить подгрузку стилей
+                "AJAX_OPTION_HISTORY" => "N",    // Включить эмуляцию навигации браузера
+                "AJAX_OPTION_ADDITIONAL" => "",    // Дополнительный идентификатор
+                "CACHE_TYPE" => "A",    // Тип кеширования
+                "CACHE_TIME" => "36000000",    // Время кеширования (сек.)
+                "CACHE_FILTER" => "N",    // Кешировать при установленном фильтре
+                "CACHE_GROUPS" => "Y",    // Учитывать права доступа
+                "PREVIEW_TRUNCATE_LEN" => "",    // Максимальная длина анонса для вывода (только для типа текст)
+                "ACTIVE_DATE_FORMAT" => "d.m.Y",    // Формат показа даты
+                "SET_TITLE" => "N",    // Устанавливать заголовок страницы
+                "SET_BROWSER_TITLE" => "N",    // Устанавливать заголовок окна браузера
+                "SET_META_KEYWORDS" => "N",    // Устанавливать ключевые слова страницы
+                "SET_META_DESCRIPTION" => "N",    // Устанавливать описание страницы
+                "SET_LAST_MODIFIED" => "N",    // Устанавливать в заголовках ответа время модификации страницы
+                "INCLUDE_IBLOCK_INTO_CHAIN" => "N",    // Включать инфоблок в цепочку навигации
+                "ADD_SECTIONS_CHAIN" => "N",    // Включать раздел в цепочку навигации
+                "HIDE_LINK_WHEN_NO_DETAIL" => "N",    // Скрывать ссылку, если нет детального описания
+                "PARENT_SECTION" => "",    // ID раздела
+                "PARENT_SECTION_CODE" => "",    // Код раздела
+                "INCLUDE_SUBSECTIONS" => "Y",    // Показывать элементы подразделов раздела
+                "STRICT_SECTION_CHECK" => "N",    // Строгая проверка раздела для показа списка
+                "DISPLAY_DATE" => "Y",    // Выводить дату элемента
+                "DISPLAY_NAME" => "Y",    // Выводить название элемента
+                "DISPLAY_PICTURE" => "Y",    // Выводить изображение для анонса
+                "DISPLAY_PREVIEW_TEXT" => "Y",    // Выводить текст анонса
+                "PAGER_TEMPLATE" => ".default",    // Шаблон постраничной навигации
+                "DISPLAY_TOP_PAGER" => "N",    // Выводить над списком
+                "DISPLAY_BOTTOM_PAGER" => "Y",    // Выводить под списком
+                "PAGER_TITLE" => "Новости",    // Название категорий
+                "PAGER_SHOW_ALWAYS" => "N",    // Выводить всегда
+                "PAGER_DESC_NUMBERING" => "N",    // Использовать обратную навигацию
+                "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",    // Время кеширования страниц для обратной навигации
+                "PAGER_SHOW_ALL" => "N",    // Показывать ссылку "Все"
+                "PAGER_BASE_LINK_ENABLE" => "N",    // Включить обработку ссылок
+                "SET_STATUS_404" => "N",    // Устанавливать статус 404
+                "SHOW_404" => "N",    // Показ специальной страницы
+                "MESSAGE_404" => "",    // Сообщение для показа (по умолчанию из компонента)
             ),
                 false
-            );?>
+            ); ?>
         </div>
     </section>
 
@@ -976,7 +1056,7 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
             <div class="main-clients-title">Бронирование номеров</div>
             <div class="form-container">
                 <div class="header-line-form-body">
-                    <?include($_SERVER['DOCUMENT_ROOT']."/include/template/page-form-container.php");?>
+                    <? include($_SERVER['DOCUMENT_ROOT'] . "/include/template/page-form-container.php"); ?>
                 </div>
             </div>
         </div>
@@ -984,4 +1064,4 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
 
     <div class="content"></div>
 
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
