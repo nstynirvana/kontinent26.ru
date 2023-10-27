@@ -1,1 +1,1 @@
-<a href="/en/about_hotel/politica/">Политика обработки<br />персональных данных</a>
+<a href="/en/about_hotel/politica/">Personal data<br />processing policy</a>

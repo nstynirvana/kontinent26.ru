@@ -1,1 +1,1 @@
-<a href="/en/"><img src="/design/img/logo.svg" alt="" title="" /></a>
+<a href="/en/"><img src="/design/img/logo-en.svg" alt="" title="" /></a>
