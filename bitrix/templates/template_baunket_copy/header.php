@@ -76,7 +76,7 @@
                 );?>
             </div>
             <div class="main-menu-bottom">
-                <a href="/reservation/" class="btn btn-gray">Забронировать номер</a>
+                <a href="/en/reservation/" class="btn btn-gray">Забронировать номер</a>
             </div>
         </div>
     </div>
@@ -156,11 +156,11 @@
                 </div>
                 <div class="main-phone">
                     <span class="lg-view"><?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/phone-link.php"),Array(),Array("MODE"=>"html"));?></span>
-                    <a class="md-view" href="/rooms/">Номера</a>
+                    <a class="md-view" href="/en/rooms/">Номера</a>
                 </div>
             </div>
             <div class="header-line-center">
-                <div class="logo"><a href="/"><img src="/design/img/logo.svg" alt="" title="" /></a></div>
+                <div class="logo"><a href="/en/"><img src="/design/img/logo.svg" alt="" title="" /></a></div>
             </div>
             <div class="header-line-right">
                 <div class="header-line-socials lg-view">
@@ -224,8 +224,8 @@
                 </a>
             </div>
             <div class="mobile-menu-list">
-                <div class="mobile-menu-item"><a href="/">Гостиница</a></div>
-                <div class="mobile-menu-item"><a class="active" href="/banqueting_hall/">Банкетный зал</a></div>
+                <div class="mobile-menu-item"><a href="/en/">Гостиница</a></div>
+                <div class="mobile-menu-item"><a class="active" href="/en/banqueting_hall/">Банкетный зал</a></div>
                 <div class="mobile-menu-item"><a href="#">Ресторан Molinari</a></div>
                 <div class="mobile-menu-item"><a href="#">Меню</a></div>
             </div>

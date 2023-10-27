@@ -66,7 +66,7 @@
 				);?>
 			</div>
 			<div class="main-menu-bottom">
-				<a href="/reservation/" class="btn btn-gray">Забронировать номер</a>
+				<a href="/en/reservation/" class="btn btn-gray">Забронировать номер</a>
 			</div>	
 		</div>
 	</div>

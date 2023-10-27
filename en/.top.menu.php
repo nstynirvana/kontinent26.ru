@@ -1,0 +1,60 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"ROOMS",
+		"/en/rooms/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"CONFERENCE HALLS",
+		"/en/konferenc-zaly/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"BANQUET HALL",
+		"/en/banqueting_hall/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"SPECIAL OFFERS",
+		"/en/specials/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"SERVICES",
+		"/en/services/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"REVIEWS",
+		"/en/reviews/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"CONTACTS",
+		"/en/contacts/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"HOTEL",
+		"/en/about_hotel/",
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

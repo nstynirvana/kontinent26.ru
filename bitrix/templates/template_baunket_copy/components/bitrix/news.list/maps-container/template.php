@@ -4,7 +4,7 @@ $this->setFrameMode(true);
 
 <div class="main-map-left">
 	<div class="main-map-left-container">
-		<div class="main-restorant-title">Места поблизости</div>
+		<div class="main-restorant-title">Places nearby</div>
 		<div class="map-placec-list lg-view">
 			
 		</div>

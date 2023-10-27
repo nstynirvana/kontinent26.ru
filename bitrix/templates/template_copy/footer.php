@@ -10,28 +10,28 @@
 			<div class="footer-mobile-not lg-view md-view">
 
 				<div class="footer-logo md-view">
-					<?include($_SERVER['DOCUMENT_ROOT']."/include/template/footer-logo.php");?>
+					<?include($_SERVER['DOCUMENT_ROOT']."/include/template/footer-logo-en.php");?>
 				</div>
 
 				<div class="footer-item item1">
 					<div class="footer-logo lg-view">
-						<?include($_SERVER['DOCUMENT_ROOT']."/include/template/footer-logo.php");?>
+						<?include($_SERVER['DOCUMENT_ROOT']."/include/template/footer-logo-en.php");?>
 					</div>
 					<div class="footer-copyright lg-view">
 						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-copy.php"),Array(),Array("MODE"=>"php"));?>
 					</div>
 					<div class="politica lg-view">
-						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/politica-link.php"),Array(),Array("MODE"=>"php"));?>
+						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/politica-link-en.php"),Array(),Array("MODE"=>"php"));?>
 					</div>		
 				</div>
 				<div class="footer-item item2">
 					<div class="menu-footer">
-						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-menu-rooms.php"),Array(),Array("MODE"=>"php"));?>
+						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-menu-rooms-en.php"),Array(),Array("MODE"=>"php"));?>
 					</div>
 				</div>
 				<div class="footer-item item3">
 					<div class="menu-footer">
-						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-menu-about.php"),Array(),Array("MODE"=>"php"));?>
+						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-menu-about-en.php"),Array(),Array("MODE"=>"php"));?>
 					</div>
 				</div>
 				<div class="footer-item item4">
@@ -63,7 +63,7 @@
 							<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-copy.php"),Array(),Array("MODE"=>"php"));?>
 						</div>
 						<div class="politica">
-							<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/politica-link.php"),Array(),Array("MODE"=>"php"));?>
+							<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/politica-link-en.php"),Array(),Array("MODE"=>"php"));?>
 						</div>	
 					</div>
 					<div class="footer-item-site">
@@ -76,7 +76,7 @@
 			<div class="footer-mobile xs-view">
 				
 				<div class="footer-logo">
-					<?include($_SERVER['DOCUMENT_ROOT']."/include/template/footer-logo.php");?>
+					<?include($_SERVER['DOCUMENT_ROOT']."/include/template/footer-logo-en.php");?>
 				</div>
 
 				<div class="footer-mobile">
@@ -98,7 +98,7 @@
 
 				<div class="footer-item item3">
 					<div class="menu-footer">
-						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-menu-about.php"),Array(),Array("MODE"=>"php"));?>
+						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-menu-about-en.php"),Array(),Array("MODE"=>"php"));?>
 					</div>
 				</div>
 
@@ -107,7 +107,7 @@
 						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-copy.php"),Array(),Array("MODE"=>"php"));?>
 					</div>
 					<div class="politica">
-						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/politica-link.php"),Array(),Array("MODE"=>"php"));?>
+						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/politica-link-en.php"),Array(),Array("MODE"=>"php"));?>
 					</div>		
 					<div class="footer-item-site">
 						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/dapsite.php"),Array(),Array("MODE"=>"php"));?>

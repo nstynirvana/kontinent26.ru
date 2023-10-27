@@ -30,11 +30,11 @@ $APPLICATION->SetTitle("Об отеле");
 			</div>	
 			<div class="main-phone">
 				<span class="lg-view"><?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/phone-link.php"),Array(),Array("MODE"=>"html"));?></span>
-				<a class="md-view" href="/rooms/">Номера</a>
+				<a class="md-view" href="/en/rooms/">Номера</a>
 			</div>
 		</div>
 		<div class="header-line-center">
-			<div class="logo"><?include($_SERVER['DOCUMENT_ROOT']."/include/template/footer-logo.php");?></div>
+			<div class="logo"><?include($_SERVER['DOCUMENT_ROOT']."/include/template/footer-logo-en.php");?></div>
 		</div>
 		<div class="header-line-right">
 			<div class="header-line-socials lg-view">

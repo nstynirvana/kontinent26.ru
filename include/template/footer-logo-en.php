@@ -1,0 +1,1 @@
+<a href="/en/"><img src="/design/img/logo.svg" alt="" title="" /></a>
