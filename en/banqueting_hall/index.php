@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Банкетный зал");
+$APPLICATION->SetTitle("Banquet hall");
 
 
 ?>
@@ -8,14 +8,14 @@ $APPLICATION->SetTitle("Банкетный зал");
         <div class="container">
             <div class="banner-info-wrapper">
                 <div class="banner-info-title">
-                    <h1><? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/banket-title.php"), array(), array("MODE" => "html")); ?>
+                    <h1><? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/banket-title-en.php"), array(), array("MODE" => "html")); ?>
                         <br>
-                        <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/banket-title-span.php"), array(), array("MODE" => "html")); ?>
+                        <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/banket-title-span-en.php"), array(), array("MODE" => "html")); ?>
                     </h1>
                 </div>
                 <div class="banner-info-block">
                     <div class="banner-info-descr">
-                        <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/banket-descr.php"), array(), array("MODE" => "html")); ?>
+                        <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/banket-descr-en.php"), array(), array("MODE" => "html")); ?>
                     </div>
                     <? $APPLICATION->IncludeComponent(
                         "bitrix:news.list",
@@ -237,7 +237,7 @@ $APPLICATION->SetTitle("Банкетный зал");
     </section>
     <section class="halls">
         <div class="container">
-            <h2>Банкетные залы</h2>
+            <h2>Banquet halls</h2>
             <? $APPLICATION->IncludeComponent(
                 "bitrix:news.list",
                 "event-list-banket",
@@ -310,7 +310,7 @@ $APPLICATION->SetTitle("Банкетный зал");
     <section class="food">
         <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/banket-food-img.php"), array(), array("MODE" => "html")); ?>
         <div class="container">
-            <h2>Банкетное меню</h2>
+            <h2>Catering Menu</h2>
             <? $APPLICATION->IncludeComponent(
                 "bitrix:news.list",
                 "banket-products-menu",
@@ -376,11 +376,10 @@ $APPLICATION->SetTitle("Банкетный зал");
                     "STRICT_SECTION_CHECK" => "N"
                 ),
                 false
-            ); ?> <a href="https://kontinent26.ru/banqueting_hall/Банкетное меню.pdf" class="food-banket-download">банкетное
-                меню (PDF)</a>
+            ); ?> <a href="https://kontinent26.ru/banqueting_hall/Банкетное меню.pdf" class="food-banket-download">CATERING MENU (PDF)</a>
             <!--  -->
 
-            <h2>Фуршетное меню</h2>
+            <h2>Catering menu</h2>
             <? $APPLICATION->IncludeComponent(
                 "bitrix:news.list",
                 "banket-products-menu",
@@ -446,12 +445,12 @@ $APPLICATION->SetTitle("Банкетный зал");
                     "STRICT_SECTION_CHECK" => "N"
                 ),
                 false
-            ); ?> <a href="#" class="food-banket-download fursh">фуршетное меню (PDF)</a>
+            ); ?> <a href="#" class="food-banket-download fursh">CATERING MENU (PDF)</a>
         </div>
     </section>
     <section class="price-list">
         <div class="container">
-            <h3>Прейскурант аренды</h3>
+            <h3>Rental price list</h3>
             <? $APPLICATION->IncludeComponent(
                 "bitrix:news.list",
                 "banket-rental-price-list",
@@ -537,8 +536,8 @@ $APPLICATION->SetTitle("Банкетный зал");
                                       fill="#C7A462"/>
                             </svg>
                             <div class="events-link-block-content-text">
-                                Мероприятия<br>
-                                под ключ
+                                TURNKEY <br>
+                                EVENTS
                             </div>
                             <a href="tel:+78652947575" class="events-link-block-content-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
@@ -558,7 +557,7 @@ $APPLICATION->SetTitle("Банкетный зал");
                             <path d="M14.9897 15.0085C14.9897 11.5904 16.2931 8.4209 18.9 5.5C21.5069 2.5791 23.7414 0.745764 25.6034 0L27 1.95763C25.1379 2.95198 23.5552 4.38136 22.2517 6.24577C21.0103 8.11017 20.2966 10.0367 20.1103 12.0254C20.6069 11.7147 21.3828 11.5593 22.4379 11.5593C23.5552 11.5593 24.5172 12.0565 25.3241 13.0508C26.131 13.9831 26.5345 15.226 26.5345 16.7797C26.5345 18.3333 25.9448 19.6073 24.7655 20.6017C23.6483 21.5339 22.2517 22 20.5759 22C18.9 22 17.5345 21.4096 16.4793 20.2288C15.4862 19.048 14.9897 17.3079 14.9897 15.0085ZM5.58621 22C3.97241 22 2.63793 21.1299 1.58276 19.3898C0.527586 17.6497 0 15.7232 0 13.6102C0 11.4972 0.434483 9.63277 1.30345 8.01695C2.17241 6.33898 3.25862 4.97175 4.56207 3.91525C7.04483 1.92655 9.06207 0.621468 10.6138 0L12.0103 1.95763C10.1483 2.95198 8.56552 4.38136 7.26207 6.24577C6.02069 8.11017 5.3069 10.0367 5.12069 12.0254C5.61724 11.7147 6.3931 11.5593 7.44828 11.5593C8.56552 11.5593 9.52759 12.0565 10.3345 13.0508C11.1414 13.9831 11.5448 15.226 11.5448 16.7797C11.5448 18.3333 10.9552 19.6073 9.77586 20.6017C8.65862 21.5339 7.26207 22 5.58621 22Z"
                                   fill="#C7A462"/>
                         </svg>
-                        <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/banket-events-text.php"), array(), array("MODE" => "html")); ?>
+                        <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/banket-events-text-en.php"), array(), array("MODE" => "html")); ?>
                     </div>
                 </div>
             </div>
@@ -568,7 +567,7 @@ $APPLICATION->SetTitle("Банкетный зал");
         <div class="container container-contacts">
             <div class="contacts-wrapper">
                 <div class="contacts-info">
-                    <h3>Контакты</h3>
+                    <h3>Contacts</h3>
                     <div class="contacts-info-item">
                         <div class="contacts-info-item-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -579,7 +578,7 @@ $APPLICATION->SetTitle("Банкетный зал");
                             </svg>
                         </div>
                         <p>
-                            г. Ставрополь, ул. Дзержинского, 114
+                            Stavropol, Dzerzhinsky Street, 114
                         </p>
                     </div>
                     <div class="contacts-info-item">
@@ -594,9 +593,9 @@ $APPLICATION->SetTitle("Банкетный зал");
                         </div>
                         <div class="contacts-info-item-text">
                             <p>
-                                Банкетный зал
+                                Banquet hall
                             </p>
-                            Пн - Вс: 08:00-00:00 <a href="tel:+79624415416">+7 (962) 441 54 16</a>
+                            Mon - Sun: 08:00-00:00 <a href="tel:+79624415416">+7 (962) 441 54 16</a>
                         </div>
                     </div>
                     <div class="contacts-info-item">
@@ -610,9 +609,9 @@ $APPLICATION->SetTitle("Банкетный зал");
                         </div>
                         <div class="contacts-info-item-text">
                             <p>
-                                Ресторан «Molinari»
+                                Molinari Restaurant
                             </p>
-                            Вс - Чт: 12:00-00:00 Пт - Сб: 12:00 - 02:00 <a href="tel:+79624415416">+7 (962) 441 54
+                            Sun - Thu: 12:00-00:00 Fri - Sat: 12:00 - 02:00 <a href="tel:+79624415416">+7 (962) 441 54
                                 16</a>
                         </div>
                     </div>
@@ -627,9 +626,9 @@ $APPLICATION->SetTitle("Банкетный зал");
                         </div>
                         <div style="border: none;" class="contacts-info-item-text">
                             <p>
-                                Гостиница «Континент»
+                                Continent Hotel
                             </p>
-                            Круглосуточно <a href="tel:+79624415416">+7 (962) 441 54 16</a>
+                            Round the clock <a href="tel:+79624415416">+7 (962) 441 54 16</a>
                         </div>
                     </div>
                 </div>

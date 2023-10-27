@@ -17,7 +17,7 @@ $this->setFrameMode(true);
 			<div class="detail-nomer-content konference">
 				<div class="breadcrumbs">
 					<ul>
-						<li><a href="/">Главная</a></li>
+						<li><a href="/en/">Main page</a></li>
 					</ul>
 				</div>
 				

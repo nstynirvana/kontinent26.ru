@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Контакты");
+$APPLICATION->SetTitle("Contacts");
 ?>
     <script type="text/javascript" src="https://maps.api.2gis.ru/1.0"></script>
     <script type="text/javascript" charset="utf-8" src="https://maps.api.2gis.ru/1.0/dg-js/dg.js?v=200"></script>
@@ -16,11 +16,11 @@ $APPLICATION->SetTitle("Контакты");
                     </div>
                     <div class="main-phone">
                         <span class="lg-view"><? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/phone-link.php"), array(), array("MODE" => "html")); ?></span>
-                        <a class="md-view" href="/en/rooms/">Номера</a>
+                        <a class="md-view" href="/en/rooms/">Rooms</a>
                     </div>
                 </div>
                 <div class="header-line-center">
-                    <div class="logo"><a href="/en/"><img src="/design/img/logo-black.svg" alt="" title=""/></a></div>
+                    <div class="logo"><a href="/en/"><img src="/design/img/logo-black-en.svg" alt="" title=""/></a></div>
                 </div>
                 <div class="header-line-right">
                     <div class="header-line-socials lg-view">
@@ -38,14 +38,14 @@ $APPLICATION->SetTitle("Контакты");
                     <? include($_SERVER['DOCUMENT_ROOT'] . "/include/template/breadcrumbs.php"); ?>
 
                     <div class="contentPage-title">
-                        <h1>Контакты</h1>
+                        <h1>Contacts</h1>
                     </div>
                     <div class="contact-page-information">
                         <div class="contact-page-information-line line-phone">
                             <div class="contact-page-information-phones">
                                 <a href="tel:+78652941337">+7 (8652) 94-13-37</a>, <a
                                         href="tel:+78652947575">94-75-75</a><br/>
-                                <span>гостиница, служба бронирования</span>
+                                <span>hotel, booking service</span>
                             </div>
                             <!--						<div class="contact-page-information-phones">-->
                             <!--							<a href="tel:+78652956464">+7 (8652) 95-64-64</a><br />-->
@@ -53,23 +53,23 @@ $APPLICATION->SetTitle("Контакты");
                             <!--						</div>-->
                             <div class="contact-page-information-phones">
                                 <a href="tel:+78652946660">+7 (8652) 94-66-60</a><br/>
-                                <span>оздоровительный комплекс<br/>«Баньки Континента»</span>
+                                <span>"Continental Saunas"<br/>health center</span>
                             </div>
                             <div class="contact-page-information-phones">
                                 <a href="tel:+78652415416">+7 (8652) 41-54-16</a><br/>
-                                <span>ресторан «Molinari»</span>
+                                <span>"Molinari" restaurant</span>
                             </div>
                             <div class="contact-page-information-phones">
                                 <a href="tel:+78652500021">+7 (8652) 50-00-21</a><br/>
-                                <span>караоке клуб «Синатра»</span>
+                                <span>"Sinatra" karaoke club</span>
                             </div>
                             <div class="contact-page-information-phones">
                                 <a href="tel:+78652500021">+7 (930) 333-60-65</a><br/>
-                                <span>салон красоты «BEAUTY RESORT 114»</span>
+                                <span>"BEAUTY RESORT 114" beauty parlor</span>
                             </div>
                         </div>
                         <div class="contact-page-information-line line-address">
-                            г. Ставрополь, ул. Дзержинского, 114
+                            Stavropol, Dzerzhinsky Street, 114
                         </div>
                         <div class="contact-page-information-line line-mail">
                             <a href="mail:kontinent26@bk.ru" class="yellow">kontinent26@bk.ru</a>

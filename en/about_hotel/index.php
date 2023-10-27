@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Об отеле");
+$APPLICATION->SetTitle("About hotel");
 ?>
 
 
@@ -13,11 +13,11 @@ $APPLICATION->SetTitle("Об отеле");
 
             <? include($_SERVER['DOCUMENT_ROOT'] . "/include/template/breadcrumbs.php"); ?>
 
-            <div class="rooms-list-item-title"><? $APPLICATION->ShowTitle(false) ?></div>
+            <div class="rooms-list-item-title">About hotel</div>
 
             <div class="rooms-list-text">
-                <p>Расположенный в центре города бизнес отель «Континент» – идеальный «второй дом» для гостей, будь они
-                    туристами, представителями властных структур или бизнесменами</p>
+                <p>Located in the city center, the Continent Business Hotel is an ideal “second home” for guests,
+                    whether they are tourists, government officials or businessmen</p>
             </div>
 
         </div>
@@ -30,7 +30,7 @@ $APPLICATION->SetTitle("Об отеле");
                 </div>
                 <div class="main-phone">
                     <span class="lg-view"><? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/phone-link.php"), array(), array("MODE" => "html")); ?></span>
-                    <a class="md-view" href="/en/rooms/">Номера</a>
+                    <a class="md-view" href="/en/rooms/">Rooms</a>
                 </div>
             </div>
             <div class="header-line-center">
@@ -60,17 +60,18 @@ $APPLICATION->SetTitle("Об отеле");
         <div class="wrapper-inside">
             <div class="about-rooms-block-container">
                 <div class="about-rooms-block-left">
-                    <div class="main-restorant-title">Наши номера</div>
+                    <div class="main-restorant-title">Our rooms</div>
                     <div class="text">
-                        <p>Новые номера в бизнес отеле «Континент» приятно поражают индивидуальными интерьерами,
-                            гармоничными цветами, настроением уюта, домашним теплом. Изюминка каждого нового номера – в
-                            панораме, открывающейся из окон верхних этажей отеля. Зимними долгими вечерами – это
-                            волшебное сияние огней города, в ясную погоду – необъятный простор.</p>
-                        <p>Гостей порадуют удобные номера класса Стандарт. Номера Бизнес класса покорят комфортом.
-                            Респектабельные номера класса Люкс превратят ваш отдых и работу в удовольствие.</p>
+                        <p>New rooms in the Continent Business Hotel surprise with unique interiors, harmonious colors,
+                            cozy atmosphere, and domestic warmth. The highlight of each new room is the sweeping view
+                            from the windows on the upper floors of the hotel. During long winter evenings it's the
+                            magical sparkling of the city lights, in clear weather it's the vastness of the city.</p>
+                        <p>Guests will be pleased with comfortable Standard class rooms. Business class rooms will win
+                            you over with comfort. Prestigious deluxe rooms will make your vacation and work a
+                            pleasure.</p>
                     </div>
                     <div class="text-prezentation">
-                        <span class="text-inside">Бизнес отель «Континент» – это предприятие высокого уровня, что подтверждено широким спектром услуг</span>
+                        <span class="text-inside">Continent Business Hotel is a high-level facility, which is confirmed by a wide range of services.</span>
                     </div>
                 </div>
                 <div class="about-rooms-block-right">
@@ -161,11 +162,11 @@ $APPLICATION->SetTitle("Об отеле");
                     </div>
                 </div>
                 <div class="about-page-video-left">
-                    <div class="main-restorant-title">Видео-обзор</div>
+                    <div class="main-restorant-title">Video-review</div>
                     <div class="text">
-                        <p class="big-text">Посмотрите небольшой видео-ролик о нашем отеле</p>
-                        <p>За 6 минут вы узнаете об основных преимуществах и особенностях, увидите интерьеры номеров и
-                            живописный вид, открывающийся из окон на окресности Ставрополя.</p>
+                        <p class="big-text">Watch a short clip about our hotel</p>
+                        <p>In 6 minutes you will learn about the main advantages and features, see the interiors of the
+                            rooms and the picturesque view of the Stavropol surroundings.</p>
                     </div>
                 </div>
 
@@ -180,20 +181,20 @@ $APPLICATION->SetTitle("Об отеле");
     <section class="main-restorant-content about-service">
         <div class="wrapper-inside">
             <div class="main-restorant-info">
-                <div class="main-restorant-title">Возможности</div>
+                <div class="main-restorant-title">Possibilities</div>
                 <div class="main-restorant-text">
-                    Бизнес отель «Континент» – это предприятие высокого уровня, что подтверждено широким спектром услуг
+                    Continent Business Hotel is a high-level facility, which is confirmed by a wide range of services.
                 </div>
                 <div class="main-restorant-text-small">
-                    <p>На территории бизнес-отеля оборудованы и оснащены современной техникой 7 комфортабельных
-                        конференц&#8209;залов и бизнес-холл с удобной для рабочих встреч и кофе-брейков обстановкой.
-                        Беспроводной WiFi обеспечивает доступ в Интернет. Здесь предусмотрено все необходимое для любых
-                        важных событий – собраний, семинаров, мастерклассов, тренингов или презентаций.</p>
-                    <p>Гости и посетители бизнес отеля «Континент» окружены вниманием. Они могут воспользоваться
-                        банковскими и почтовыми услугами, забронировать авиа- и железнодорожные билеты, воспользоваться
-                        услугой трансфер.</p>
-                    <p>Для наших гостей распахнуты двери магазинов, предлагающих брендовые товары – одежду, косметику,
-                        технику.</p>
+                    <p>There are 3 comfortable conference halls and a business hall with a comfortable environment for
+                        working meetings and coffee breaks. WiFi ensures Internet access. Everything necessary for any
+                        important events — meetings, seminars, workshops, master classes, trainings or presentations —
+                        is here.</p>
+                    <p>Guests and visitors of the Continent Business Hotel are surrounded by care. They can use bank and
+                        postal services, book plane and train tickets, use the transfer service and choose fun gifts for
+                        your family and friends in the business hotel's gift shop.</p>
+                    <p>Our guests can enjoy shopping in stores offering brand items such as clothing, cosmetics, and
+                        appliances.</p>
                 </div>
             </div>
             <div class="main-restorant-text second">
@@ -284,17 +285,17 @@ $APPLICATION->SetTitle("Об отеле");
     <section class="about-page-dosug">
         <div class="wrapper-inside">
             <div class="main-restorant-text second">
-                <div class="main-restorant-title">Досуг и развлечения</div>
+                <div class="main-restorant-title">Entertainment</div>
                 <div class="main-restorant-text-small">
-                    <p>В ресторане «Молинари» Бизнес Отеля «Континент» гости могут вкусно перекусить и выпить любимые
-                        напитки. Шеф-повар приготовит для Вас блюда русской, европейской, а также японской кухни.</p>
-                    <p>В караоке-клубе «Синатра» спойте тёплые для сердца песни. Превосходный звук плюс огромный
-                        перечень знакомых песен в каталогах. Персонал внимателен - это залог хорошего отдыха.</p>
-                    <p>За день накопилась усталость – не беда, ведь опытный массажист справится с ней. Тело испытает
-                        радость в массажном кабинете, ведь оно почувствует здоровье и прилив сил.</p>
-                    <p>С берёзовым веничком да в русской бане, а может расслабиться в римской сауне – выбор за Вами.
-                        Нужна потрясающая причёска, макияж, впечатляющий маникюр, тогда обратитесь в салон красоты
-                        нашего отеля.</p>
+                    <p>In the Samovar or Molinari Café of the Continent Business Hotel, guests can enjoy a tasty snack
+                        and have their favorite drinks. The chef will prepare Russian, European and Japanese dishes for
+                        you.</p>
+                    <p>Sing some heart-warming songs at Sinatra's Karaoke Club. Excellent sound plus a huge list of
+                        popular familiar songs in the catalogs. Attentive personnel means a good holiday.</p>
+                    <p>Got tired after a long day? No problem, a skilled masseur can help you out. Your body will find
+                        joy in the massage room, as it will feel healthy and energized.</p>
+                    <p>You can choose a birch bath room in a Russian sauna or relax in a Roman one. Need a stunning
+                        hairstyle, makeup, impressive manicur? Contact our hotel's beauty salon.</p>
                 </div>
             </div>
             <div class="main-restorant-info">
@@ -385,14 +386,14 @@ $APPLICATION->SetTitle("Об отеле");
                 <div class="about-page-docs-left">
                     <div class="hotel-pluses-item form-item">
                         <div class="header-line-form-container">
-                            <div class="header-line-form-title">Документы</div>
+                            <div class="header-line-form-title">Documents</div>
                             <div class="docs-list">
                                 <div class="docs-item">
-                                    <a href="/design/img/inn.jpg" class="fancybox"><span>Свидетельство о постановке на учет в налоговом органе</span></a>
+                                    <a href="/design/img/inn.jpg" class="fancybox"><span>Certificate of registration with the tax authority</span></a>
                                 </div>
                                 <div class="docs-item">
                                     <a href="/design/img/ogrnip.jpg"
-                                       class="fancybox"><span>Свидетельство о регистрации</span></a>
+                                       class="fancybox"><span>Registration certificate</span></a>
                                 </div>
                             </div>
                         </div>
@@ -401,9 +402,9 @@ $APPLICATION->SetTitle("Об отеле");
                 <div class="about-page-docs-right">
                     <div class="hotel-pluses-item form-item">
                         <div class="header-line-form-container">
-                            <div class="header-line-form-title">Бронирование номеров</div>
+                            <div class="header-line-form-title">Rooms booking</div>
                             <div class="header-line-form-body">
-                                <? include($_SERVER['DOCUMENT_ROOT'] . "/include/template/page-form-container.php"); ?>
+                                <? include($_SERVER['DOCUMENT_ROOT'] . "/include/template/page-form-container-en.php"); ?>
                             </div>
                         </div>
                     </div>

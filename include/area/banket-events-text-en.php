@@ -1,0 +1,1 @@
+<p>In our banquet halls you can hold a unique turnkey celebration at the highest level, whether it is an exquisite wedding, a splendid birthday party, conferences or a grand corporate party.</p>

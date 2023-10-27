@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Услуги");
+$APPLICATION->SetTitle("Services");
 ?>
 
 
@@ -13,11 +13,11 @@ $APPLICATION->SetTitle("Услуги");
 
             <? include($_SERVER['DOCUMENT_ROOT'] . "/include/template/breadcrumbs.php"); ?>
 
-            <div class="rooms-list-item-title">Услуги</div>
+            <div class="rooms-list-item-title">Services</div>
 
             <div class="rooms-list-text">
-                <p>На территории гостиницы оборудованы и оснащены современной техникой 7 комфортабельных конференц-зала
-                    и бизнес-холл с удобной для рабочих встреч и кофе-брейков обстановкой</p>
+                <p>There are 7 comfortable conference halls and a business hall with a comfortable environment for
+                    working meetings and coffee breaks on the territory of the hotel equipped with modern technology</p>
             </div>
 
         </div>
@@ -30,11 +30,11 @@ $APPLICATION->SetTitle("Услуги");
                 </div>
                 <div class="main-phone">
                     <span class="lg-view"><? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/phone-link.php"), array(), array("MODE" => "html")); ?></span>
-                    <a class="md-view" href="/en/rooms/">Номера</a>
+                    <a class="md-view" href="/en/rooms/">Rooms</a>
                 </div>
             </div>
             <div class="header-line-center">
-                <div class="logo"><a href="/en/"><img src="/design/img/logo.svg" alt="" title=""/></a></div>
+                <div class="logo"><a href="/en/"><img src="/design/img/logo-en.svg" alt="" title=""/></a></div>
             </div>
             <div class="header-line-right">
                 <div class="header-line-socials lg-view">

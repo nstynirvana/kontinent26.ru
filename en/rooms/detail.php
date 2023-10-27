@@ -69,7 +69,7 @@ $APPLICATION->SetTitle("Детальная страница номера");
                 </div>
             </div>
             <div class="header-line-center">
-                <div class="logo"><a href="/en/"><img src="/design/img/logo.svg" alt="" title=""/></a></div>
+                <div class="logo"><a href="/en/"><img src="/design/img/logo-en.svg" alt="" title=""/></a></div>
             </div>
             <div class="header-line-right">
                 <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/header-mobile-phone.php"), array(), array("MODE" => "html")); ?>

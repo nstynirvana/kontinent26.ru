@@ -48,7 +48,7 @@ $this->setFrameMode(true);
 								</div>
 							</div>
 							<div class="main-nomera-slider-btn">
-								<a href="/reservation/?room-type=<?=$arItem["PROPERTIES"]["TRAVELLINE_ID"]["VALUE"]?>" class="btn btn-gray" tabindex="0">Забронировать</a>
+								<a href="/reservation/?room-type=<?=$arItem["PROPERTIES"]["TRAVELLINE_ID"]["VALUE"]?>" class="btn btn-gray" tabindex="0">Booking</a>
 							</div>
 						</td>
 					</tr>

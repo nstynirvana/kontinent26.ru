@@ -1,0 +1,1 @@
+New, stylish and comfortable banquet space at the Continent Hotel located in the city center. Best prices and service.

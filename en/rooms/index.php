@@ -14,11 +14,11 @@ $APPLICATION->SetTitle("Номера");
                     </div>
                     <div class="main-phone">
                         <span class="lg-view"><? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/phone-link.php"), array(), array("MODE" => "html")); ?></span>
-                        <a class="md-view" href="/en/rooms/">Номера</a>
+                        <a class="md-view" href="/en/rooms/">Rooms</a>
                     </div>
                 </div>
                 <div class="header-line-center">
-                    <div class="logo"><a href="/en/"><img src="/design/img/logo-black.svg" alt="" title=""/></a></div>
+                    <div class="logo"><a href="/en/"><img src="/design/img/logo-black-en.svg" alt="" title=""/></a></div>
                 </div>
                 <div class="header-line-right">
                     <div class="header-line-socials lg-view">
@@ -37,17 +37,16 @@ $APPLICATION->SetTitle("Номера");
                             <td>
                                 <? include($_SERVER['DOCUMENT_ROOT'] . "/include/template/breadcrumbs.php"); ?>
                                 <div class="contentPage-title">
-                                    <h1>Номера и цены</h1>
+                                    <h1>Rooms and prices</h1>
                                 </div>
                                 <div class="contentPage-zagolovok">
-                                    <p>203 номер от стандарта до люкса</p>
+                                    <p>203 rooms from standard to deluxe</p>
                                 </div>
                                 <div class="contentPage-text">
-                                    <p>Новые номера в бизнес отеле «Континент» приятно поражают индивидуальными
-                                        интерьерами, гармоничными цветами, настроением уюта, домашним теплом</p>
+                                    <p>New rooms in the business hotel "Continent" pleasantly impress with individual interiors, harmonious colors, mood of coziness, home warmth</p>
                                 </div>
                                 <div class="contentPage-btn">
-                                    <a href="/en/reservation/" class="btn btn-gray">Забронировать</a>
+                                    <a href="/en/reservation/" class="btn btn-gray">Booking</a>
                                 </div>
                             </td>
                         </tr>

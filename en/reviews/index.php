@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Отзывы");
+$APPLICATION->SetTitle("Reviews");
 ?>
 
     <section class="main-block detail-page service-page">
@@ -12,11 +12,10 @@ $APPLICATION->SetTitle("Отзывы");
 
             <? include($_SERVER['DOCUMENT_ROOT'] . "/include/template/breadcrumbs.php"); ?>
 
-            <div class="rooms-list-item-title">Отзывы</div>
+            <div class="rooms-list-item-title">Reviews</div>
 
             <div class="rooms-list-text">
-                <p>Расположенный в центре города бизнес отель «Континент» – идеальный «второй дом» для гостей, будь они
-                    туристами, представителями властных структур или бизнесменами</p>
+                <p>Located in the city center, the Continent Business Hotel is an ideal “second home” for guests, whether they are tourists, government officials or businessmen</p>
             </div>
 
         </div>
@@ -29,11 +28,11 @@ $APPLICATION->SetTitle("Отзывы");
                 </div>
                 <div class="main-phone">
                     <span class="lg-view"><? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/phone-link.php"), array(), array("MODE" => "html")); ?></span>
-                    <a class="md-view" href="/en/rooms/">Номера</a>
+                    <a class="md-view" href="/en/rooms/">Rooms</a>
                 </div>
             </div>
             <div class="header-line-center">
-                <div class="logo"><a href="/en/"><img src="/design/img/logo.svg" alt="" title=""/></a></div>
+                <div class="logo"><a href="/en/"><img src="/design/img/logo-en.svg" alt="" title=""/></a></div>
             </div>
             <div class="header-line-right">
                 <div class="header-line-socials lg-view">

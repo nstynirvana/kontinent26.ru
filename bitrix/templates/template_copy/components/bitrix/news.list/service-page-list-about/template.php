@@ -20,5 +20,5 @@ $this->setFrameMode(true);
 	<?endforeach;?>
 </div>
 <div class="about-page-service-list-btn">
-	<a class="btn btn-gray-line" href="/services/">Все услуги</a>
+	<a class="btn btn-gray-line" href="/en/services/">All services</a>
 </div>

@@ -26,26 +26,26 @@ $this->setFrameMode(true);
 					<div class="main-nomera-slider-price">
 						<span class="price"><?=number_format($arItem["PROPERTIES"]["PRICE"]["VALUE"], 0, '.', ' ')?></span>
 						<span class="icon icon-rub"></span>
-						<span class="price-correct">/ час</span>
+						<span class="price-correct"> per hour</span>
 					</div>
 				</div>
 				<div class="konferenc-list-item-content-text">
 					<div class="konferenc-list-item-desc">
 						<?if($arItem["PROPERTIES"]["PLOSHAD"]["VALUE"] != ""):?>
 							<div class="konferenc-list-item-desc-item">
-								<span class="name">Площадь:</span>
+								<span class="name">Area:</span>
 								<span class="value"><?=$arItem["PROPERTIES"]["PLOSHAD"]["VALUE"]?></span>
 							</div>
 						<?endif;?>
 						<?if($arItem["PROPERTIES"]["PEOPLES"]["VALUE"] != ""):?>
 							<div class="konferenc-list-item-desc-item">
-								<span class="name">Кол-во человек:</span>
+								<span class="name">Number of people:</span>
 								<span class="value"><?=$arItem["PROPERTIES"]["PEOPLES"]["VALUE"]?></span>
 							</div>
 						<?endif;?>
 						<?if($arItem["PROPERTIES"]["RASSADKA"]["VALUE"] != ""):?>
 							<div class="konferenc-list-item-desc-item">
-								<span class="name">Рассадка:</span>
+								<span class="name">Seating:</span>
 								<span class="value"><?=$arItem["PROPERTIES"]["RASSADKA"]["VALUE"]?></span>
 							</div>
 						<?endif;?>
@@ -61,7 +61,7 @@ $this->setFrameMode(true);
 			</div>
 			
 			<div class="konferenc-list-item-btn">
-				<a href="#" class="btn btn-gray openForm konferencZalOpenForm" data-formopen="konferencForm" tabindex="0" data-zalname="<?=$arItem["NAME"]?>">Забронировать</a>
+				<a href="#" class="btn btn-gray openForm konferencZalOpenForm" data-formopen="konferencForm" tabindex="0" data-zalname="<?=$arItem["NAME"]?>">Booking</a>
 			</div>
 			
 		</div>	

@@ -1,181 +1,293 @@
 <?
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Политика персональных данных");
 ?>
 
 
-<section class="main-block detail-page service-page">
-	
-	<div class="konference-detail-nomer-slider">
-		<img src="/design/img/about-rules.png" alt="" title="" />
-	</div>
-	<div class="detail-nomer-content konference">
-		
-		<?include($_SERVER['DOCUMENT_ROOT']."/include/template/breadcrumbs.php");?>
-		
-		<div class="rooms-list-item-title">Политика персональных данных</div>
-		
-		<div class="rooms-list-text">
-			<p>Политика в области обработки и защиты персональных данных клиентов бизнес отеля «Континент»</p>
-		</div>
-		
-	</div>
-	
-	<div class="header-line service-style">
-		
-		<div class="header-line-left">
-			<div class="main-menu">
-				<a href="#"><span class="icon icon-buter"></span></a>
-			</div>	
-			<div class="main-phone">
-				<span class="lg-view"><?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/phone-link.php"),Array(),Array("MODE"=>"html"));?></span>
-				<a class="md-view" href="/en/rooms/">Номера</a>
-			</div>
-		</div>
-		<div class="header-line-center">
-			<div class="logo"><a href="/en/"><img src="/design/img/logo.svg" alt="" title="" /></a></div>
-		</div>
-		<div class="header-line-right">
-			<div class="header-line-socials lg-view">
-				<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/header-social-white.php"),Array(),Array("MODE"=>"html"));?>
-			</div>	
-			<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/header-mobile-phone.php"),Array(),Array("MODE"=>"html"));?>
-		</div>
-	</div>
-	
-</section>
+    <section class="main-block detail-page service-page">
 
-<section class="page-podmenu">
-	<div class="wrapper-inside">
-		<div class="page-podmenu-line">
-			<?$APPLICATION->IncludeComponent("bitrix:menu", "podmenu-template", Array(
-	
-				),
-				false
-			);?>
-		</div>
-	</div>
-</section>
+        <div class="konference-detail-nomer-slider">
+            <img src="/design/img/about-rules.png" alt="" title=""/>
+        </div>
+        <div class="detail-nomer-content konference">
 
-<section class="page-rules">
-	<div class="wrapper-inside">
-		<div class="page-rules-container politica-page">
-			<div class="page-rules-left">
-				<div class="rules-text">
-				
-					<h3>Политика в области обработки и защиты персональных данных клиентов бизнес отеля «Континент»</h3>
-					
-					<p id="section1" class="big-text">1. Общие положения</p>
-					
-					<ul>
-						<li>1.1. Индивидуальный предприниматель Демченко Петр Вячеславович осуществляет обработку персональных данных на законной и справедливой основе.</li>
-						<li>1.2. Обработка персональных данных осуществляется в соответствии с Конституцией Российской Федерации, Федеральным законом "О персональных данных" N 152-ФЗ от 27.07.2006 года, Постановлением Правительства Российской Федерации N687 от 15 сентября 2008 г. и N 1119 от 01.11.2012 г. а также другими нормативно правовыми актами.</li>
-						<li>1.3. Основные понятия, используемые в Политики:
-							<ul>
-								<li>Отель - ИП Демченко П.В., предоставляющий гостиничные услуги клиенту;</li>
-								<li>Клиент - физическое лицо, потребитель гостиничных услуг, субъект персональных данных;</li>
-								<li>Гостиничные услуги– действия Гостиницы по размещению Клиентов в объекте размещения, а также иная деятельность, связанная с размещением и проживанием, которая включает в себя основные и дополнительные услуги, предоставляемые Клиенту;</li>
-								<li>Оператор – лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными;</li>
-								<li>Персональные данные – информация, сохраненная в любом формате, относящаяся к определенному или определяемому на основании такой информации физическому лицу (субъекту персональных данных), которая сама по себе или в сочетании с другой информацией, имеющейся в распоряжении Отеля, позволяет идентифицировать личность Клиента;</li>
-								<li>Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных;</li>
-								<li>Информационная система персональных данных – совокупность содержащихся в базах персональных данных и обеспечивающих их обработку информационных технологий и технических средств;</li>
-								<li>Предоставление персональных данных – действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц;</li>
-								<li>Трансграничная передача персональных данных – передача персональных данных на территорию иностранного государства органу власти иностранного государства, иностранному физическому лицу или иностранному юридическому лицу;</li>
-								<li>Использование персональных данных – действия (операции) с персональными данными, совершаемые оператором в целях принятия решений или совершения иных действий, порождающих юридические последствия в отношении субъекта персональных данных или других лиц либо иным образом затрагивающих права и свободы субъекта персональных данных или других лиц;</li>
-							</ul>
-						</li>
-					</ul>
-					
-					<p id="section2" class="big-text">2. Цели обработки персональных данных Клиента</p>
-					
-					<ul>
-						<li>2.1.Персональные данные клиентов могут обрабатываться в следующих целях:
-							<ul>
-								<li>бронирование номеров в Отеле;</li>
-								<li>оформление и исполнения договора по предоставлению услуг по проживанию или временному размещению в Отеле.</li>
-							</ul>
-						</li>
-						<li>2.2.Оператором не допускается обработка персональных данных, несовместимая с указанными целями.</li>
-						<li>2.3.Персональные данные не могут быть использованы в целях причинения имущественного и морального вреда гражданам, затруднения реализации прав и свобод граждан Российской Федерации.</li>
-					</ul>
-					
-					<p id="section3" class="big-text">3. Содержание персональных данных Клиента</p>
-					
-					<ul>
-						<li>3.1.Объем и содержание обрабатываемых персональных данных строго соответствует заявленным целям обработки и не являются избыточными по отношению к целям обработки.</li>
-						<li>3.2.К персональным данным Клиентов, сбор и обработку которых осуществляет Гостиница, относятся:
-							<ul>
-								<li>Фамилия, Имя, Отчество;</li>
-								<li>Дата и место рождения;</li>
-								<li>Паспортные данные;</li>
-								<li>Адрес регистрации (и места жительства);</li>
-								<li>Номер контактного телефона;</li>
-								<li>Данные о месте работы.</li>
-							</ul>
-						</li>
-						<li>3.3.Сотрудники Отеля получают персональные данные с письменного согласия Клиента.</li>
-						<li>3.4.Сотрудники Отеля имеет право проверить точность и актуальность предоставленных персональных данных.</li>
-						<li>3.5.При использовании услуги бронирования номера, сохраняются следующие сведения: ФИО, номер телефона и электронный почтовый адрес Клиента. В целях предоставления гостиничной услуги эти данные используются для однозначной однократной идентификации бронирования при его исполнении.</li>
-					</ul>
-					
-					<p id="section4" class="big-text">4. Обработка персональных данных Клиента</p>
-					
-					<ul>
-						<li>4.1.Обработка персональных данных Клиентов для выполнения поставленных целей заключается в следующих возможных действиях: сбор, хранение, уточнение, обновление, изменение, использование, передача, уничтожение.</li>
-						<li>4.2.Обработка персональных данных Клиентов ведется без использования средств автоматизации.</li>
-						<li>4.3.К обработке персональных данных Клиентов могут иметь доступ только сотрудники Гостиницы, допущенные к работе с персональными данными Клиентов и подписавшие Соглашение о неразглашении персональных данных.</li>
-						<li>4.4.Для выполнения текущего законодательства в области миграционной политики Отеля осуществляет передачу персональных данных Клиентов в ФМС с соблюдениями норм защиты персональных данных.</li>
-						<li>4.5.Отель не передаёт персональные данные Клиентов третьим лицам, без согласия субъекта персональных данных, если иное не предусмотрено федеральным законом.</li>
-						<li>4.6.Трансграничная передача персональных данных не производится.</li>
-					</ul>
+            <? include($_SERVER['DOCUMENT_ROOT'] . "/include/template/breadcrumbs.php"); ?>
 
-					<p id="section5" class="big-text">5. Защита персональных данных Клиента</p>
-										
-					<ul>
-						<li>5.1.Отель соблюдает конфиденциальность персональных данных, принимает правовые, организационные и технические меры по защите персональных данных от несанкционированного или случайного доступа к ним, уничтожения, изменения, блокирования, копирования, распространения персональных данных, а также от иных неправомерных действий.</li>
-						<li>5.2.При обработке персональных данных, осуществляемой без использования средств автоматизации, Отель выполняет требования, установленные постановлением Правительства Российской Федерации от 15 сентября 2008 года № 687 "Об утверждении Положения об особенностях обработки персональных данных, осуществляемой без использования средств автоматизации".</li>
-						<li>5.3.Ответственным за организацию обработки персональных данных в ИП Демченко П.В. назначен Директор Барчевская Анна Евгеньевна (телефон: 8(8652) 94-17-95).</li>
-						<li>5.4.К техническим мерам защиты принятым в отеле относятся: пожарная и охранная сигнализация, видеонаблюдение и антивирусная защита.</li>
-						<li>5.5.Отель уведомила уполномоченный орган по защите прав субъектов персональных данных об обработке персональных данных в соответствии с требованиями, установленными Федеральным законом "О персональных данных".</li>
-						<li>5.6.В случае выявления неправомерных действий с персональными данными оператор в срок, не превышающий трех рабочих дней, со дня такого выявления, обязан устранить допущение нарушений. Об устранении допущенных нарушений оператор обязан уведомить субъекта персональных данных.</li>
-					</ul>
-					
-					<p id="section6" class="big-text">6. Права Клиента</p>
-					
-					<ul>
-						<li>6.1.Клиент имеет право на: доступ к информации о самом себе, в том числе содержащей информацию подтверждения факта обработки персональных данных, цель такой обработки, а также другие сведения обозначенные в ч.7 14 статьи Федерального закона 152-ФЗ "О персональных данных".</li>
-						<li>6.2.Субъект персональных данных вправе требовать от оператора уточнения его персональных данных, их блокирования или уничтожения в случае, если персональные данные являются неполными, устаревшими, неточными, незаконно полученными или не являются необходимыми для заявленной цели обработки, а также принимать предусмотренные законом меры по защите своих прав.</li>
-						<li>6.3.Если субъект персональных данных считает, что оператор осуществляет обработку его персональных данных с нарушением законодательства или иным образом нарушает его права и свободы, субъект персональных данных вправе обжаловать действия или бездействие оператора в уполномоченный орган по защите прав субъектов персональных данных или в судебном порядке.</li>
-					</ul>			
-					
-					<p id="section6" class="big-text">7. Ответственность за нарушение норм, регулирующих обработку персональных данных Клиентов</p>
-					
-					<ul>
-						<li>7.1.Отель несет ответственность за персональную информацию, которая находится в ее распоряжении и закрепляет персональную ответственность сотрудников за соблюдением установленного режима конфиденциальности.</li>
-						<li>7.2.Каждый сотрудник, получающий для работы документ, содержащий персональные данные Клиента, несет единоличную ответственность за сохранность носителя и конфиденциальность информации.</li>
-						<li>7.3.Сотрудники Отеля обязаны на должном уровне обеспечивать рассмотрение запросов, заявлений и жалоб Клиентов, а также содействовать исполнению требований компетентных органов.</li>
-						<li>7.4.Лица, виновные в нарушении норм, регулирующих получение, обработку и защиту персональных данных Клиентов, несут дисциплинарную, административную, гражданско-правовую или уголовную ответственность в соответствии с федеральными законами.</li>
-					</ul>
-				
-				</div>
-			</div>
-			<div class="page-rules-right">
-				<div class="rules-menu">
-					<ul>
-						<li><a href="#section1">1. Общие положения</a></li>
-						<li><a href="#section2">2. Цели обработки персональных данных Клиента</a></li>
-						<li><a href="#section3">3. Содержание персональных данных Клиента</a></li>
-						<li><a href="#section4">4. Обработка персональных данных Клиента</a></li>
-						<li><a href="#section5">5. Защита персональных данных Клиента</a></li>
-						<li><a href="#section6">6. Права Клиента</a></li>
-						<li><a href="#section7">7. Ответственность за нарушение норм, регулирующих обработку персональных данных Клиентов</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+            <div class="rooms-list-item-title">Personal data policy</div>
 
-<div class="content"></div>
+            <div class="rooms-list-text">
+                <p>Continent Business Hotel Personal Data Processing and Protection Policy</p>
+            </div>
 
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+        </div>
+
+        <div class="header-line service-style">
+
+            <div class="header-line-left">
+                <div class="main-menu">
+                    <a href="#"><span class="icon icon-buter"></span></a>
+                </div>
+                <div class="main-phone">
+                    <span class="lg-view"><? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/phone-link.php"), array(), array("MODE" => "html")); ?></span>
+                    <a class="md-view" href="/en/rooms/">Rooms</a>
+                </div>
+            </div>
+            <div class="header-line-center">
+                <div class="logo"><a href="/en/"><img src="/design/img/logo-en.svg" alt="" title=""/></a></div>
+            </div>
+            <div class="header-line-right">
+                <div class="header-line-socials lg-view">
+                    <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/header-social-white.php"), array(), array("MODE" => "html")); ?>
+                </div>
+                <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/header-mobile-phone.php"), array(), array("MODE" => "html")); ?>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="page-podmenu">
+        <div class="wrapper-inside">
+            <div class="page-podmenu-line">
+                <? $APPLICATION->IncludeComponent("bitrix:menu", "podmenu-template", array(),
+                    false
+                ); ?>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-rules">
+        <div class="wrapper-inside">
+            <div class="page-rules-container politica-page">
+                <div class="page-rules-left">
+                    <div class="rules-text">
+
+                        <h3>Continent Business Hotel Personal Data Processing and Protection Policy</h3>
+
+                        <p id="section1" class="big-text">1. General rules</p>
+
+                        <ul>
+                            <li>1.1. Petr Demchenko, an individual entrepreneur, processes personal data on a legal
+                                basis.
+                            </li>
+                            <li>1.2. Processing of personal data is carried out in accordance with the Constitution of
+                                the Russian Federation, the Federal Law “On Personal Data” N 152-ФЗ dated 27.07.2006,
+                                the Decree of the Government of the Russian Federation No 687 dated September 15, 2008
+                                and No 1119 dated 01.11.2012, as well as other regulations.
+                            </li>
+                            <li>1.3. Main concepts used in the Policy:
+                                <ul>
+                                    <li>Hotel — Individual entrepreneur P.V. Demchenko providing hotel services to the
+                                        client;
+                                    </li>
+                                    <li>Client — a private entity, a consumer of hotel services, a subject of personal
+                                        data;
+                                    </li>
+                                    <li>Hotel services — the Hotel's actions to accommodate Clients in the accommodation
+                                        facility, as well as other activities regarding accommodation and stay, which
+                                        include basic and additional services provided to the Client;
+                                    </li>
+                                    <li>Operator — a person who alone or together with other persons organizes and (or)
+                                        carries out processing of personal data, as well as determines the purposes of
+                                        personal data processing, the composition of personal data subject to
+                                        processing, actions (operations) performed with personal data;
+                                    </li>
+                                    <li>Personal Data — information stored in any format relating to a private entity
+                                        (subject of personal data) defined or determined on the basis of such
+                                        information, which by itself or in combination with other information at the
+                                        Hotel's disposal allows to identify the Client's identity;
+                                    </li>
+                                    <li>Processing of personal data — any action (operation) or set of actions
+                                        (operations) performed with or without the use of automation means, with
+                                        personal data, including collection, recording, systematization, accumulation,
+                                        storage, clarification (update, change), extraction, use, transfer
+                                        (distribution, provision, access), depersonalization, blocking, deletion,
+                                        destruction of personal data;
+                                    </li>
+                                    <li>Personal data information system — a combination of information technologies and
+                                        technical means contained in personal data bases and ensuring their processing;
+                                    </li>
+                                    <li>Personal data sharing — actions aimed at providing personal data to a certain
+                                        person or a certain number of people;
+                                    </li>
+                                    <li>International data transfer — transfer of personal data to the territory of a
+                                        foreign country to a foreign government authority, a foreign private entity or a
+                                        foreign legal entity;
+                                    </li>
+                                    <li>Use of personal data — actions (operations) with personal data performed by the
+                                        operator in order to make decisions or perform other actions that give rise to
+                                        legal consequences in respect of the personal data subject or other persons or
+                                        otherwise affect the rights and freedoms of the personal data subject or other
+                                        people;
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <p id="section2" class="big-text">2. Client’s personal data processing policy</p>
+
+                        <ul>
+                            <li>2.1. Personal data of clients may be processed for the following purposes:
+                                <ul>
+                                    <li>booking rooms in the Hotel</li>
+                                    <li>preparation and execution of the contract on provision of accommodation or
+                                        temporary accommodation services in the Hotel.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>2.2. The Operator is not allowed to process personal data other than for the specified
+                                purposes.
+                            </li>
+                            <li>2.3. Personal data may not be used for the purpose of causing property and moral damage
+                                to citizens, hindering the exercising of rights and freedoms of citizens of the Russian
+                                Federation.
+                            </li>
+                        </ul>
+
+                        <p id="section3" class="big-text">3. Client’s personal data processing policy</p>
+
+                        <ul>
+                            <li>3.1. The scope and content of processed personal data strictly corresponds to the
+                                specified processing purposes and is not excessive in relation to the processing
+                                purposes.
+                            </li>
+                            <li>3.2. The Clients' personal data collected and processed by the Hotel shall include:
+                                <ul>
+                                    <li>Full name</li>
+                                    <li>Date and place of birth</li>
+                                    <li>ID data</li>
+                                    <li>Registration address (place of residence)</li>
+                                    <li>Contact phone number</li>
+                                    <li>Information about the workplace.</li>
+                                </ul>
+                            </li>
+                            <li>3.3. Hotel's personnel shall receive personal data upon the written consent of the
+                                Client.
+                            </li>
+                            <li>3.4. The Hotel's employees have the right to verify the accuracy and relevance of the
+                                personal data provided.
+                            </li>
+                            <li>3.5. When using the booking service, the following information will be collected:
+                                Client's full name, telephone number and e-mail address. These data are used to clearly
+                                identify the reservation once in order to provide the hotel service.
+                            </li>
+                        </ul>
+
+                        <p id="section4" class="big-text">4. Client’s personal data processing policy</p>
+
+                        <ul>
+                            <li>4.1. Processing of Clients' personal data to fulfill the purposes stated consists of the
+                                following possible actions: collection, storage, clarification, updating, modification,
+                                use, transfer, destruction.
+                            </li>
+                            <li>4.2. Processing of Clients' personal data is done without using any means of automation.
+                            </li>
+                            <li>4.3. Only the employees of the Hotel who are authorized to work with the personal data
+                                of the Clients and who have signed the Agreement on non-disclosure of personal data may
+                                have access to the processing of the Clients' personal data.
+                            </li>
+                            <li>4.4. To follow the current legislation in the field of migration policy of the Hotel
+                                transfers personal data of the Clients to the FMS with observance of the norms of
+                                personal data protection.
+                            </li>
+                            <li>4.5 The Hotel does not give the Clients' personal data to third parties without the
+                                consent of the subject of personal data, unless otherwise provided by federal law.
+                            </li>
+                            <li>4.6. There is no international transfer of personal data.</li>
+                        </ul>
+
+                        <p id="section5" class="big-text">5. Client’s personal data processing policy</p>
+
+                        <ul>
+                            <li>5.1. The Hotel observes confidentiality of personal data, takes legal, organizational
+                                and technical measures to protect personal data from unauthorized or accidental access
+                                to them, destruction, modification, blocking, copying, dissemination of personal data,
+                                as well as from other unlawful actions.
+                            </li>
+                            <li>5.2. When processing personal data without using means of automation, the Hotel complies
+                                with the requirements established by the Resolution of the Government of the Russian
+                                Federation No. 687 dated September 15, 2008 “On Approval of the Regulations on the
+                                peculiarities of personal data processing without using means of automation”.
+                            </li>
+                            <li>5.3. Responsible for the organization of personal data processing in an Individual
+                                Entrepreneur P.V. Demchenko is appointed Director Anna Barchevskaya(phone: 8 (8652)
+                                94-17-95.
+                            </li>
+                            <li>5.4. Technical protection measures used in the hotel include: fire and security alarms,
+                                video surveillance and anti-virus protection.
+                            </li>
+                            <li>5.5. The Hotel has notified the authorized body for the protection of the rights of
+                                personal data subjects about the processing of personal data in accordance with the
+                                requirements established by the Federal Law “On Personal Data”.
+                            </li>
+                            <li>5.6. Should any unlawful actions with personal data be detected, the operator is
+                                required to eliminate the violation within a period not exceeding three working days
+                                from the date of such detection. The operator shall notify the personal data subject of
+                                the elimination of the admitted violations.
+                            </li>
+                        </ul>
+
+                        <p id="section6" class="big-text">6. Client’s Rights</p>
+
+                        <ul>
+                            <li>6.1. The Client has the right to: access to information about themselves, including
+                                information confirming the fact of personal data processing, the purpose of such
+                                processing, as well as other information specified in Part 7 of Article 14 of the
+                                Federal Law 152-ФЗ “On Personal Data”.
+                            </li>
+                            <li>6.2. The subject of personal data has the right to demand from the operator to clarify
+                                their personal data, block or destroy them in case the personal data are incomplete,
+                                outdated, inaccurate, illegally obtained or are not necessary for the stated purpose of
+                                processing, as well as to take measures provided by law to protect their rights.
+                            </li>
+                            <li>6.3. If the subject of personal data believes that the operator processes his personal
+                                data in violation of the law or otherwise infringes his rights and freedoms, the subject
+                                of personal data has the right to appeal the actions or omissions of the operator to the
+                                authorized body for the protection of the rights of personal data subjects or in court.
+                            </li>
+                        </ul>
+
+                        <p id="section6" class="big-text">7. Liability for violation of regulations governing the
+                            processing of Clients' personal data</p>
+
+                        <ul>
+                            <li>7.1. The Hotel is responsible for the personal information in its possession and
+                                establishes the personal responsibility of its employees for compliance with the
+                                existing confidentiality regime.
+                            </li>
+                            <li>7.2. Each employee who receives for work a document containing the Client's personal
+                                data is solely responsible for the safety of the data storage and confidentiality of the
+                                information.
+                            </li>
+                            <li>7.3. The Hotel's employees are responsible for the proper handling of Customer
+                                inquiries, applications and complaints, as well as for assisting in the fulfillment of
+                                the requirements of competent authorities.
+                            </li>
+                            <li>7.4. Persons guilty of violating the norms regulating the obtaining, processing and
+                                protection of Clients' personal data shall be held accountable for disciplinary,
+                                administrative, civil or criminal liability in accordance with federal laws.
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="page-rules-right">
+                    <div class="rules-menu">
+                        <ul>
+                            <li><a href="#section1">1. General rules</a></li>
+                            <li><a href="#section2">2. Client’s personal data processing policy</a></li>
+                            <li><a href="#section3">3. Client’s personal data processing policy</a></li>
+                            <li><a href="#section4">4. Client’s personal data processing policy</a></li>
+                            <li><a href="#section5">5. Client’s personal data processing policy</a></li>
+                            <li><a href="#section6">6. Client’s Rights</a></li>
+                            <li><a href="#section7">7. Liability for violation of regulations governing the
+                                    processing of Clients' personal data</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="content"></div>
+
+<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

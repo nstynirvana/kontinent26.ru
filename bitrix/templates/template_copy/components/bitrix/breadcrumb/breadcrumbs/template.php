@@ -12,7 +12,7 @@ if(empty($arResult))
 	return "";
 
 $strReturn = '';
-$strReturn .= '<div class="breadcrumbs" itemprop="http://schema.org/breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"><ul><li><a href="/">Главная</a></li>';
+$strReturn .= '<div class="breadcrumbs" itemprop="http://schema.org/breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"><ul><li><a href="/en/">Main page</a></li>';
 
 $itemSize = count($arResult);
 for($index = 0; $index < $itemSize; $index++)

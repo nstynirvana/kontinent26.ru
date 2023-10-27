@@ -1,14 +1,14 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Об отеле", 
+		"About hotel",
 		"/en/about_hotel/",
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Расположение", 
+		"Location",
 		"/en/about_hotel/location/",
 		Array(), 
 		Array(), 
@@ -22,7 +22,7 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Персональные данные", 
+		"Personal data",
 		"/en/about_hotel/politica/",
 		Array(), 
 		Array(), 

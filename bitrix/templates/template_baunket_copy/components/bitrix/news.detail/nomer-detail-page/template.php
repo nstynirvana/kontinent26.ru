@@ -13,8 +13,8 @@ $this->setFrameMode(true);
 <div class="detail-nomer-content">
 	<div class="breadcrumbs">
 		<ul>
-			<li><a href="/">Главная</a></li>
-			<li><a href="/rooms/">Все номера</a></li>
+			<li><a href="/en/">Main page</a></li>
+			<li><a href="/en/rooms/">All rooms</a></li>
 		</ul>
 	</div>
 	
@@ -38,7 +38,7 @@ $this->setFrameMode(true);
 		</div>
 	</div>
 	<div class="main-nomera-slider-btn">
-		<a href="/reservation/?room-type=<?=$arResult["PROPERTIES"]["TRAVELLINE_ID"]["VALUE"]?>" class="btn btn-gray" tabindex="0">Забронировать</a>
+		<a href="/reservation/?room-type=<?=$arResult["PROPERTIES"]["TRAVELLINE_ID"]["VALUE"]?>" class="btn btn-gray" tabindex="0">Booking</a>
 		<?/*
 		<a href="/reservation/?room-type=<?=$arResult["PROPERTIES"]["TRAVELLINE_ID"]["VALUE"]?>" class="btn btn-white" tabindex="0">Быстрая бронь</a>
 		*/?>
@@ -56,7 +56,7 @@ $this->setFrameMode(true);
 	<div class="detail-nomer-slider-after-item">
 		<a class="panorama-link" href="<?=$arResult["PROPERTIES"]["PANORAMA"]["VALUE"]?>" target="_blank">
 			<span class="big-name">3D</span>
-			<span class="little-name">тур</span>
+			<span class="little-name">tour</span>
 		</a>
 	</div>
 </div>

@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Конференц залы");
+$APPLICATION->SetTitle("Conference halls");
 ?>
 
     <div class="wrapper-content">
@@ -13,11 +13,11 @@ $APPLICATION->SetTitle("Конференц залы");
                     </div>
                     <div class="main-phone">
                         <span class="lg-view"><? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/phone-link.php"), array(), array("MODE" => "html")); ?></span>
-                        <a class="md-view" href="/en/rooms/">Номера</a>
+                        <a class="md-view" href="/en/rooms/">Rooms</a>
                     </div>
                 </div>
                 <div class="header-line-center">
-                    <div class="logo"><a href="/en/"><img src="/design/img/logo-black.svg" alt="" title=""/></a></div>
+                    <div class="logo"><a href="/en/"><img src="/design/img/logo-black-en.svg" alt="" title=""/></a></div>
                 </div>
                 <div class="header-line-right">
                     <div class="header-line-socials lg-view">
@@ -36,15 +36,16 @@ $APPLICATION->SetTitle("Конференц залы");
                             <td>
                                 <? include($_SERVER['DOCUMENT_ROOT'] . "/include/template/breadcrumbs.php"); ?>
                                 <div class="contentPage-title">
-                                    <h1>Конференц залы</h1>
+                                    <h1>Conference halls</h1>
                                 </div>
                                 <div class="contentPage-zagolovok">
-                                    <p>Бизнес отель «Континент» - это центр деловой жизни Ставрополя!</p>
+                                    <p>Continent Business Hotel is the heart of business life in Stavropol!</p>
                                 </div>
                                 <div class="contentPage-text">
-                                    <p>Мы предлагаем широкий спектр услуг конгресс-центра: VIPкомнаты для деловых
-                                        переговоров, 7 конференц-залов для проведения видео-конференций, семинаров,
-                                        тренингов, презентаций и прочих корпоративных мероприятий</p>
+                                    <p> We offer a wide range of congress center services: VIP rooms for business
+                                        negotiations, 7 conference halls for video conferences, seminars, trainings,
+                                        presentations and other corporate events.
+                                    </p>
                                 </div>
                                 <? /*
 							<div class="contentPage-btn">

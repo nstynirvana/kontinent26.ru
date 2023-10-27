@@ -7,7 +7,7 @@
 	
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?$APPLICATION->ShowTitle()?> - гостиница «Континент» г. Ставрополь</title>
+    <title><?$APPLICATION->ShowTitle()?> - Continent Hotel Stavropol</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@400;600;700&family=Rubik:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -76,7 +76,7 @@
                 );?>
             </div>
             <div class="main-menu-bottom">
-                <a href="/en/reservation/" class="btn btn-gray">Забронировать номер</a>
+                <a href="/en/reservation/" class="btn btn-gray">Book a room</a>
             </div>
         </div>
     </div>
@@ -156,11 +156,11 @@
                 </div>
                 <div class="main-phone">
                     <span class="lg-view"><?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/phone-link.php"),Array(),Array("MODE"=>"html"));?></span>
-                    <a class="md-view" href="/en/rooms/">Номера</a>
+                    <a class="md-view" href="/en/rooms/">Rooms</a>
                 </div>
             </div>
             <div class="header-line-center">
-                <div class="logo"><a href="/en/"><img src="/design/img/logo.svg" alt="" title="" /></a></div>
+                <div class="logo"><a href="/en/"><img src="/design/img/logo-en.svg" alt="" title="" /></a></div>
             </div>
             <div class="header-line-right">
                 <div class="header-line-socials lg-view">
@@ -224,10 +224,10 @@
                 </a>
             </div>
             <div class="mobile-menu-list">
-                <div class="mobile-menu-item"><a href="/en/">Гостиница</a></div>
-                <div class="mobile-menu-item"><a class="active" href="/en/banqueting_hall/">Банкетный зал</a></div>
-                <div class="mobile-menu-item"><a href="#">Ресторан Molinari</a></div>
-                <div class="mobile-menu-item"><a href="#">Меню</a></div>
+                <div class="mobile-menu-item"><a href="/en/">Hotel</a></div>
+                <div class="mobile-menu-item"><a class="active" href="/en/banqueting_hall/">Banquet hall</a></div>
+                <div class="mobile-menu-item"><a href="#">Molinari Restaurant</a></div>
+                <div class="mobile-menu-item"><a href="#">Menu</a></div>
             </div>
             <div class="mobile-menu-change">
                 <!-- <div class="mobile-menu-change-item"><a href="#">RU</a></div>
