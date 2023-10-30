@@ -124,23 +124,23 @@
 		<div id="konferencForm" class="form-pop-up">
 			<div class="header-line-form">
 				<div class="header-line-form-container">
-					<div class="header-line-form-title">Бронирование зала</div>
-					<div class="header-line-form-text">Вы можете забронировать зал позвонив по номеру <a href="tel:+78652947575">+7(8652)94-75-75</a> или заполнив форму:</div>
+					<div class="header-line-form-title">Hall Reservations</div>
+					<div class="header-line-form-text">You can book the hall by calling <a href="tel:+78652947575">+7(8652)94-75-75</a> or filling out the form:</div>
 					<div class="header-line-form-body">
 						<form action="" method="" class="reservation-form ajax-form-send">
 							<div class="bronirovanie-items-fields">
 								<div class="bronirovanie-item">
-									<input type="text" class="" name="user-name" placeholder="Имя" />
+									<input type="text" class="" name="user-name" placeholder="Name" />
 								</div>
 								<div class="bronirovanie-item">
-									<input type="text" class="phoneNumber" name="user-phone" placeholder="Телефон" />
+									<input type="text" class="phoneNumber" name="user-phone" placeholder="Phone" />
 								</div>
 								<div class="bronirovanie-item">
 									<input type="text" class="konferencZalSelected" name="user-zal" placeholder="Выбранный конференц зал" />
 								</div>
 							</div>
 							<div class="bronirovanie-item bronirovanie-item-btn">
-								<button type="submit" class="btn btn-gray">Забронировать</button>
+								<button type="submit" class="btn btn-gray">Booking</button>
 							</div>
 						</form>
 					</div>
@@ -150,8 +150,8 @@
 		<div id="successSended" class="form-pop-up">
 			<div class="header-line-form">
 				<div class="header-line-form-container">
-					<div class="header-line-form-title">Спасибо! Менеджер свяжется с вами в ближайшее время</div>
-					<div class="btn btn-gray closePopUp">ОК</div>
+					<div class="header-line-form-title">Thank you! Our manager will contact you shortly</div>
+					<div class="btn btn-gray closePopUp">OK</div>
 				</div>
 			</div>
 		</div>

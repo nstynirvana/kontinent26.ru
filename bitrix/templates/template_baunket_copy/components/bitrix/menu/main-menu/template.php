@@ -119,4 +119,11 @@ foreach($arResult as $arItem):
 <?endforeach?>
 
 </ul>
+
+    <div class="header-button-lang-mobile">
+        <a class="header-button-lang-mobile_text" href="<?=str_replace("/en/", "/", $_SERVER['REQUEST_URI'])?>">
+            <img class="header-button-lang-mobile_img" src="/design/img/switch-ru.svg" alt="" title=""/>
+            Change language
+        </a>
+    </div>
 <?endif?>

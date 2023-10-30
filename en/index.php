@@ -1,8 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetPageProperty("description", "От 1500 руб./чел. Центр Ставрополя. Wi-Fi. Парковка. Шведский стол. 203 комфортабельных номера. Один из лучших видов на город. Завтрак включен.");
-$APPLICATION->SetPageProperty("title", "Бизнес отель «Континент» - гостиница в центре Ставрополя");
-$APPLICATION->SetTitle("Бизнес отель «Континент» ");
+$APPLICATION->SetPageProperty("description", "From 1500 RUB per person. Center of Stavropol. Wi-Fi. Parking. Buffet. 203 comfortable rooms. One of the best views of the city. Breakfast included.");
+$APPLICATION->SetPageProperty("title", "Business Hotel «Continent» - hotel in the center of Stavropol");
+$APPLICATION->SetTitle("Business Hotel «Continent» ");
 ?>
 
 <? //global $USER;?>
@@ -94,6 +94,13 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
                             <img src="/design/img/logo-en.svg" alt="" title=""/>
                         </a>
                     </div>
+
+                    <div class="header-button-lang">
+                        <a href="<?=str_replace("/en/", "/", $_SERVER['REQUEST_URI'])?>">
+                            <img src="/design/img/switch-ru.svg" alt="" title=""/>
+                        </a>
+                    </div>
+
                     <div class="header-line-service lg-view">
                         <div class="icon-service-ite">
                             <a href="https://www.tripadvisor.ru/Hotel_Review-g675739-d2468067-Reviews-Kontinent-Stavropol_Stavropol_Krai_North_Caucasian_District.html"
@@ -140,7 +147,7 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
                     </div>
                     <div class="header-nomera-menu md-view">
                         <div class="header-nomera-link">
-                            <a href="#">Номера и цены</a>
+                            <a href="#">Rooms and price</a>
                         </div>
                         <div class="header-nomera-mobile-menu">
                             <a href="#">
@@ -885,7 +892,7 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
             </div>
 
             <div class="main-restorant-pic lg-view md-view">
-                <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/panorama-link-block.php"), array(), array("MODE" => "php")); ?>
+                <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/panorama-link-block-en.php"), array(), array("MODE" => "php")); ?>
             </div>
 
             <div class="main-hotel-transport lg-view md-view">
@@ -898,7 +905,7 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
         </div>
 
         <div class="main-restorant-pic xs-view">
-            <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/panorama-link-block.php"), array(), array("MODE" => "php")); ?>
+            <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/panorama-link-block-en.php"), array(), array("MODE" => "php")); ?>
         </div>
 
         <div class="main-hotel-transport xs-view">

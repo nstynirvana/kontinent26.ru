@@ -59,7 +59,7 @@ $this->setFrameMode(true);
 					<?endif;?>
 					<?if($arResult["PROPERTIES"]["LGOTNIKI"]["VALUE"]["TEXT"] != ""):?>
 						<div class="detail-page-text-item item-lgotniki">
-							<div class="detail-page-text-item-title">Специальные условия для размещения льготной категории гражда</div>
+							<div class="detail-page-text-item-title">Специальные условия для размещения льготной категории граждан</div>
 							<div class="detail-page-text-item-list">
 								<p><?=htmlspecialchars_decode($arResult["PROPERTIES"]["LGOTNIKI"]["VALUE"]["TEXT"])?></p>
 							</div>

@@ -1,4 +1,5 @@
-<?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+$dir = $APPLICATION->GetCurDir();?>
 
 
 <?
@@ -119,4 +120,12 @@ foreach($arResult as $arItem):
 <?endforeach?>
 
 </ul>
+
+    <div <?if($dir == "/en/"):?>style="display: none"<?endif;?> class="header-button-lang-mobile">
+        <a class="header-button-lang-mobile_text" href="<?=str_replace("/en/", "/", $_SERVER['REQUEST_URI'])?>">
+            <img class="header-button-lang-mobile_img" src="/design/img/switch-ru.svg" alt="" title=""/>
+            Change language
+        </a>
+    </div>
+
 <?endif?>

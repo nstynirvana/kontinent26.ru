@@ -1,4 +1,5 @@
-<?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+$dir = $APPLICATION->GetCurDir();?>
 
 
 <?
@@ -119,4 +120,12 @@ foreach($arResult as $arItem):
 <?endforeach?>
 
 </ul>
+
+    <div <?if($dir == "/"):?>style="display: none"<?endif;?> class="header-button-lang-mobile">
+        <a class="header-button-lang-mobile_text" href="/en<?=$_SERVER['REQUEST_URI']?>">
+            <img class="header-button-lang-mobile_img" src="/design/img/switch-en.svg" alt="" title=""/>
+             Изменить язык
+        </a>
+    </div>
+
 <?endif?>

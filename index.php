@@ -95,6 +95,13 @@ $APPLICATION->SetTitle("Бизнес отель «Континент» ");
                             <img src="/design/img/logo.svg" alt="" title=""/>
                         </a>
                     </div>
+
+                    <div class="header-button-lang">
+                        <a href="/en<?=$_SERVER['REQUEST_URI']?>">
+                            <img src="/design/img/switch-en.svg" alt="" title=""/>
+                        </a>
+                    </div>
+
                     <div class="header-line-service lg-view">
                         <div class="icon-service-ite">
                             <a href="https://www.tripadvisor.ru/Hotel_Review-g675739-d2468067-Reviews-Kontinent-Stavropol_Stavropol_Krai_North_Caucasian_District.html"

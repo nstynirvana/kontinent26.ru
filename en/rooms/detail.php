@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Детальная страница номера");
+$APPLICATION->SetTitle("Detailed room page");
 ?>
 
     <section class="main-block detail-page">
@@ -65,7 +65,7 @@ $APPLICATION->SetTitle("Детальная страница номера");
                 </div>
                 <div class="main-phone">
                     <span class="lg-view"><? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/phone-link.php"), array(), array("MODE" => "html")); ?></span>
-                    <a class="md-view" href="/en/rooms/">Номера</a>
+                    <a class="md-view" href="/en/rooms/">Rooms</a>
                 </div>
             </div>
             <div class="header-line-center">
@@ -75,7 +75,7 @@ $APPLICATION->SetTitle("Детальная страница номера");
                 <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/header-mobile-phone.php"), array(), array("MODE" => "html")); ?>
                 <div class="nomera-container">
                     <div class="nomera-container-top nomera-top lg-view xs-view">
-                        <a href="/en/rooms/" class="">Номера</a>
+                        <a href="/en/rooms/" class="">Rooms</a>
                     </div>
                     <? $APPLICATION->IncludeComponent(
                         "bitrix:news.list",
@@ -147,7 +147,7 @@ $APPLICATION->SetTitle("Детальная страница номера");
                         false
                     ); ?>
                     <div class="nomera-container-top md-view">
-                        <a href="#" class="">Номера</a>
+                        <a href="#" class="">Rooms</a>
                     </div>
                 </div>
             </div>
@@ -237,70 +237,69 @@ $APPLICATION->SetTitle("Детальная страница номера");
     <div class="wrapper-content">
         <div class="wrapper-inside">
             <div class="detail-page-text">
-                <div class="detail-page-text-title">В стоимость номера включено:</div>
+                <div class="detail-page-text-title">The room rate includes:</div>
                 <div class="detail-page-text-content">
                     <div class="detail-page-text-content-left">
                         <div class="detail-page-text-item item-tafirs">
-                            <div class="detail-page-text-item-title">Тарифы</div>
+                            <div class="detail-page-text-item-title">Rates</div>
                             <div class="detail-page-text-item-list">
                                 <div class="detail-page-text-item-list-item">
-                                    <span class="title">Базовый тариф</span>
-                                    <span class="text">проживание, завтрак «Шведский стол»</span>
+                                    <span class="title">Basic Rate</span>
+                                    <span class="text">accommodation, buffet breakfast</span>
                                 </div>
                                 <div class="detail-page-text-item-list-item">
-                                    <span class="title">Тариф "Полупансион"</span>
-                                    <span class="text">проживание, завтрак «Шведский стол», комплексный ужин</span>
+                                    <span class="title">Half Board Rate</span>
+                                    <span class="text">accommodation, buffet breakfast, set dinner</span>
                                 </div>
                                 <div class="detail-page-text-item-list-item">
-                                    <span class="title">Тариф "Полный пансион"</span>
-                                    <span class="text">проживание, завтрак «Шведский стол», комплексный обед и ужин</span>
+                                    <span class="title">Full Board Rate</span>
+                                    <span class="text">accommodation, buffet breakfast, set lunch and dinner
+                                    </span>
                                 </div>
                             </div>
                         </div>
                         <div class="detail-page-text-item item-zaezd">
-                            <div class="detail-page-text-item-title">Заезд</div>
+                            <div class="detail-page-text-item-title">Сheck-in</div>
                             <div class="detail-page-text-item-list">
-                                <p><b>Расчетный час</b> - заезд в 14:00 ч., выезд в 12:00 ч.</p>
-                                <p><b>При продлении проживания:</b> - с 12:00 до 23:00 оплата за сутки.</p>
-                                <p><b>Ранний заезд</b> - заезд ранее указанного срока возможен при наличии свободных
-                                    номеров, при гарантированном заезде оплата за сутки до даты заезда.</p>
+                                <p><b>Check-out time</b> - check-in at 14:00 PM, check-out at 12:00 PM.</p>
+                                <p><b>When extending stay:</b> - from 12:00 to 23:00 - payment per day.</p>
+                                <p><b>Early check-in</b> - early check-in is possible if rooms are available, with
+                                    guaranteed check-in payment one day prior to the date of check-in.</p>
                             </div>
                         </div>
                         <div class="detail-page-text-item item-annylirovanie">
-                            <div class="detail-page-text-item-title">Аннуляция бронирования</div>
+                            <div class="detail-page-text-item-title">Cancellation of booking</div>
                             <div class="detail-page-text-item-list">
-                                <p>Сроки полной или частичной аннуляции без штрафных санкций при бронировании для
-                                    индивидуальных клиентов: до 14:00 за 1 сутки до даты заезда.</p>
+                                <p>Deadline for full or partial cancellation without a fee for bookings made by individual clients: by 14:00, 1 day prior to the date of arrival.</p>
                             </div>
                         </div>
                     </div>
                     <div class="detail-page-text-content-right">
                         <div class="detail-page-text-item item-dopmesta">
-                            <div class="detail-page-text-item-title">Дополнительные места</div>
+                            <div class="detail-page-text-item-title">Extra beds</div>
                             <div class="detail-page-text-item-list">
-                                Стоимость дополнительного места составляет 1700 рублей. В стоимость дополнительного
-                                места включено: завтрак – «Шведский стол»
+                                The cost of an extra bed is 1700 RUB. The cost of an extra bed includes: buffet breakfast
                             </div>
                         </div>
                         <div class="detail-page-text-item item-deti">
-                            <div class="detail-page-text-item-title">Специальные условия размещения для детей</div>
+                            <div class="detail-page-text-item-title">Special accommodations for children</div>
                             <div class="detail-page-text-item-list">
-                                <p><b>До 5 лет</b> при условии проживания с родителями (родителем) в номере, бесплатно,
-                                    включая завтрак «Шведский стол», без предоставления дополнительного места.</p>
-                                <p><b>От 6 до 12 лет</b> при условии проживания с родителями (родителем) в номере,
-                                    доплата составляет 1700 рублей от стоимости номера, предоставляется дополнительное
-                                    место. Доплата включает: проживание, завтрак «Шведский стол».</p></div>
+                                <p><b>Up to 6 years old</b> if staying with parents (parent) in the room, free of
+                                    charge, including buffet breakfast, without an extra bed. </p>
+                                <p><b>From 6 to 12 years old</b> if staying with parents (parent) in the room, an
+                                    additional payment of 1000 RUB of the room cost, an extra bed is provided. The extra
+                                    charge includes: accommodation, buffet breakfast.</p></div>
                         </div>
                         <div class="detail-page-text-item item-lgotniki">
-                            <div class="detail-page-text-item-title">Специальные условия для размещения льготной
-                                категории гражда
+                            <div class="detail-page-text-item-title">Special conditions for accommodation of the
+                                privileged category of citizens
                             </div>
                             <div class="detail-page-text-item-list">
                                 <p></p>
-                                <p>Специальные условия для размещения льготной категории граждан РФ в соответствии с
-                                    законодательством:</p>
-                                <p>Предоставляется скидка 50% на проживание при предъявлении документа, удостоверяющего
-                                    право на получение льгот.</p>
+                                <p>Special conditions for accommodation of the privileged category of citizens of the
+                                    Russian Federation in accordance with the legislation:</p>
+                                <p>A 50% discount on accommodation is provided upon presenting a document certifying the
+                                    right to receive benefits.</p>
                                 <p></p>
                             </div>
                         </div>
@@ -312,10 +311,10 @@ $APPLICATION->SetTitle("Детальная страница номера");
 
     <section class="main-form">
         <div class="wrapper-inside">
-            <div class="main-clients-title">Бронирование номеров</div>
+            <div class="main-clients-title">Rooms booking</div>
             <div class="form-container">
                 <div class="header-line-form-body">
-                    <? include($_SERVER['DOCUMENT_ROOT'] . "/include/template/page-form-container.php"); ?>
+                    <? include($_SERVER['DOCUMENT_ROOT'] . "/include/template/page-form-container-en.php"); ?>
                 </div>
             </div>
         </div>

@@ -64,6 +64,7 @@
 					),
 					false
 				);?>
+
 			</div>
 			<div class="main-menu-bottom">
 				<a href="/reservation/" class="btn btn-gray">Забронировать номер</a>

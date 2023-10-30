@@ -10,10 +10,10 @@
                 </div>
                 <ul class="header-list">
                     <li class="header-list-item">
-                        <a href="/" class="header-list-item-link foo-nav">Гостиница</a>
+                        <a href="/en/" class="header-list-item-link foo-nav">Hotel</a>
                     </li>
                     <li class="header-list-item">
-                        <a href="/banqueting_hall/" class="header-list-item-link current-foo foo-nav">Банкетный зал</a>
+                        <a href="/en/banqueting_hall/" class="header-list-item-link current-foo foo-nav">Banquet hall</a>
                     </li>
                     <li class="header-list-item">
                         <a href="" class="header-list-item-link logo">
@@ -35,10 +35,10 @@
                         </a>
                     </li>
                     <li class="header-list-item">
-                        <a href="#" class="header-list-item-link foo-nav">Ресторан Molinari</a>
+                        <a href="#" class="header-list-item-link foo-nav">Molinari Restaurant</a>
                     </li>
                     <li class="header-list-item">
-                        <a href="#" class="header-list-item-link foo-nav">Меню</a>
+                        <a href="#" class="header-list-item-link foo-nav">Menu</a>
                     </li>
                     <li class="header-list-item">
                         <a href="tel:+78652947575" class="header-list-item-link foo-nav">+ 7 (8652) 94 75 75</a>
@@ -48,7 +48,7 @@
             <div class="footer-navigation">
                 <ul class="footer-list">
                     <li class="footer-item logo">
-                        <a href="/" class="footer-link">
+                        <a href="/en/" class="footer-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M39.505 0L41.0768 3.54973L44.9006 3.94937L42.0386 6.53526L42.8362 10.3201L39.505 8.39241L36.1503 10.3201L36.948 6.53526L34.0859 3.94937L37.9332 3.54973L39.505 0Z" fill="#C7A462"/>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M39.505 68.6797L41.0768 72.2294L44.9006 72.6291L42.0386 75.2149L42.8362 79.0233L39.505 77.0721L36.1503 79.0233L36.948 75.2149L34.0859 72.6291L37.9332 72.2294L39.505 68.6797Z" fill="#C7A462"/>
@@ -67,10 +67,10 @@
                         </a>
                     </li>
                     <li class="footer-item"><a href="tel:+78652947575" class="footer-link">+ 7 (8652) 94 75 75</a></li>
-                    <li class="footer-item"><a href="/" class="footer-link">Гостиница</a></li>
-                    <li class="footer-item"><a href="/banqueting_hall/" class="footer-link">Банкетный зал</a></li>
-                    <li class="footer-item"><a href="#" class="footer-link">Ресторан Molinari</a></li>
-                    <li class="footer-item"><a href="#" class="footer-link">Меню</a></li>
+                    <li class="footer-item"><a href="/en/" class="footer-link">Hotel</a></li>
+                    <li class="footer-item"><a href="/en/banqueting_hall/" class="footer-link">Banquet hall</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Molinari Restaurant</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Menu</a></li>
                 </ul>
             </div>
             <div class="copyright">
