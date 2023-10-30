@@ -5459,6 +5459,19 @@ h2{
 
 }
 
+@media (max-width: 1230px){
+	.footer-list__banquet{
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		align-items: center;
+	}
+
+	.footer-item {
+		width: auto;
+	}
+}
+
 @media (max-width: 1023px){
 
 	.header-button-lang-mobile {

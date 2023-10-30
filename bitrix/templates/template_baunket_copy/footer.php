@@ -1,6 +1,6 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();?>
 	</main>
-    <footer class="footer">
+    <footer class="footer" style="margin: 0; height: auto;">
         <div class="container">
             <nav class="header-navigation">
                 <div class="cange-language">
@@ -46,7 +46,7 @@
                 </ul>
             </nav>
             <div class="footer-navigation">
-                <ul class="footer-list">
+                <ul class="footer-list footer-list__banquet">
                     <li class="footer-item logo">
                         <a href="/en/" class="footer-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">

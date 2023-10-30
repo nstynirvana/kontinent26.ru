@@ -85,7 +85,7 @@
 							<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-link-phone.php"),Array(),Array("MODE"=>"php"));?>
 						</div>
 						<div class="footer-item-link">
-							<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-link-address.php"),Array(),Array("MODE"=>"php"));?>
+							<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-link-address-en.php"),Array(),Array("MODE"=>"php"));?>
 						</div>
 						<div class="footer-item-link">
 							<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-link-email.php"),Array(),Array("MODE"=>"php"));?>

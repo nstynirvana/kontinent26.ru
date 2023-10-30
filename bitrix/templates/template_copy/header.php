@@ -22,7 +22,7 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/26105076" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
-	<?include($_SERVER['DOCUMENT_ROOT']."/include/template/head.php");?>
+	<?include($_SERVER['DOCUMENT_ROOT']."/include/template/head-en.php");?>
 </head>
 
 <body>

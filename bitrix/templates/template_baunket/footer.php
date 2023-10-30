@@ -1,6 +1,6 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();?>
 	</main>
-    <footer class="footer">
+    <footer class="footer" style="margin: 0">
         <div class="container">
             <nav class="header-navigation">
                 <div class="cange-language">
