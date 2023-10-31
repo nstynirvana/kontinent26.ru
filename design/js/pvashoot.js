@@ -25,8 +25,14 @@ $(document).ready(function() {
 			var dateStopDate = new Date($(this).find(".to").val());
 			
 			var daysLag = Math.ceil(Math.abs(dateStartDate.getTime() - dateStopDate.getTime()) / (1000 * 3600 * 24));
-			
-			document.location.href='/reservation/?date='+dateStart+'&nights='+daysLag;
+
+			if (document.location.href.indexOf('/en/') === -1) {
+				document.location.href='/reservation/?date='+dateStart+'&nights='+daysLag;
+			} else {
+				document.location.href='/en/reservation/?date='+dateStart+'&nights='+daysLag;
+			}
+
+
 			
 			return false;
 		}

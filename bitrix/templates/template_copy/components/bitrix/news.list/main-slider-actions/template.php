@@ -20,6 +20,6 @@ $this->setFrameMode(true);
 		</div>
 	<?endforeach;?>
 </div>
-<div class="renovation-icon">
-	<img src="/design/img/new/renovation.png" alt="" title="" />
+<div class="renovation-icon renovation-icon_en">
+	<img src="/design/img/new/renovation-en.png" style="width: 107px;" alt="" title="" />
 </div>

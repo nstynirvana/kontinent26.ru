@@ -4112,6 +4112,12 @@ h2{
     bottom: -36px;
 }
 
+.renovation-icon_en{
+	position: absolute;
+	right: -18px;
+	bottom: -18px;
+}
+
 .information-header-slider .slick-dots{
 	position: absolute;
 	left: 50%;
@@ -7427,6 +7433,12 @@ h2{
 	    position: absolute;
 	    right: -6px;
 	    bottom: -16px;
+	}
+
+	.renovation-icon_en {
+		position: absolute;
+		right: 16px;
+		bottom: -1px;
 	}
 
 }
