@@ -18,7 +18,7 @@
 						<?include($_SERVER['DOCUMENT_ROOT']."/include/template/footer-logo-en.php");?>
 					</div>
 					<div class="footer-copyright lg-view">
-						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-copy.php"),Array(),Array("MODE"=>"php"));?>
+						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-copy-en.php"),Array(),Array("MODE"=>"php"));?>
 					</div>
 					<div class="politica lg-view">
 						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/politica-link-en.php"),Array(),Array("MODE"=>"php"));?>
@@ -60,7 +60,7 @@
 				<div class="footer-item-mobile md-view">
 					<div class="footer-item-copyright">
 						<div class="footer-copyright">
-							<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-copy.php"),Array(),Array("MODE"=>"php"));?>
+							<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-copy-en.php"),Array(),Array("MODE"=>"php"));?>
 						</div>
 						<div class="politica">
 							<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/politica-link-en.php"),Array(),Array("MODE"=>"php"));?>
@@ -104,7 +104,7 @@
 
 				<div class="footer-item item1">
 					<div class="footer-copyright">
-						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-copy.php"),Array(),Array("MODE"=>"php"));?>
+						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/footer-copy-en.php"),Array(),Array("MODE"=>"php"));?>
 					</div>
 					<div class="politica">
 						<?$APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/politica-link-en.php"),Array(),Array("MODE"=>"php"));?>

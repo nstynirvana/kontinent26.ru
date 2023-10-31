@@ -1,0 +1,1 @@
+<?=date("Y")?> © Continent Business Hotel.<br /> All rights reserved

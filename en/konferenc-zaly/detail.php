@@ -90,7 +90,7 @@ $APPLICATION->SetTitle("Детальная страница конференцз
                 <? $APPLICATION->IncludeFile($APPLICATION->GetTemplatePath("/include/area/header-mobile-phone.php"), array(), array("MODE" => "html")); ?>
                 <div class="nomera-container">
                     <div class="nomera-container-top nomera-top lg-view xs-view">
-                        <a href="/en/konferenc-zaly/" class="">Залы</a>
+                        <a href="/en/konferenc-zaly/" class="">Halls</a>
                     </div>
                     <? $APPLICATION->IncludeComponent(
                         "bitrix:news.list",
@@ -193,81 +193,81 @@ if (strpos($pageUrl, '/konferents-zal-kontinent.html') !== false ||
             <? if ($defaultMenu): ?>
                 <div class="konferenc-text-after-container">
                     <div class="konferenc-text-after-left">
-                        <div class="konferenc-text-after-title">Дополнительно</div>
+                        <div class="konferenc-text-after-title">Optional</div>
                         <div class="konferenc-text-after-table">
                             <div class="konferenc-text-after-table-header">
-                                <span class="name">Наименование</span>
-                                <span class="value">Стоимость (руб.)</span>
+                                <span class="name">Service name</span>
+                                <span class="value">Price (RUB)</span>
                             </div>
                             <div class="konferenc-text-after-table-body">
 
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Аренда кулера (1 шт./1 день)</span>
+                                    <span class="name">Cooler rental (1 pc./1 day)</span>
                                     <span class="value">500</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Вода газ/без газ (в стекле) (0,5)</span>
+                                    <span class="name">Sparkling mineral water/still water <br> (in a glass bottle) (0,5)</span>
                                     <span class="value">100</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Вода газ/без газ (в пластике) (0,5)</span>
+                                    <span class="name">Sparkling mineral water/still water <br> (in a plastic bottle) (0,5)</span>
                                     <span class="value">50</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Экран, проектор/плазменный телевизор 92 дюйма</span>
-                                    <span class="value">2 000 ₽/день</span>
+                                    <span class="name">Screen, projector/plasma TV 92 inches</span>
+                                    <span class="value">2 000 ₽ per day</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Звуковое оборудование, микшерный <br> пульт и 2 микрофона</span>
-                                    <span class="value">2 000 ₽/день</span>
+                                    <span class="name">Sound equipment, mixing <br> console and 2 microphones</span>
+                                    <span class="value">2 000 ₽ per day</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Усиленный интернет 100 Мбит/с</span>
-                                    <span class="value">1 000 ₽/день</span>
+                                    <span class="name">Amplified Internet 100 Mbps</span>
+                                    <span class="value">1 000 ₽ per day</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Флипчарт, Магнитно-маркерная доска <br> (с канцелярией)</span>
-                                    <span class="value">2 000 ₽/день</span>
+                                    <span class="name">Flipchart, Magnetic marker board <br> (with stationery)</span>
+                                    <span class="value">2 000 ₽ per day</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Специалист тех поддержки <br> (звук, видео/презентация)</span>
-                                    <span class="value">по запросу</span>
+                                    <span class="name">Technical support specialist <br> (sound, video/presentation)</span>
+                                    <span class="value">On request</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Специалист по проведению<br> online-конференций</span>
-                                    <span class="value">по запросу</span>
+                                    <span class="name">Online conference specialist</span>
+                                    <span class="value">On request</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Дополнительные специалисты<br> (официанты, бармены, повара)</span>
-                                    <span class="value">по запросу</span>
+                                    <span class="name">Additional specialists<br> (waiters, bartenders, cooks)</span>
+                                    <span class="value">On request</span>
                                 </div>
 
                             </div>
                         </div>
                     </div>
                     <div class="konferenc-text-after-right">
-                        <div class="konferenc-text-after-title">Питание</div>
+                        <div class="konferenc-text-after-title">Feeding</div>
                         <div class="konferenc-text-after-table">
                             <div class="konferenc-text-after-table-header">
-                                <span class="name">Наименование</span>
-                                <span class="value">Стоимость 1 чел. (руб.)</span>
+                                <span class="name">Name</span>
+                                <span class="value">Price per person (RUB)</span>
                             </div>
                             <div class="konferenc-text-after-table-body">
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Бизнес Обед</span>
+                                    <span class="name">Business Lunch</span>
                                     <span class="value">500</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Бизнес Ужин</span>
+                                    <span class="name">Business Dinner</span>
                                     <span class="value">700</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Кофе-брейк</span>
-                                    <span class="value">по запросу</span>
+                                    <span class="name">Coffee break</span>
+                                    <span class="value">On request</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Фуршет</span>
-                                    <span class="value">по запросу</span>
+                                    <span class="name">Buffet</span>
+                                    <span class="value">On request</span>
                                 </div>
                             </div>
                         </div>
@@ -276,45 +276,45 @@ if (strpos($pageUrl, '/konferents-zal-kontinent.html') !== false ||
             <? else: ?>
                 <div class="konferenc-text-after-container">
                     <div class="konferenc-text-after-left">
-                        <div class="konferenc-text-after-title">Дополнительно</div>
+                        <div class="konferenc-text-after-title">Optional</div>
                         <div class="konferenc-text-after-table">
                             <div class="konferenc-text-after-table-header">
-                                <span class="name">Наименование</span>
-                                <span class="value">Стоимость (руб.)</span>
+                                <span class="name">Service name</span>
+                                <span class="value">Price (RUB)</span>
                             </div>
                             <div class="konferenc-text-after-table-body">
 
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Аренда кулера (1 шт./1 день)</span>
+                                    <span class="name">Cooler rental (1 pc./1 day)</span>
                                     <span class="value">500</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Вода газ/без газ (в стекле) (0,5)</span>
+                                    <span class="name">Sparkling mineral water/still water <br> (in a glass bottle) (0,5)</span>
                                     <span class="value">100</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Вода газ/без газ (в пластике) (0,5)</span>
+                                    <span class="name">Sparkling mineral water/still water <br> (in a plastic bottle) (0,5)</span>
                                     <span class="value">50</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Флипчарт</span>
+                                    <span class="name">Flipchart</span>
                                     <span class="value">500</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Мультимедийный проектор</span>
-                                    <span class="value">входит в стоимость</span>
+                                    <span class="name">Multi-media projector</span>
+                                    <span class="value">included in the price</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Экран</span>
-                                    <span class="value">входит в стоимость</span>
+                                    <span class="name">Screen</span>
+                                    <span class="value">included in the price</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Ноутбук</span>
-                                    <span class="value">входит в стоимость</span>
+                                    <span class="name">Laptop</span>
+                                    <span class="value">included in the price</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Микрофон</span>
-                                    <span class="value">входит в стоимость</span>
+                                    <span class="name">Microphone</span>
+                                    <span class="value">included in the price</span>
                                 </div>
                                 <? /*
                                     <div class="konferenc-text-after-table-body-line">
@@ -326,28 +326,28 @@ if (strpos($pageUrl, '/konferents-zal-kontinent.html') !== false ||
                         </div>
                     </div>
                     <div class="konferenc-text-after-right">
-                        <div class="konferenc-text-after-title">Питание</div>
+                        <div class="konferenc-text-after-title">Feeding</div>
                         <div class="konferenc-text-after-table">
                             <div class="konferenc-text-after-table-header">
-                                <span class="name">Наименование</span>
-                                <span class="value">Стоимость 1 чел. (руб.)</span>
+                                <span class="name">Name</span>
+                                <span class="value">Price per person (RUB)</span>
                             </div>
                             <div class="konferenc-text-after-table-body">
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Бизнес Обед</span>
+                                    <span class="name">Business Lunch</span>
                                     <span class="value">500</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Бизнес Ужин</span>
+                                    <span class="name">Business Dinner</span>
                                     <span class="value">700</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Кофе-брейк</span>
-                                    <span class="value">по запросу</span>
+                                    <span class="name">Coffee break</span>
+                                    <span class="value">On request</span>
                                 </div>
                                 <div class="konferenc-text-after-table-body-line">
-                                    <span class="name">Фуршет</span>
-                                    <span class="value">по запросу</span>
+                                    <span class="name">Buffet</span>
+                                    <span class="value">On request</span>
                                 </div>
                             </div>
                         </div>
@@ -405,20 +405,24 @@ if (strpos($pageUrl, '/konferents-zal-1.html') !== false) {
                     <div class="main-restorant-text-small">
                         <p>We offer a wide range of congress center services: VIP rooms for business negotiations, 7
                             conference halls for video conferences, seminars, trainings, presentations and other
-                            corporate events. Расположение в центре города, удобная бесплатная парковка,
-                            качественный сервис, роскошный интерьер – все это позволит провести мероприятие на высшем
-                            уровне!</p>
+                            corporate events. Location in the city center, convenient free parking,
+                            quality service, luxurious interior - all this will allow you to hold the event at the
+                            highest level!
+                        </p>
 
                     </div>
                 </div>
                 <div class="main-restorant-text second">
                     <div class="main-restorant-text-small">
-                        <p>Название этого зала говорит само за себя – это 100 м2 c шикарным видом на центр города.
-                            Отличная возможность совместить рабочие встречи с пребыванием в эстетичной атмосфере зала
-                            класса premium. Пространство оснащено профессиональным звуковым оборудованием и комфортно
-                            вмещает до 50 участников. По запросу организатора мероприятия сотрудники комплекса
-                            «Континент» помогут с любыми вопросами в рамках компетенции, а также по вашему желанию
-                            организуют комплексное питание участников мероприятия.</p>
+                        <p>The name of this room speaks for itself - it is 100 m2 with a gorgeous view of the city
+                            center.
+                            An excellent opportunity to combine working meetings with staying in the aesthetic
+                            atmosphere of the hall.
+                            premium class. The space is equipped with professional sound equipment and comfortably
+                            accommodates up to 50 participants. At the request of the event organizer the employees of
+                            the complex
+                            "Continent" will help with any questions within the competence, as well as at your request
+                            organize complex catering for the participants of the event.</p>
 
                     </div>
                 </div>
@@ -433,12 +437,13 @@ if (strpos($pageUrl, '/konferents-zal-1.html') !== false) {
                     <div class="main-restorant-text-small">
                         <p>We offer a wide range of congress center services: VIP rooms for business negotiations, 7
                             conference halls for video conferences, seminars, trainings, presentations and other
-                            corporate events. Расположение в центре города, удобная бесплатная парковка,
-                            качественный сервис, роскошный интерьер – все это позволит провести мероприятие на высшем
-                            уровне!</p>
+                            corporate events. Location in the city center, convenient free parking,
+                            quality service, luxurious interior - all this will allow you to hold the event at the
+                            highest level!
+                        </p>
                         <p>Continent Conference hall is the largest hall of the complex accommodating up to 200 people,
                             featuring professional sound equipment, projector and TVs. It hosts large-scale weddings,
-                            anniversaries, corporate parties and conferences. </p>
+                            anniversaries, corporate parties and conferences.</p>
                     </div>
                 </div>
                 <div class="main-restorant-text second">
@@ -448,7 +453,7 @@ if (strpos($pageUrl, '/konferents-zal-1.html') !== false) {
                             the event at the highest level, the organizers consider every small detail, and the room
                             allows to achieve everything planned: accomodation of newlyweds, music equipment, a place
                             for a photo booth, etc. The Continent's staff controls the timely serving of food, and the
-                            most comfortable conditions are created for the guests' stay.</p>
+                            most comfortable conditions are created for the guests stay.</p>
 
                     </div>
                 </div>
@@ -461,22 +466,23 @@ if (strpos($pageUrl, '/konferents-zal-1.html') !== false) {
                         Continent Business Hotel is the heart of business life in Stavropol!
                     </div>
                     <div class="main-restorant-text-small">
-                        <p>Мы предлагаем широкий спектр услуг конгресс-центра: VIPкомнаты для деловых переговоров, 7
-                            конференц-залов для проведения видео-конференций, семинаров, тренингов, презентаций и прочих
-                            корпоративных мероприятий. Расположение в центре города, удобная бесплатная парковка,
-                            качественный сервис, роскошный интерьер – все это позволит провести мероприятие на высшем
-                            уровне!</p>
-                        <p>Также Вы можете заказать кофе-брейки, фуршеты, банкеты, бизнес-ланчи, воспользоваться
-                            услугами копирования и печати документов.</p>
+                        <p>We offer a wide range of congress center services: VIP rooms for business negotiations, 7
+                            conference halls for video conferences, seminars, trainings, presentations and other
+                            corporate events. Location in the city center, convenient free parking,
+                            quality service, luxurious interior - all this will allow you to hold the event at the
+                            highest level!
+                        </p>
+                        <p>You can also order coffee breaks, buffets, banquets, business lunches, copying and printing
+                            services.</p>
                     </div>
                 </div>
                 <div class="main-restorant-text second">
                     <div class="main-restorant-text-small">
-                        <p>При аренде конференц–зала, для компаний, в которых принято экономить время, мы берем на себя
-                            все заботы о питании, трансфере, размещении и досуге участников. Наш специалист, в случае
-                            необходимости, обеспечит мероприятию рекламную поддержку внутри отеля или в любых СМИ
-                            города.</p>
-                        <p>Все помещения конференц-залов оснащены современным профессиональным оборудованием.</p>
+                        <p>When renting a conference hall, for time-saving companies, we take care of
+                            all catering, transportation, accommodation and leisure of participants. Our specialist, in
+                            case of if necessary, will provide the event advertising support within the hotel or in any
+                            media of the city.</p>
+                        <p>All conference rooms are equipped with modern professional equipment.</p>
                     </div>
                 </div>
             </div>

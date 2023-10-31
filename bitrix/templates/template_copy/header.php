@@ -1,7 +1,7 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >

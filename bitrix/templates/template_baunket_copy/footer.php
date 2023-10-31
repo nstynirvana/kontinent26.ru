@@ -74,7 +74,7 @@
                 </ul>
             </div>
             <div class="copyright">
-                <?=date("Y")?> © БО Континент.Все права защищены
+                <?=date("Y")?> © Continent Business Hotel. All rights reserved
             </div>
         </div>
     </footer>

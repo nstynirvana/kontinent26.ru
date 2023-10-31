@@ -15,7 +15,7 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Правила проживания", 
+		"Rules of accommodation",
 		"/en/about_hotel/rules/",
 		Array(), 
 		Array(), 

@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Правила проживания");
+$APPLICATION->SetTitle("Rules of accommodation");
 ?>
 
     <section class="main-block detail-page service-page">
@@ -12,10 +12,10 @@ $APPLICATION->SetTitle("Правила проживания");
 
             <? include($_SERVER['DOCUMENT_ROOT'] . "/include/template/breadcrumbs.php"); ?>
 
-            <div class="rooms-list-item-title">Правила проживания</div>
+            <div class="rooms-list-item-title">Rules of accommodation</div>
 
             <div class="rooms-list-text">
-                <p>Порядок проживания и оплаты услуг, предоставляемых бизнес отелем «Континент»</p>
+                <p>The order of accommodation and payment for services provided by the Continent Business Hotel</p>
             </div>
 
         </div>

@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet" />
 <link href="/design/css/style.css?v=23" rel="stylesheet" />
 
-<script src="https://api-maps.yandex.ru/2.1/?apikey=60effeca-5cb2-411c-b375-a6cefaea1420&amp;lang=ru_RU" type="text/javascript"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=60effeca-5cb2-411c-b375-a6cefaea1420&amp;lang=en_US" type="text/javascript"></script>
 
 <script type="text/javascript" src="/design/js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="/design/js/jquery-migrate-1.2.1.min.js"></script>

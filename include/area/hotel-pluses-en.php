@@ -10,12 +10,12 @@
 </div>
 <div class="hotel-pluses-item">
 	<div class="hotel-pluses-pic"><img src="/design/img/plus-3.png" alt="" title="" /></div>
-	<div class="hotel-pluses-name">Polite personnel</div>
+	<div class="hotel-pluses-name">Polite staff</div>
 	<?/*<div class="hotel-pluses-desc">Гостям отеля предлагаем скидку на цветы и подарки</div>*/?>
 </div>
 <div class="hotel-pluses-item">
 	<div class="hotel-pluses-pic"><img src="/design/img/plus-4.png" alt="" title="" /></div>
-	<div class="hotel-pluses-name">Congress cervices</div>
+	<div class="hotel-pluses-name">Conference services</div>
 	<?/*<div class="hotel-pluses-desc">Гостям отеля предлагаем скидку на цветы и подарки</div>*/?>
 </div>
 <div class="hotel-pluses-item">
