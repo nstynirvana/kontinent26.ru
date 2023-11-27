@@ -2,7 +2,7 @@
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Contacts");
 ?>
-    <script type="text/javascript" src="https://maps.api.2gis.ru/1.0"></script>
+    <script type="text/javascript" src="https://maps.api.2gis.ru/1.0/en"></script>
     <script type="text/javascript" charset="utf-8" src="https://maps.api.2gis.ru/1.0/dg-js/dg.js?v=200"></script>
     <link rel="stylesheet" href="https://maps.api.2gis.ru/1.0/dg-css/dg.css?v=200">
 

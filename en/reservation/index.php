@@ -49,7 +49,7 @@ $APPLICATION->SetTitle("Booking");
                 <script type="text/javascript">
                     (function (w) {
                         var q = [
-                            ['setContext', 'TL-INT-kontinent26', 'ru'],
+                            ['setContext', 'TL-INT-kontinent26', 'en'],
                             ['embed', 'booking-form', {container: 'tl-booking-form'}]
                         ];
                         var t = w.travelline = (w.travelline || {}), ti = t.integration = (t.integration || {});

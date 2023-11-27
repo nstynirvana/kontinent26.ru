@@ -35,7 +35,6 @@ if($USER->IsAdmin()){
 }
 ?>
 
-
 <?if (!empty($arResult)):?>
 <ul>
 
@@ -45,11 +44,12 @@ foreach($arResult as $arItem):
 		continue;
 ?>
 	<?if($arItem["SELECTED"]):?>
-		<li <?if($arItem["TEXT"] == "Номера"):?>class="parent"<?endif;?><?if($arItem["TEXT"] == "Конференц залы"):?>class="parent"<?endif;?>><a href="<?=$arItem["LINK"]?>" class="active <?if($arItem["TEXT"] == "Номера"):?>parent<?endif;?> <?if($arItem["TEXT"] == "Конференц залы"):?>parent<?endif;?>"><?=$arItem["TEXT"]?></a></li>
+
+		<li <?if($arItem["TEXT"] == "ROOMS"):?>class="parent"<?endif;?><?if($arItem["TEXT"] == "Конференц залы"):?>class="parent"<?endif;?>><a href="<?=$arItem["LINK"]?>" class="active <?if($arItem["TEXT"] == "Номера"):?>parent<?endif;?> <?if($arItem["TEXT"] == "Конференц залы"):?>parent<?endif;?>"><?=$arItem["TEXT"]?></a></li>
 	<?else:?>
-		<li <?if($arItem["TEXT"] == "Номера"):?>class="parent"<?endif;?><?if($arItem["TEXT"] == "Конференц залы"):?>class="parent"<?endif;?>>
-			<a href="<?=$arItem["LINK"]?>" <?if($arItem["TEXT"] == "Номера"):?>class="parent"<?endif;?><?if($arItem["TEXT"] == "Конференц залы"):?>class="parent"<?endif;?>><?=$arItem["TEXT"]?></a>
-			<?if($arItem["TEXT"] == "Номера"):?>
+		<li <?if($arItem["TEXT"] == "ROOMS"):?>class="parent"<?endif;?><?if($arItem["TEXT"] == "Конференц залы"):?>class="parent"<?endif;?>>
+			<a href="<?=$arItem["LINK"]?>" <?if($arItem["TEXT"] == "ROOMS"):?>class="parent"<?endif;?><?if($arItem["TEXT"] == "Конференц залы"):?>class="parent"<?endif;?>><?=$arItem["TEXT"]?></a>
+			<?if($arItem["TEXT"] == "ROOMS"):?>
 				<div class="drop-down-menu">
 					<ul class="hidden-main-menu">	
 						<?foreach($arrNomera as $nomerOne):?>
@@ -121,7 +121,7 @@ foreach($arResult as $arItem):
 
 </ul>
 
-    <div <?if($dir == "/en/"):?>style="display: none"<?endif;?> class="header-button-lang-mobile">
+    <div <?if($dir == "/en/"):?> style="display: none" <?endif;?> class="header-button-lang-mobile">
         <a class="header-button-lang-mobile_text" href="<?=str_replace("/en/", "/", $_SERVER['REQUEST_URI'])?>">
             <img class="header-button-lang-mobile_img" src="/design/img/switch-ru.svg" alt="" title=""/>
             Change language
